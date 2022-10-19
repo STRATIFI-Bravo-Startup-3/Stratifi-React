@@ -16,8 +16,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Learn More
 
-You can learn more about Stratifi:\
-[Twitter](https://twitter.com/stratifi_).
+You can learn more about Stratifi on [Twitter](https://twitter.com/stratifi_).
 
 
 
