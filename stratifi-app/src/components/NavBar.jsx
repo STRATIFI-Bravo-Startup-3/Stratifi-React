@@ -23,7 +23,7 @@ const NavBar = () => {
             <li className="px-3 block cursor-pointer">Pricing</li>
             <li className="px-3 block cursor-pointer">Services</li>
             <li className="px-3 block cursor-pointer">Contact us</li>
-            <button className="px-3 bg-blue-500 ring-2 ring-blue-500 rounded">
+            <button className="px-4 bg-blue-500 ring-2 ring-blue-500 rounded">
               Log in
             </button>
           </ul>
