@@ -4,9 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Authors
 
-[Ikenna Udemezue](https://github.com/iykethe1st)
-[Oluwateniola Oyelakin](https://github.com/teni-dev)
-[Felix Awosika](https://github.com/LiexICT)
+[Ikenna Udemezue](https://github.com/iykethe1st)\
+[Oluwateniola Oyelakin](https://github.com/teni-dev)\
+[Felix Awosika](https://github.com/LiexICT)\
 [Mubarak Ajibola](https://github.com/mubizzy)
 
 
