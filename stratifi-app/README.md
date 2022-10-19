@@ -16,6 +16,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Learn More
 
-You can learn more about Stratifi by clicking here [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can learn more about Stratifi:\
+[Twitter](https://twitter.com/stratifi_).
+
 
 
