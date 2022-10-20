@@ -1,11 +1,16 @@
 import React, { Component } from "react";
-import background from "../images/background.jpeg";
-import Button from "./common/Button";
+import desktopBackground from "../images/background.jpeg";
+import mobileBackground from "../images/background-sm.jpeg";
+import { useEffect, useState } from "react";
+
 const Hero = () => {
+  const imageUrl =
+    useWindowWidth() >= 650 ? desktopBackground : mobileBackground;
+
   return (
     <section className="w-auto h-[42rem] ">
       <div
-        style={{ backgroundImage: `url(${background})` }}
+        style={{ backgroundImage: `url(${imageUrl})` }}
         className="h-full w-full relative bg-cover bg-no-repeat"
       >
         <div className="w-full h-full bg-black opacity-50 absolute top-0 left-0">
@@ -29,6 +34,24 @@ const Hero = () => {
       </div>
     </section>
   );
+};
+
+const useWindowWidth = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
+  return windowWidth;
 };
 
 export default Hero;
