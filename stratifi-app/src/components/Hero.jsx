@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import background from "../images/background.png";
+import background from "../images/background.jpeg";
 import Button from "./common/Button";
 const Hero = () => {
   return (
