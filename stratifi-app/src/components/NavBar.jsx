@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <header className="border-b-4 bg-[#702862] border-neutral-800">
       <div className="flex items-center p-2  text-white justify-between xl:mx-auto xl:max-w-7xl max-w-full flex-wrap w-full">
-        <div className="w-40">
+        <div className="w-60">
           <img className="" src={logo} alt="" srcSet="" />
         </div>
         <HiMenu
@@ -24,9 +24,9 @@ const NavBar = () => {
             open ? "block w-full ease-in delay-150" : "hidden"
           } lg:flex lg:items-center lg:w-auto `}
         >
-          <ul className="lg:flex lg:justify-between items-center">
+          <ul className="lg:flex lg:justify-between items-center text-lg lg:text-base">
             {navItems.map((navItem) => (
-              <li className="px-3 block text-start">
+              <li className="px-3 block text-start border-b-[0.5px] lg:border-0 border-neutral-800">
                 <Link
                   className="hover:text-slate-300 active:text-slate-400"
                   to="/"
