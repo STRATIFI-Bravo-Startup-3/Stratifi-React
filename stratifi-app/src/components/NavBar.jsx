@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
+  const navItems = ["About Us", "Home", "Pricing", "Services", "Contact us"];
 
   return (
     <header className="border-b-4 bg-[#702862] border-neutral-800">
@@ -24,31 +25,16 @@ const NavBar = () => {
           } lg:flex lg:items-center lg:w-auto `}
         >
           <ul className="lg:flex lg:justify-between items-center">
-            <li className="px-3 block text-start">
-              <Link className="hover:text-slate-300" to="/">
-                About Us
-              </Link>
-            </li>
-            <li className="px-3 block text-start">
-              <Link className="hover:text-slate-300" to="/">
-                Home
-              </Link>
-            </li>
-            <li className="px-3 block text-start">
-              <Link className="hover:text-slate-300" to="/">
-                Pricing
-              </Link>
-            </li>
-            <li className="px-3 block text-start">
-              <Link className="hover:text-slate-300" to="/">
-                Services
-              </Link>
-            </li>
-            <li className="px-3 block text-start">
-              <Link className="hover:text-slate-300" to="/">
-                Contact Us
-              </Link>
-            </li>
+            {navItems.map((navItem) => (
+              <li className="px-3 block text-start">
+                <Link
+                  className="hover:text-slate-300 active:text-slate-400"
+                  to="/"
+                >
+                  {navItem}
+                </Link>
+              </li>
+            ))}
             <button className="ml-3 my-1 block px-4 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 ring-2 ring-blue-500 rounded">
               Log in
             </button>
