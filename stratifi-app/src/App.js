@@ -7,12 +7,14 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <NavBar />
+        <Hero />
       </Router>
     </div>
   );

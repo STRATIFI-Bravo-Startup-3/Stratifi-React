@@ -1,4 +1,5 @@
 {
+  "homepage": "http://stratifi.github.io/stratifi-app",
   "name": "stratifi-app",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +15,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -38,7 +41,9 @@
     ]
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
     "autoprefixer": "^10.4.12",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.18",
     "tailwindcss": "^3.1.8"
   }
