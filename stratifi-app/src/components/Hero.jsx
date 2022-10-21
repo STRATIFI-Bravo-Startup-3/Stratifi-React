@@ -16,7 +16,7 @@ const Hero = () => {
         style={{ backgroundImage: `url(${imageUrl})` }}
         className="h-full w-full relative bg-cover bg-no-repeat"
       >
-        <div className="w-full h-full bg-black opacity-75 absolute top-0 left-0">
+        <div className="w-full h-full bg-black opacity-60 absolute top-0 left-0">
           <div className=" flex-col pt-28 px-8 lg:py-36 w-[500px] mx-auto text-left max-w-sm lg:max-w-none">
             <h1 className="text-2xl  text-white">COMING SOON...</h1>
             <h1 className="lg:text-6xl text-4xl mt-5 text-white">
