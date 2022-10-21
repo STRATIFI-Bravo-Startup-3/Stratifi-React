@@ -2,10 +2,13 @@ import React, { Component } from "react";
 import desktopBackground from "../images/background.jpeg";
 import mobileBackground from "../images/background-sm.jpeg";
 import { useEffect, useState } from "react";
-
+import MailchimpSubscribe from "./mailchimpSubscribe";
 const Hero = () => {
   const imageUrl =
     useWindowWidth() >= 650 ? desktopBackground : mobileBackground;
+
+  const url =
+    "https://app.us13.list-manage.com/subscribe/post?u=311327338697ce69baa12d960&amp;id=3f88d6e974&amp;f_id=00c297e2f0";
 
   return (
     <section className="w-auto h-[42rem] ">
@@ -19,16 +22,8 @@ const Hero = () => {
             <h1 className="lg:text-6xl text-4xl mt-5 text-white">
               Get notified when we launch!
             </h1>
-            <div className="flex form-input h-10 w-80 mt-5 rounded p-1">
-              <input
-                placeholder="Enter your email address"
-                className="border-0 p-0 focus:ring-0 w-0 grow text-center"
-                type="email"
-              />
-              <button className=" block px-4 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 ring-2 ring-blue-500 rounded">
-                Subscribe
-              </button>
-            </div>
+
+            <MailchimpSubscribe url={url} />
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import logo from "../images/logo.png";
+import logo from "../images/logo2.png";
 import { HiMenu } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
