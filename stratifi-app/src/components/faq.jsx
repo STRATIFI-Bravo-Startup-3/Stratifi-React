@@ -1,11 +1,11 @@
 import React from "react";
-// import "../App.css";
+import "../App.css";
 
 var ask = document.getElementsByClassName("ask");
 var i;
 
 for (i = 0; i < ask.length; i++) {
-  ask[i].addEventListener("click", function () {
+  ask[i].addEventListener("click", () => {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
