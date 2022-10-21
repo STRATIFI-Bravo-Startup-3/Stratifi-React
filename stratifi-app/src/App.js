@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import NavBar from "./components/NavBar";
+import Faq from "./components/faq";
 import {
   BrowserRouter as Router,
   Navigate,
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <Router>
         <NavBar />
+        <Faq />
       </Router>
     </div>
   );
