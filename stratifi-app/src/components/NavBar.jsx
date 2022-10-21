@@ -16,7 +16,7 @@ const NavBar = () => {
         <HiMenu
           className={`${
             open ? "rotate-90 ease-in delay-150" : ""
-          } ring-2 ring-neutral-800 ring-offset-0 lg:hidden block h-6 w-6 cursor-pointer rounded`}
+          } ring-2 ring-neutral-800 ring-offset-0 lg:hidden block h-6 w-6 cursor-pointer rounded mr-3`}
           onClick={() => setOpen(!open)}
         />
         <nav
