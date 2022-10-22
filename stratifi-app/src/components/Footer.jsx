@@ -8,23 +8,52 @@ import {
   FaTiktok,
   FaLinkedin,
 } from "react-icons/fa";
+import MailchimpSubscribeSmall from "./mailchimpSubscribeSmall";
 
 const Footer = () => {
+  const url =
+    "https://app.us13.list-manage.com/subscribe/post?u=311327338697ce69baa12d960&amp;id=3f88d6e974&amp;f_id=00c297e2f0";
+
   return (
-    <div className="w-full mt-24 bg-[#702862] text-white py-8 px-2">
+    <div className="w-full mt-24 bg-[#702862] text-white py-8 px-4">
       <div className="max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-6 boarded-b-2 border-white py-8">
         <div>
           <h6 className="font-bold uppercase pt-2 text-left">Company</h6>
           <ul>
-            <li className="py-1 text-left">About Us</li>
-            <li className="py-1 text-left">Our Services</li>
-            <li className="py-1 text-left">FAQs</li>
-            <li className="py-1 text-left ">Contact Us</li>
+            <li
+              className="py-1 text-left  hover:text-slate-300  active:text-slate-400 duration-300
+          text-sm cursor-pointer leading-6"
+            >
+              About Us
+            </li>
+            <li
+              className="py-1 text-left  hover:text-slate-300  active:text-slate-400 duration-300
+          text-sm cursor-pointer leading-6"
+            >
+              Our Services
+            </li>
+            <li
+              className="py-1 text-left  hover:text-slate-300  active:text-slate-400 duration-300
+          text-sm cursor-pointer leading-6"
+            >
+              FAQs
+            </li>
+            <li
+              className="py-1 text-left  hover:text-slate-300  active:text-slate-400 duration-300
+          text-sm cursor-pointer leading-6"
+            >
+              Contact Us
+            </li>
           </ul>
         </div>
 
         <div>
-          <h6 className="font-bold uppercase pt-2 text-left">Products</h6>
+          <h6
+            className="font-bold uppercase pt-2 text-left  hover:text-slate-300  active:text-slate-400 duration-300
+          text-sm cursor-pointer leading-6"
+          >
+            Products
+          </h6>
         </div>
 
         <div>
@@ -35,15 +64,11 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="cols-span-2 pt-8 md:pt-2">
-          <p className="font-bold  ">Sign up for monthly newsletters</p>
-          <form className="flex flex-col sm:flex-row">
-            <input
-              className="w-full p-2 mr-4 rounded-md mb-4"
-              type="email"
-              placeholder="Email Address"
-            />
-          </form>
+        <div className="flex-col">
+          <p className="font-bold  text-left">
+            Sign up for monthly newsletters
+          </p>
+          <MailchimpSubscribeSmall url={url} />
         </div>
       </div>
 
