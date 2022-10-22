@@ -15,7 +15,7 @@ const SimpleForm = ({ status, message, className, style, onSubmitted }) => {
       <div className="flex form-input h-10 w-80 mt-5 rounded p-1" style={style}>
         <input
           ref={(node) => (input = node)}
-          className="border-0 p-0 focus:ring-0 w-0 grow text-center"
+          className="border-0 p-0 focus:ring-0 w-0 grow text-center text-black"
           type="email"
           placeholder="Enter your email address"
         />
