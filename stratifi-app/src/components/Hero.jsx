@@ -3,6 +3,7 @@ import desktopBackground from "../images/background.jpeg";
 import mobileBackground from "../images/background-sm.jpeg";
 import { useEffect, useState } from "react";
 import MailchimpSubscribe from "./mailchimpSubscribe";
+import MailchimpSubscribeSmall from "./mailchimpSubscribeSmall";
 const Hero = () => {
   const imageUrl =
     useWindowWidth() >= 650 ? desktopBackground : mobileBackground;
@@ -20,7 +21,7 @@ const Hero = () => {
           <div className=" flex-col pt-28 px-8 lg:py-36 w-[500px] mx-auto text-left max-w-sm lg:max-w-none">
             <h1 className="text-2xl  text-white">COMING SOON...</h1>
             <h1 className="lg:text-6xl text-4xl mt-5 text-white">
-              Get notified when we launch!
+              Website under construction. Get notified when we launch!
             </h1>
 
             <MailchimpSubscribe url={url} />
