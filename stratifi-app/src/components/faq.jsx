@@ -1,30 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
-
-var ask = document.getElementsByClassName("ask");
-var i;
-
-for (i = 0; i < ask.length; i++) {
-  ask[i].addEventListener("click", () => {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
+import { HiChevronDown } from "react-icons/hi";
 
 function Faq() {
+  const [open, setOpen] = useState(false);
   return (
     <section className="faq">
       <div className="faqimg"></div>
 
-      <ul className="questions">
-        <li className="ask">
+      <div>
+        <div className="ask flex" onClick={() => setOpen(!open)}>
+          <HiChevronDown />
           <button>What is Stratifi</button>
-        </li>
+        </div>
         <div className="panel">
           <p>
             Stratifi is an online marketplace for businesses and start-up’s to
@@ -37,12 +25,16 @@ function Faq() {
             maximum delivery and professionalism.
           </p>
         </div>
-        <li className="ask">
+      </div>
+
+      <div>
+        <div className="ask flex">
+          <HiChevronDown />
           <button>What service does Stratifi offer</button>
-        </li>
+        </div>
         <div className="panel">
           <p>
-            An online platform for influencer to connect with brands directly{" "}
+            An online platform for influencer to connect with brands directly
             <br />
             As an influencer we solve the problem of brands not paying for the
             content you promote in the guise of not having enough visibility,
@@ -50,18 +42,26 @@ function Faq() {
             influencers.
           </p>
         </div>
-        <li className="ask">
+      </div>
+
+      <div>
+        <div className="ask flex">
+          <HiChevronDown />
           <button>Is Stratifi free</button>
-        </li>
+        </div>
         <div className="panel">
           <p>
             Signing up as a brand or influencer is completely free, but we do
             charge a commission for every transaction done on stratify
           </p>
         </div>
-        <li className="ask">
+      </div>
+
+      <div>
+        <div className="ask flex">
+          <HiChevronDown />
           <button>Is Stratifi trustworthy</button>
-        </li>
+        </div>
         <div className="panel">
           <p>
             At stratify your safety is important to us. Brands and influencers
@@ -69,16 +69,20 @@ function Faq() {
             the safety of each user.
           </p>
         </div>
-        <li className="ask">
+      </div>
+
+      <div>
+        <div className="ask flex">
+          <HiChevronDown />
           <button>Why should I use Straifi</button>
-        </li>
+        </div>
         <div className="panel">
           <p>
             We do the hard work so that you can enjoy a seamless interaction to
             meet you brand goals.
           </p>
         </div>
-      </ul>
+      </div>
     </section>
   );
 }
