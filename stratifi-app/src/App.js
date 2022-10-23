@@ -17,8 +17,8 @@ function App() {
       <Router>
         <NavBar />
         <Hero />
-        <Faq />
         <Footer />
+
       </Router>
     </div>
   );

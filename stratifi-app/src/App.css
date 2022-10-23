@@ -1,35 +1,38 @@
-* {
-  font-size: clamp(0.8rem, 0.7677rem + 0.2581vw, em);
-}
-.faq {
-  margin-inline: 1.5em;
+.App {
+  text-align: center;
 }
 
-.faqimg {
-  background-image: url(./images/faqimage.png);
-  height: 25vh;
-  background-size: cover;
-  background-position-y: 660px;
-  border-radius: 5px;
-  overflow: hidden;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.ask {
-  padding-left: 4em;
-  padding-top: 0.3em;
-  border-radius: 5px;
-  background-color: rgb(194, 187, 187);
-  height: 5vh;
-  margin: 0.5em auto;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.ask:hover {
-  opacity: 0.9;
-  cursor: pointer;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.panel {
-  background-color: rgb(231, 222, 222);
-  padding-left: 2em;
-  border-radius: 5px;
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
