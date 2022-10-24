@@ -11,6 +11,7 @@ import {
   Routes,
 } from "react-router-dom";
 import Hero from "./components/Hero";
+import Testimonial from "./components/Testimonial";
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
       <Router>
         <NavBar />
         <Hero />
-        <Faq />
+        <Testimonial />
+
+        {/* <Faq /> */}
         <Footer />
       </Router>
     </div>
