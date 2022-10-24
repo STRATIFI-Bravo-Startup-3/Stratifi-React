@@ -14,6 +14,7 @@ const Testimonial = () => {
         </h2>
       </div>
       <div className="space-y-6">
+        {/* First Part */}
         <div className="mx-auto container flex flex-col  items-center gap-2 md:flex-row md:px-28 md:space-x-6 md:max-w-6xl ">
           <div className="flex flex-col bg-purple-300 md:space-x-6 md:px-4 md:py-2">
             <div className="flex flex-row   bg-purple-300 items-center mb-4">
@@ -63,7 +64,6 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
-      {/* First Part */}
     </section>
   );
 };
