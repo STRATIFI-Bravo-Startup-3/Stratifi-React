@@ -176,7 +176,7 @@ class Footer extends Component {
                 {this.icons.map((icon) => (
                   <Link
                     className="hover:text-slate-300 active:text-slate-400"
-                    to="/"
+                    to=""
                   >
                     {icon}
                   </Link>
