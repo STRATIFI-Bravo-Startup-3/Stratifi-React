@@ -36,6 +36,17 @@ const Testimonial = () => {
         </div>
         {/* second Testimonial */}
       </div>
+
+      <div className="flex flex-col bg-purple-300 md:space-x-6 md:px-4 md:py-2">
+        <div className="flex flex-row   bg-purple-300 items-center mb-4">
+          <img src={img7} alt="" className="w-16 mr-5" />
+          <h2 className="text-sm items-center ">Jamila Datti</h2>
+        </div>
+        <p className="px-">
+          Great service, I had an amazing experience using Stratifi to get an
+          influenece
+        </p>
+      </div>
     </section>
   );
 };
