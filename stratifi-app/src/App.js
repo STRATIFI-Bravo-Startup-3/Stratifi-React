@@ -17,7 +17,7 @@ function App() {
       <Router>
         <NavBar />
         <Hero />
-        <Faq />
+        {/* <Faq /> */}
         <Footer />
       </Router>
     </div>
