@@ -37,6 +37,7 @@ const Testimonial = () => {
         {/* second Testimonial */}
       </div>
       {/* Second Part */}
+      <div className="mx-auto container flex flex-col  items-center gap-2  md:flex-row md:px-28 md:space-x-6 md:max-w-6xl "></div>
       <div className="flex flex-col bg-purple-300 md:space-x-6 md:px-4 md:py-2">
         <div className="flex flex-row   bg-purple-300 items-center mb-4">
           <img src={img7} alt="" className="w-16 mr-5" />
