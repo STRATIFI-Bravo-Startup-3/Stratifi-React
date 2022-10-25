@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import Faq from "./components/faq";
 
 import {
   BrowserRouter as Router,
