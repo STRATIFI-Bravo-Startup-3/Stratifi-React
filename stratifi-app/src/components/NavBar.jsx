@@ -26,7 +26,10 @@ const NavBar = () => {
         >
           <ul className="lg:flex lg:justify-between items-center text-lg lg:text-base">
             {navItems.map((navItem) => (
-              <li className="px-3 block text-start border-b-[0.5px] lg:border-0 border-neutral-800">
+              <li
+                key={navItem}
+                className="px-3 block text-start border-b-[0.5px] lg:border-0 border-neutral-800"
+              >
                 <Link
                   className="hover:text-slate-300 active:text-slate-400"
                   to="/"
