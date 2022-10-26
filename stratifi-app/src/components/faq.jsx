@@ -1,4 +1,4 @@
-import Faq from "react-faq-component";
+// import Faq from "react-faq-component";
 import "../App.css";
 
 const data = {
@@ -55,7 +55,7 @@ function FaqComp() {
           <h1>FAQ</h1>
         </div>
         <div className="faqcontent">
-          <Faq data={data} config={config} />
+          {/* <Faq data={data} config={config} /> */}
         </div>
       </section>
     </div>
