@@ -3,6 +3,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import FaqComp from "./components/Faq";
+import Testimonial from "./components/Testimonial"
 
 import {
   BrowserRouter as Router,
@@ -11,6 +12,7 @@ import {
   Routes,
 } from "react-router-dom";
 import Hero from "./components/Hero";
+import Testimonial from "./components/Testimonial";
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <NavBar />
         <Hero />
         <FaqComp />
+        <Testimonial />
         <Footer />
       </Router>
     </div>
