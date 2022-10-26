@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import Faq from "./components/faq";
+import FaqComp from "./components/Faq";
 
 import {
   BrowserRouter as Router,
@@ -18,7 +18,7 @@ function App() {
       <Router>
         <NavBar />
         <Hero />
-        <Faq />
+        <FaqComp />
         <Footer />
       </Router>
     </div>
