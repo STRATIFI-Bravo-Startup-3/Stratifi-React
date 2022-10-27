@@ -26,6 +26,14 @@ const Testimonial = () => {
               <h5 class="text-lg font-bold">Anisha Li</h5>
             </div>
           </div>
+
+          {/* <!-- Testimonial 2 --> */}
+          <div class="flex flex-col  p-6 space-y-6 rounded-lg bg-veryLightGray mb-4 md:mb-32   shadow-sm md:w-1/3 md:shadow-md">
+            <p class="text-sm ">
+              “An absolute influencer marketing tool. Effective and
+              trustworthy.”
+            </p>
+          </div>
         </div>
       </div>
     </section>
