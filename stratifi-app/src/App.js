@@ -3,7 +3,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import FaqComp from "./components/Faq";
-import Testimonial from "./components/Testimonial"
+import Testimonial from "./components/Testimonial";
 
 import {
   BrowserRouter as Router,
