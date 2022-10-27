@@ -28,7 +28,7 @@ const Testimonial = () => {
           </div>
 
           {/* <!-- Testimonial 2 --> */}
-          <div class="flex flex-col    rounded-lg bg-veryLightGray mb-4 md:mb-32   shadow-sm md:w-1/3 md:shadow-md">
+          <div class="flex flex-col space-y-20  p-4 rounded-lg bg-veryLightGray mb-4 md:mb-32   shadow-sm md:w-1/3 md:shadow-md">
             <p class="text-sm ">
               “Great service. I had an amazing experience using StratifI to get
               an influencer for my brand marketing campaign.An absolute
