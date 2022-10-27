@@ -9,9 +9,10 @@ const NavBar = () => {
 
   return (
     <header className=" bg-[#FFFFFF] ">
-      <div className="flex items-center p-2  text-slate-600 justify-between xl:mx-auto xl:max-w-7xl max-w-full flex-wrap w-full">
-        <div className="w-[10rem]">
+      <div className="flex items-center p-1  text-slate-600 justify-between xl:mx-auto xl:max-w-7xl max-w-full flex-wrap w-full">
+        <div className="flex justify-center w-[3rem]">
           <img className="" src={logo} alt="" srcSet="" />
+          <span className="font-black text-lg my-auto">STRATIFI.NG</span>
         </div>
         <HiMenu
           className={`${
