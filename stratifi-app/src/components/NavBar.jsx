@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <header className=" bg-[#FFFFFF] ">
       <div className="flex items-center p-1  text-slate-600 justify-between xl:mx-auto xl:max-w-7xl max-w-full flex-wrap w-full">
-        <div className="flex justify-center w-[3rem]">
+        <div className="ml-16 lg:ml-10 flex justify-center w-[3rem]">
           <img className="" src={logo} alt="" srcSet="" />
           <span className="font-black text-lg my-auto">STRATIFI.NG</span>
         </div>
@@ -25,7 +25,7 @@ const NavBar = () => {
             open ? "block w-full ease-in delay-150" : "hidden"
           } lg:flex lg:items-center lg:w-auto `}
         >
-          <ul className="lg:flex lg:justify-between items-center text-lg lg:text-base">
+          <ul className="lg:flex lg:justify-between items-center text-md lg:text-base">
             {navItems.map((navItem) => (
               <li
                 key={navItem}

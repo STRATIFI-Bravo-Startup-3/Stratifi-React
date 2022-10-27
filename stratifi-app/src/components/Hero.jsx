@@ -23,16 +23,14 @@ const Hero = () => {
           MARKETING WITH INFLUENCE
         </div>
         <div className="md:mx-auto lg:mx-0 flex flex-col gap-1">
-          <span className="text-2xl lg:text-xl">
-            Real brands, Trusted Creators,
-          </span>
-          <span className="text-2xl lg:text-xl">Guaranteed Results.</span>
+          <span className="lg:text-xl">Real brands, Trusted Creators,</span>
+          <span className="lg:text-xl">Guaranteed Results.</span>
         </div>
-        <div className="md:mx-auto lg:mx-0 flex gap-6">
-          <button className="ring-2 ring-white bg-white hover:bg-slate-100 active:bg-slate-200 rounded-md text-[#FF8F50] py-1 px-6 w-40">
+        <div className="md:mx-auto lg:mx-0 flex justify-between gap-8  lg:gap-6">
+          <button className="text-sm lg:text-base ring-2 ring-white bg-white hover:bg-slate-100 active:bg-slate-200 rounded-md text-[#FF8F50] py-1 px-6 w-30 lg:w-40">
             GET STARTED
           </button>
-          <button className="ring-2 ring-white bg-[#AD6EC0] hover:bg-[#A960BF] active:bg-[#A752C0] rounded-md text-white py-1 px-6 w-40">
+          <button className="text-sm lg:text-base ring-2 ring-white bg-[#AD6EC0] hover:bg-[#A960BF] active:bg-[#A752C0] rounded-md text-white py-1 px-6 w-30 lg:w-40">
             Sign Up
           </button>
         </div>

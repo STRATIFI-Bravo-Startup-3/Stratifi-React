@@ -8,7 +8,7 @@ const About = () => {
         <div className=" w-[15rem] lg:ml-48 mx-auto bg-[#FF8F50] rounded-full">
           <img className="" src={about1} alt="" />
         </div>
-        <div className="mx-auto lg:w-2/5 w-4/5 flex flex-col gap-6">
+        <div className="mx-auto lg:w-2/5 w-full flex flex-col gap-6">
           <h1 className="mx-auto lg:mx-0 text-xl font-bold">About us</h1>
           <span className="text-slate-600 lg:w-4/5 w-full text-center lg:text-left">
             We are an influencer marketplace. We connect brands with influencers
@@ -23,7 +23,7 @@ const About = () => {
         <div className=" w-[15rem] lg:mr-48 mx-auto bg-[#FF8F50] rounded-full">
           <img className="" src={about2} alt="" />
         </div>
-        <div className="mx-auto lg:ml-48 lg:w-2/5 w-4/5 flex flex-col gap-6">
+        <div className="mx-auto lg:ml-48 lg:w-2/5 w-full flex flex-col gap-6">
           <h1 className="mx-auto lg:mx-0 text-xl font-bold">
             What is influencer marketing?
           </h1>
