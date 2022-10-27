@@ -6,7 +6,7 @@ import img7 from "../images/img7.png";
 import img8 from "../images/img8.png";
 const Testimonial = () => {
   return (
-    
+   
   );
 };
 
