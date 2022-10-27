@@ -16,7 +16,7 @@ const Testimonial = () => {
         {/* <!-- Testimonials Container --> */}
         <div class="flex flex-col mt-32 md:flex-row md:space-x-6">
           {/* <!-- Testimonial 1 --> */}
-          <div class="flex flex-col    rounded-lg bg-veryLightGray p-4 space-y-20 mb-4 md:mb-32 shadow-sm md:w-1/3 md:shadow-md">
+          <div class="flex flex-col  mb-4  rounded-lg  p-4 space-y-20 md:mb-32 shadow-sm md:w-1/3 md:shadow-md">
             <p class="text-sm ">
               “An absolute influencer marketing tool. Effective and
               trustworthy.”
@@ -41,7 +41,7 @@ const Testimonial = () => {
           </div>
 
           {/* <!-- Testimonial 3 --> */}
-          <div class="flex flex-col      rounded-lg mb-4 md:mb-32  shadow-sm md:w-1/3 md:shadow-md">
+          <div class="flex flex-col  space-y-20  p-4    rounded-lg mb-4 md:mb-32  shadow-sm md:w-1/3 md:shadow-md">
             <p class="text-sm  ">
               “Simple and effective. no long hours searching for reliable
               influencers.”
