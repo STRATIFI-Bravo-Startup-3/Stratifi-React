@@ -3,16 +3,15 @@ import Hero from "../components/Hero";
 import Testimonial from "../components/Testimonial";
 import Faq from "../components/faq";
 import Footer from "../components/Footer";
+import About from "../components/About";
 
 const Home = () => {
   return (
     <main>
       <NavBar />
       <Hero />
-      <Testimonial />
-
-      <Faq />
-      {/* <Footer /> */}
+      <About />
+      <Footer />
     </main>
   );
 };
