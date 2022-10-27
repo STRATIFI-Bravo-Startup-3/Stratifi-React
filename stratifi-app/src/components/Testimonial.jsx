@@ -13,6 +13,16 @@ const Testimonial = () => {
         <h2 class="text-4xl font-bold text-center">
           Testimonials from our clients
         </h2>
+        {/* <!-- Testimonials Container --> */}
+        <div class="flex flex-col mt-32 md:flex-row md:space-x-6">
+          {/* <!-- Testimonial 1 --> */}
+          <div class="flex flex-col  p-6 space-y-6 rounded-lg bg-veryLightGray mb-4 md:mb-32 shadow-sm md:w-1/3 md:shadow-md">
+            <p class="text-sm ">
+              “An absolute influencer marketing tool. Effective and
+              trustworthy.”
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
