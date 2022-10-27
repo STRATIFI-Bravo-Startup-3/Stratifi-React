@@ -16,19 +16,19 @@ const Testimonial = () => {
         {/* <!-- Testimonials Container --> */}
         <div class="flex flex-col mt-32 md:flex-row md:space-x-6">
           {/* <!-- Testimonial 1 --> */}
-          <div class="flex flex-col  p-6 space-y-6 rounded-lg bg-veryLightGray mb-4 md:mb-32 shadow-sm md:w-1/3 md:shadow-md">
+          <div class="flex flex-col    rounded-lg bg-veryLightGray p-4 space-y-20 mb-4 md:mb-32 shadow-sm md:w-1/3 md:shadow-md">
             <p class="text-sm ">
               “An absolute influencer marketing tool. Effective and
               trustworthy.”
             </p>
             <div className="flex items-center ">
-              <img src={img8} class="w-9  rounded-full mr-4" alt="" />
+              <img src={img6} class="w-9  rounded-full mr-4" alt="" />
               <h5 class="text-md font-normal">Ovie Boco</h5>
             </div>
           </div>
 
           {/* <!-- Testimonial 2 --> */}
-          <div class="flex flex-col  p-6 space-y-6 rounded-lg bg-veryLightGray mb-4 md:mb-32   shadow-sm md:w-1/3 md:shadow-md">
+          <div class="flex flex-col    rounded-lg bg-veryLightGray mb-4 md:mb-32   shadow-sm md:w-1/3 md:shadow-md">
             <p class="text-sm ">
               “Great service. I had an amazing experience using StratifI to get
               an influencer for my brand marketing campaign.An absolute
@@ -41,14 +41,14 @@ const Testimonial = () => {
           </div>
 
           {/* <!-- Testimonial 3 --> */}
-          <div class="flex flex-col  p-6 space-y-6 rounded-lg bg-veryLightGray mb-4 md:mb-32  shadow-sm md:w-1/3 md:shadow-md">
-            <p class="text-sm ">
+          <div class="flex flex-col      rounded-lg mb-4 md:mb-32  shadow-sm md:w-1/3 md:shadow-md">
+            <p class="text-sm  ">
               “Simple and effective. no long hours searching for reliable
               influencers.”
             </p>
-            <div className="flex flex-start">
-              <img src={img5} class="w-9  rounded-full mr-4" alt="" />
-              <h5 class="text-lg font-bold">Anisha Li</h5>
+            <div className="flex ">
+              <img src={img8} class="w-9  rounded-full mr-4" alt="" />
+              <h5 class="text-md font-normal">Dayo Inaolaji</h5>
             </div>
           </div>
         </div>
