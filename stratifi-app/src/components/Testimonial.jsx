@@ -21,9 +21,9 @@ const Testimonial = () => {
               “An absolute influencer marketing tool. Effective and
               trustworthy.”
             </p>
-            <div className="flex flex-start">
+            <div className="flex items-center">
               <img src={img5} class="w-9  rounded-full mr-4" alt="" />
-              <h5 class="text-lg font-bold">Anisha Li</h5>
+              <h5 class="text-md font-normal">Ovie Boco</h5>
             </div>
           </div>
 
