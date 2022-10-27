@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import logo from "../images/logo2.png";
+import logo from "../images/logo.png";
 import { HiMenu } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
@@ -8,15 +8,15 @@ const NavBar = () => {
   const navItems = ["About Us", "Home", "Pricing", "Services", "Contact us"];
 
   return (
-    <header className="border-b-4 bg-[#702862] border-neutral-800">
-      <div className="flex items-center p-2  text-white justify-between xl:mx-auto xl:max-w-7xl max-w-full flex-wrap w-full">
-        <div className="w-60">
+    <header className=" bg-[#FFFFFF] ">
+      <div className="flex items-center p-2  text-slate-600 justify-between xl:mx-auto xl:max-w-7xl max-w-full flex-wrap w-full">
+        <div className="w-[10rem]">
           <img className="" src={logo} alt="" srcSet="" />
         </div>
         <HiMenu
           className={`${
             open ? "rotate-90 ease-in delay-150" : ""
-          } ring-2 ring-neutral-800 ring-offset-0 lg:hidden block h-6 w-6 cursor-pointer rounded mr-3`}
+          } ring-2 ring-slate-600 active:ring-slate-800 ring-offset-0 lg:hidden block h-6 w-6 cursor-pointer rounded mr-3`}
           onClick={() => setOpen(!open)}
         />
         <nav
@@ -26,17 +26,17 @@ const NavBar = () => {
         >
           <ul className="lg:flex lg:justify-between items-center text-lg lg:text-base">
             {navItems.map((navItem) => (
-              <li className="px-3 block text-start border-b-[0.5px] lg:border-0 border-neutral-800">
-                <Link
-                  className="hover:text-slate-300 active:text-slate-400"
-                  to="/"
-                >
+              <li
+                key={navItem}
+                className="px-3 block text-start border-b-[0.5px] lg:border-0 border-neutral-800"
+              >
+                <Link className="hover:text-slate-800 active:text-black" to="/">
                   {navItem}
                 </Link>
               </li>
             ))}
-            <button className="ml-3 my-1 block px-4 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 ring-2 ring-blue-500 rounded">
-              Log in
+            <button className="ml-3 my-1 block text-white px-4 bg-[#FF8F50] hover:bg-[#FF7A30] active:bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
+              Sign in
             </button>
           </ul>
         </nav>

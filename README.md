@@ -7,7 +7,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 [Ikenna Udemezue](https://github.com/iykethe1st)\
 [Oluwateniola Oyelakin](https://github.com/teni-dev)\
 [Felix Awosika](https://github.com/LiexICT)\
-[Mubarak Ajibola](https://github.com/mubizzy)
+[Mubarak Ajibola](https://github.com/mubizzy)\
+[Daniel Oluwatobi Amusan](https://github.com/DanielAmusan)
 
 
 Runs the app in the development mode.\

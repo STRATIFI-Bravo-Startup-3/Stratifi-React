@@ -1,35 +1,32 @@
 * {
-  font-size: clamp(0.8rem, 0.7677rem + 0.2581vw, em);
+  /* padding: 0;
+  margin: 0; */
+  box-sizing: border-box;
+  font-size: clamp(0.8rem, 0.7677rem + 0.2581vw, 1em);
 }
 .faq {
-  margin-inline: 1.5em;
-}
-
-.faqimg {
-  background-image: url(./images/faqimage.png);
-  height: 25vh;
-  background-size: cover;
-  background-position-y: 660px;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.ask {
-  padding-left: 4em;
-  padding-top: 0.3em;
-  border-radius: 5px;
-  background-color: rgb(194, 187, 187);
-  height: 5vh;
-  margin: 0.5em auto;
-}
-
-.ask:hover {
-  opacity: 0.9;
-  cursor: pointer;
-}
-
-.panel {
-  background-color: rgb(231, 222, 222);
+  margin-block: 1em;
+  width: 70%;
+  margin-inline: auto;
+  height: fit-content;
   padding-left: 2em;
-  border-radius: 5px;
+}
+
+.faqhead {
+  height: 10vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding-block: 0.3em;
+}
+
+.login-background {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(89, 9, 121, 1) 35%,
+    rgba(255, 151, 0, 1) 100%
+  );
 }

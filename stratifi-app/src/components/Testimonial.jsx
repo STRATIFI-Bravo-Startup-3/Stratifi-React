@@ -26,12 +26,15 @@ const Testimonial = () => {
             </div>
           </div>
 
+
           {/* <!-- Testimonial 2 --> */}
           <div class="flex flex-col space-y-20  p-4 rounded-lg bg-veryLightGray mb-4 md:mb-32 shadow-sm md:w-1/3 md:shadow-md">
             <p class="text-sm ">
               Great service. I had an amazing experience using StratifI to get
               an influencer for my brand marketing campaign.An absolute
               influencer marketing tool. Effective and trustworthy.
+
+
             </p>
             <div className="flex items-center">
               <img src={img5} class="w-9  rounded-full mr-4" alt="" />
@@ -44,6 +47,7 @@ const Testimonial = () => {
             <p class="text-sm  mb-10 ">
               Simple and effective. no long hours searching for reliable
               influencers.
+
             </p>
             <div className="flex mb">
               <img src={img8} class="w-9  rounded-full mr-4" alt="" />
