@@ -32,7 +32,7 @@ const Testimonial = () => {
               <img src={img6} alt="" className="w-16 mr-5" />
               <h2 className="text-sm items-center text-center">Ovie Boco</h2>
             </div>
-            <p class="px-">
+            <p className="px-">
               An absolute influencer and brand marketing tool, wow all in one
             </p>
           </div>
@@ -58,7 +58,7 @@ const Testimonial = () => {
                 Dayo Inaolaji
               </h2>
             </div>
-            <p class="px-4">
+            <p className="px-4">
               Using Stratifi to get an influencer was the best decision I made
             </p>
           </div>
