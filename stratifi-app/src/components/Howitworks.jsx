@@ -12,7 +12,7 @@ function Box({ children, ...props }) {
 const Howitworks = () => {
   const items = ["Sign Up", "Choose a Niche", "Get Paired"];
   return (
-    <section className=" items-center flex flex-col">
+    <section className=" items-center flex flex-col animate__animated  animate__fadeInLeft">
       <div className="flex flex-col items-center font-bold text-2xl lg:text-3xl py-12">
         <h1>How it Works</h1>
       </div>

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Input from "../components/common/input";
 import Joi from "joi-browser";
 import backgroundfooter from "../images/backgroundfooter.svg";
+import logo from "../images/logo.png";
 
 class Register extends Component {
   state = {
@@ -86,7 +87,7 @@ class Register extends Component {
         style={{ backgroundImage: `url(${backgroundfooter})` }}
       >
         <div className="flex justify-center  h-screen">
-          <div className="flex flex-col gap-4 justify-center my-auto bg-white w-4/5 lg:w-6/12 h-auto rounded-xl shadow-2xl">
+          <div className="flex flex-col gap-4 justify-center my-auto bg-white w-4/5 lg:w-6/12 h-auto rounded-xl shadow-2xl animate__animated animate__flipInX">
             <div className="flex flex-col mx-auto mt-5">
               <h1 className=" mx-auto text-xl lg:text-2xl font-bold text-gray-800">
                 Create An Account
@@ -154,19 +155,12 @@ class Register extends Component {
                   Sign In
                 </Link>
               </span>
-            </div>
-          </div>
-        </div>
-        <div className="w-[15rem] absolute bottom-[2rem] invisible lg:visible left-[2rem] mx-auto bg-white shadow-lg  text-sm rounded-lg">
-          <div className="grid grid-cols-1 items-center h-36">
-            <div className="mx-auto w-4/6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at
-              voluptatum officiis
-            </div>
-            <div className="flex justify-center mx-auto w-3/6">
-              <button className="mx-auto text-white px-4 py-2 bg-[#FF8F50] hover:bg-[#FF7A30] active:bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
-                Download
-              </button>
+              <div className="items-center flex flex-col  ">
+                <img className="mx-auto w-[3rem]" src={logo} alt="" srcSet="" />
+                <span className="font-black text-slate-700 text-lg my-auto">
+                  STRATIFI.NG
+                </span>
+              </div>
             </div>
           </div>
         </div>

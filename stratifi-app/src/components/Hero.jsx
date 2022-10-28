@@ -19,7 +19,7 @@ const Hero = () => {
       className="lg:flex grid grid-cols-1 w-auto h-full bg-cover bg-no-repeat relative "
     >
       <div className="mx-auto  items-start lg:ml-24 flex flex-col gap-16 lg:my-auto lg:pt-28 pt-8 w-9/12 lg:w-3/6  text-left text-white  ">
-        <div className=" md:mx-auto lg:mx-0 font-black text-3xl lg:text-[2.8rem]">
+        <div className=" md:mx-auto lg:mx-0 font-black text-3xl lg:text-[2.8rem] ">
           MARKETING WITH INFLUENCE
         </div>
         <div className="md:mx-auto lg:mx-0 flex flex-col gap-1">
@@ -40,7 +40,7 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="h-auto items-center mx-auto lg:pt-12 lg:w-3/6">
+      <div className="h-auto items-center mx-auto lg:pt-12 lg:w-3/6 animate__animated animate__fadeInRight">
         <img className="w-full " src={influencer} alt="" />
       </div>
     </section>

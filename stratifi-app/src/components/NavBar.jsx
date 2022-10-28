@@ -8,7 +8,7 @@ const NavBar = () => {
   const navItems = ["About Us", "Home", "Pricing", "Services", "Contact us"];
 
   return (
-    <header className=" bg-[#FFFFFF] ">
+    <header className=" bg-[#FFFFFF] animate__animated animate__slideInDown">
       <div className="flex items-center p-1  text-slate-600 justify-between xl:mx-auto xl:max-w-7xl max-w-full flex-wrap w-full">
         <div className="ml-16 lg:ml-10 flex justify-center w-[3rem]">
           <img className="" src={logo} alt="" srcSet="" />

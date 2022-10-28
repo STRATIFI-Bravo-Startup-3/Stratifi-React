@@ -4,8 +4,8 @@ import about2 from "../images/about2.png";
 const About = () => {
   return (
     <div>
-      <section className="px-20 grid grid-cols-1 items-center lg:gap-4 lg:flex lg:justify-items-center p-8 gap-8">
-        <div className=" w-[15rem] lg:ml-48 mx-auto bg-[#FF8F50] rounded-full">
+      <section className="px-20 grid grid-cols-1 items-center lg:gap-4 lg:flex lg:justify-items-center p-8 gap-8 animate__animated animate__zoomIn">
+        <div className=" w-[15rem] lg:ml-48 mx-auto bg-[#FF8F50] rounded-full ">
           <img className="" src={about1} alt="" />
         </div>
         <div className="mx-auto lg:w-2/5 w-full flex flex-col gap-6">
