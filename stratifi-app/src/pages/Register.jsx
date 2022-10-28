@@ -17,28 +17,49 @@ class Register extends Component {
   };
 
   schema = {
-    username: Joi.string().alphanum().min(3).max(15).required(),
-    password: Joi.string().required(),
-    repeat_password: Joi.ref("password"),
-    email: Joi.string().required(),
+    fullname: Joi.string().min(3).required().label("Full name"),
+    username: Joi.string()
+      .alphanum()
+      .min(3)
+      .max(15)
+      .required()
+      .label("Username"),
+    password: Joi.string().required().label("Password"),
+    repeat_password: Joi.any()
+      .valid(Joi.ref("password"))
+      .required()
+      .label("Passwords")
+      .options({ language: { any: { allowOnly: "do not match" } } }),
+    email: Joi.string().email().required().label("Email"),
+  };
+
+  validateOnChange = ({ name, value }) => {
+    const obj = { [name]: value };
+    const schema = { [name]: this.schema[name] };
+    const { error } = Joi.validate(obj, schema);
+    return error ? error.details[0].message : null;
   };
 
   validate = () => {
-    const result = Joi.validate(this.state.account, this.schema, {
-      abortEarly: false,
-    });
-    // return Object.keys(errors).length === 0 ? null : errors;
-    console.log(result);
-  };
+    const options = { abortEarly: false };
+    const result = Joi.validate(this.state.account, this.schema, options);
 
-  validateOnChange = (input) => {};
+    if (!result.error) return null;
+
+    const errors = {};
+
+    for (let item of result.error.details) errors[item.path[0]] = item.message;
+
+    console.log(errors);
+    return errors;
+  };
 
   handleSubmit = (e) => {
     e.preventDefault();
     const errors = this.validate();
     this.setState({ errors: errors || {} });
     if (errors) return;
-    console.log("Submitted");
+    // console.log("Submitted");
   };
 
   handleChange = ({ currentTarget: input }) => {
@@ -117,7 +138,7 @@ class Register extends Component {
                 name="repeat_password"
                 placeholder="Repeat Password"
                 type="password"
-                error={errors.password}
+                error={errors.repeat_password}
               />
             </div>
             <div className="flex flex-col ">

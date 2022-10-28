@@ -12,7 +12,7 @@ const Input = ({ name, placeholder, error, onChange, value, autoFocus }) => {
         type="text"
         placeholder={placeholder}
       />
-      {error && <div className="ml-20 text-red-600">{error}</div>}
+      {error && <div className="lg:ml-20 ml-5 text-red-600">{error}</div>}
     </div>
   );
 };

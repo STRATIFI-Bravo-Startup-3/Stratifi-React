@@ -1,66 +1,54 @@
 import React from "react";
-import logo3 from "../images/logo3.svg";
+
 import img5 from "../images/img5.png";
 import img6 from "../images/img6.png";
-import img7 from "../images/img7.png";
+
 import img8 from "../images/img8.png";
 const Testimonial = () => {
   return (
-    <section className="testimonial  bg-purple-300">
-      <div className="justify-center items-center text-center py-4 px-3 container mx-auto">
-        <img src={logo3} alt="" className="w-1/2 block mx-auto" />
-        <h2 className="font-semibold">
-          View testimonials from some of our clients
+    <section>
+      {/* <!-- Container to heading and testm blocks --> */}
+      <div class="max-w-6xl px-5 mx-auto mt-10 text-center">
+        {/* <!-- Heading --> */}
+        <h2 class="text-4xl font-bold text-center">
+          Testimonials from our clients
         </h2>
-      </div>
-      <div className="space-y-6">
-        {/* First Part */}
-        <div className="mx-auto container flex flex-col  items-center gap-2 md:flex-row md:px-28 md:space-x-6 md:max-w-6xl ">
-          <div className="flex flex-col bg-purple-300 md:space-x-6 md:px-4 md:py-2">
-            <div className="flex flex-row   bg-purple-300 items-center mb-4">
-              <img src={img5} alt="" className="w-16 mr-5" />
-              <h2 className="text-sm items-center ">Michelle Ikeji</h2>
-            </div>
-            <p className="px-8">
-              simple and effective. no long hours searching for reliable
-              influencers.
+        {/* <!-- Testimonials Container --> */}
+        <div class="flex flex-col mt-10 md:flex-row md:space-x-6">
+          {/* <!-- Testimonial 1 --> */}
+          <div class="flex flex-col  mb-4  rounded-lg  p-4 space-y-20 md:mb-32 shadow-sm md:w-1/3 md:shadow-md">
+            <p class="text-sm text-slate-600 font-semi-bold mb-10 pt-8">
+              An absolute influencer marketing tool. Effective and trustworthy.
             </p>
+            <div className="flex items-center ">
+              <img src={img6} class="w-9  rounded-full mr-4" alt="" />
+              <h5 class="text-md font-normal">Ovie Boco</h5>
+            </div>
           </div>
 
-          <div className="flex flex-col bg-purple-300 md:space-x-6 md:px-4 md:py-2">
-            <div className="flex flex-row   bg-purple-300 items-center mb-4">
-              <img src={img6} alt="" className="w-16 mr-5" />
-              <h2 className="text-sm items-center text-center">Ovie Boco</h2>
-            </div>
-            <p className="px-">
-              An absolute influencer and brand marketing tool, wow all in one
+          {/* <!-- Testimonial 2 --> */}
+          <div class="flex flex-col space-y-20  p-4 rounded-lg bg-veryLightGray mb-4 md:mb-32 shadow-sm md:w-1/3 md:shadow-md">
+            <p class="text-sm pt-8 text-slate-600">
+              Great service. I had an amazing experience using StratifI to get
+              an influencer for my brand marketing campaign.An absolute
+              influencer marketing tool. Effective and trustworthy.
             </p>
+            <div className="flex items-center">
+              <img src={img5} class="w-9  rounded-full mr-4" alt="" />
+              <h5 class="text-md font-normal">Jamila Datti </h5>
+            </div>
           </div>
-          {/* second Testimonial */}
-        </div>
-        {/* Second Part */}
-        <div className="mx-auto container flex flex-col  items-center gap-2  md:flex-row md:px-28 md:space-x-6 md:max-w-6xl ">
-          {" "}
-          <div className="flex flex-col bg-purple-300 md:space-x-6 md:px-4 md:py-2">
-            <div className="flex flex-row   bg-purple-300 items-center mb-4">
-              <img src={img7} alt="" className="w-16 mr-5" />
-              <h2 className="text-sm items-center ">Jamila Datti</h2>
-            </div>
-            <p className="px-">
-              Great service, I had an amazing experience using Stratifi to get
-              an influenece
+
+          {/* <!-- Testimonial 3 --> */}
+          <div class="flex flex-col  space-y-20  p-4 rounded-lg mb-4 md:mb-32  shadow-sm md:w-1/3 md:shadow-md">
+            <p class="text-sm  mb-10 pt-8 text-slate-600">
+              Simple and effective. no long hours searching for reliable
+              influencers.
             </p>
-          </div>
-          <div className="flex flex-col bg-purple-300 md:space-x-6 md:px-4 md:py-2">
-            <div className="flex flex-row   bg-purple-300 items-center mb-4">
-              <img src={img8} alt="" className="w-16 mr-5" />
-              <h2 className="text-sm items-center text-center">
-                Dayo Inaolaji
-              </h2>
+            <div className="flex mb">
+              <img src={img8} class="w-9  rounded-full mr-4" alt="" />
+              <h5 class="text-md font-normal">Dayo Inaolaji</h5>
             </div>
-            <p className="px-4">
-              Using Stratifi to get an influencer was the best decision I made
-            </p>
           </div>
         </div>
       </div>
