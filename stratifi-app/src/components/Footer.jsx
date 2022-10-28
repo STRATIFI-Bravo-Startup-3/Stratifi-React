@@ -129,7 +129,7 @@ class Footer extends Component {
     const url =
       "https://app.us13.list-manage.com/subscribe/post?u=311327338697ce69baa12d960&amp;id=3f88d6e974&amp;f_id=00c297e2f0";
     return (
-      <div className="md:flex grid-cols-1 justify-between mx-50 w-full bg-[#702862] text-white py-8 px-4  border-neutral-800 border-t-4">
+      <div className="md:flex grid-cols-1 justify-between mx-50 w-full bg-[#AD6EC0] text-white py-8 px-4  border-neutral-800 border-t-4">
         <div className="flex justify-between lg:w-8/12 w-full">
           <div className="w-6/12 lg:ml-[10rem] ml-[3rem]">
             <div className="ml-50 flex-col text-left">
