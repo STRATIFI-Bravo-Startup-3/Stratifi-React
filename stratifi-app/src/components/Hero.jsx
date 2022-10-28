@@ -4,8 +4,8 @@ import mobileBackground from "../images/background-sm.jpeg";
 import background from "../images/background.svg";
 import influencer from "../images/influencer.png";
 import { useEffect, useState } from "react";
-import MailchimpSubscribe from "./mailchimpSubscribe";
-import MailchimpSubscribeSmall from "./mailchimpSubscribeSmall";
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   // const imageUrl =
   //   useWindowWidth() >= 650 ? desktopBackground : mobileBackground;
@@ -27,12 +27,17 @@ const Hero = () => {
           <span className="lg:text-xl">Guaranteed Results.</span>
         </div>
         <div className="md:mx-auto lg:mx-0 flex justify-between gap-8  lg:gap-6">
-          <button className="text-sm lg:text-base ring-2 ring-white bg-white hover:bg-slate-100 active:bg-slate-200 rounded-md text-[#FF8F50] py-1 px-6 w-30 lg:w-40">
-            GET STARTED
-          </button>
-          <button className="text-sm lg:text-base ring-2 ring-white bg-[#AD6EC0] hover:bg-[#A960BF] active:bg-[#A752C0] rounded-md text-white py-1 px-6 w-30 lg:w-40">
-            Sign Up
-          </button>
+          <Link to="/register">
+            {" "}
+            <button className="text-sm lg:text-base ring-2 ring-white bg-white hover:bg-slate-100 active:bg-slate-200 rounded-md text-[#FF8F50] py-1 px-6 w-30 lg:w-40">
+              GET STARTED
+            </button>
+          </Link>
+          <Link to="/login">
+            <button className="text-sm lg:text-base ring-2 ring-white bg-[#AD6EC0] hover:bg-[#A960BF] active:bg-[#A752C0] rounded-md text-white py-1 px-6 w-30 lg:w-40">
+              Sign In
+            </button>
+          </Link>
         </div>
       </div>
       <div className="h-auto items-center mx-auto lg:pt-12 lg:w-3/6">

@@ -1,9 +1,10 @@
 .faq {
   box-sizing: border-box;
-  font-size: clamp(0.8rem, 0.7677rem + 0.2581vw, 1em);
-  background-color: #aa2dd2;
+  font-size: clamp(0.6rem, 0.5677rem + 0.2581vw, 1em);
+  background-color: #ad6ec0;
   padding-block: 1em;
   padding-inline: 4em;
+  margin: 0 auto;
 }
 
 @media (max-width: 376px) {
@@ -13,10 +14,11 @@
 }
 
 .faqhead {
-  background-color: #aa2dd2;
+  background-color: #ad6ec0;
   color: black;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .faqcontent li {
@@ -24,7 +26,7 @@
 }
 
 .faqli {
-  border: 2px solid #aa2dd2;
+  border: 2px solid #ad6ec0;
   border-radius: 5px;
   overflow: hidden;
 }
