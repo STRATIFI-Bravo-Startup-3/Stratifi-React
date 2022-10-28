@@ -81,7 +81,10 @@ class Register extends Component {
   render() {
     const { account, errors } = this.state;
     return (
-      <div style={{ backgroundImage: `url(${backgroundfooter})` }}>
+      <div
+        className="static flex flex-col"
+        style={{ backgroundImage: `url(${backgroundfooter})` }}
+      >
         <div className="flex justify-center  h-screen">
           <div className="flex flex-col gap-4 justify-center my-auto bg-white w-4/5 lg:w-6/12 h-auto rounded-xl shadow-2xl">
             <div className="flex flex-col mx-auto mt-5">
@@ -154,7 +157,19 @@ class Register extends Component {
             </div>
           </div>
         </div>
-        {/* <div className="mx-auto">Download Now</div> */}
+        <div className="w-[15rem] absolute bottom-[2rem] invisible lg:visible left-[2rem] mx-auto bg-white shadow-lg  text-sm rounded-lg">
+          <div className="grid grid-cols-1 items-center h-36">
+            <div className="mx-auto w-4/6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at
+              voluptatum officiis
+            </div>
+            <div className="flex justify-center mx-auto w-3/6">
+              <button className="mx-auto text-white px-4 py-2 bg-[#FF8F50] hover:bg-[#FF7A30] active:bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
+                Download
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

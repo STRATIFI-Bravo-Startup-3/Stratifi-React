@@ -6,7 +6,6 @@ import Howitworks from "../components/Howitworks";
 import Footer from "../components/Footer";
 import About from "../components/About";
 
-
 const Home = () => {
   return (
     <main>
@@ -14,12 +13,10 @@ const Home = () => {
       <Hero />
       <About />
       {/* <FaqComp /> */}
-      <Howitworks/> 
+      <Howitworks />
       <Testimonial />
-      <Faq />
       <Footer />
-
-  </main>
+    </main>
   );
 };
 
