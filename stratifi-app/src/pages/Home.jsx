@@ -2,7 +2,7 @@ import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 import Testimonial from "../components/Testimonial";
 import FaqComp from "../components/faq";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import About from "../components/About";
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
       <About />
       <FaqComp />
       <Testimonial />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 };

@@ -71,7 +71,7 @@ const styles = {
 function FaqComp() {
   return (
     <div>
-      <section className="faq">
+      {/* <section className="faq">
         <div className="faqhead">
           <h1>FAQs</h1>
         </div>
@@ -104,13 +104,13 @@ function FaqComp() {
               </div>
             </li>
             <li>
-              <div className="lg:px-12 px-3 faqli bg-white">
+              <div className="px-12 faqli bg-white">
                 <Faq data={datafour} config={config} styles={styles} />
               </div>
             </li>
           </ul>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
