@@ -26,7 +26,7 @@ const Hero = () => {
           <span className="lg:text-xl">Real brands, Trusted Creators,</span>
           <span className="lg:text-xl">Guaranteed Results.</span>
         </div>
-        <div className="md:mx-auto lg:mx-0 flex justify-between gap-8  lg:gap-6">
+        <div className="md:mx-auto lg:mx-0 flex justify-between gap-8 animate__animated animate__bounce  lg:gap-6">
           <Link to="/register">
             {" "}
             <button className="text-sm lg:text-base ring-2 ring-white bg-white hover:bg-slate-100 active:bg-slate-200 rounded-md text-[#FF8F50] py-1 px-6 w-30 lg:w-40">
