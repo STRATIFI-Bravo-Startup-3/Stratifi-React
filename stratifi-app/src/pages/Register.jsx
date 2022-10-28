@@ -3,6 +3,7 @@ import "../index.css";
 import { Link } from "react-router-dom";
 import Input from "../components/common/input";
 import Joi from "joi-browser";
+import backgroundfooter from "../images/backgroundfooter.svg";
 
 class Register extends Component {
   state = {
@@ -80,13 +81,16 @@ class Register extends Component {
   render() {
     const { account, errors } = this.state;
     return (
-      <div className="flex justify-center login-background h-screen">
-        <div className="flex flex-col gap-4 justify-center my-auto bg-slate-200 w-4/5 lg:w-6/12 h-3/5 lg:h-4/5 rounded-3xl shadow-2xl">
-          <div className="flex flex-col mx-auto">
-            <h1 className="font-bold text-4xl text-gray-800">
+      <div
+        style={{ backgroundImage: `url(${backgroundfooter})` }}
+        className="flex justify-center  h-screen"
+      >
+        <div className="flex flex-col gap-4 justify-center my-auto bg-white w-4/5 lg:w-6/12 h-auto rounded-xl shadow-2xl">
+          <div className="flex flex-col mx-auto mt-5">
+            <h1 className=" mx-auto text-xl lg:text-2xl font-bold text-gray-800">
               Create An Account
             </h1>
-            <span className="text-center text-gray-800 text-lg lg:text-base">
+            <span className="text-center text-gray-800 text-sm lg:text-base">
               Sign up to get started
             </span>
           </div>
@@ -108,14 +112,6 @@ class Register extends Component {
                 error={errors.fullname}
               />
 
-              <Input
-                value={account.username}
-                onChange={this.handleChange}
-                name="username"
-                placeholder="Username"
-                type="text"
-                error={errors.username}
-              />
               <Input
                 value={account.email}
                 onChange={this.handleChange}
@@ -141,17 +137,17 @@ class Register extends Component {
                 error={errors.repeat_password}
               />
             </div>
-            <div className="flex flex-col ">
-              <button className="mx-auto bg-orange-500 text-white h-16 w-40 rounded-xl text-xl hover:bg-orange-600 active:bg-orange-700">
+            <div className="flex flex-col">
+              <button className="mx-auto bg-[#FF8F50] text-white h-12 w-[16rem] rounded-xl text-base hover:bg-orange-600 active:bg-orange-700">
                 Create Account
               </button>
             </div>
           </form>
-          <div className="flex flex-col mx-auto ">
-            <span className="text-center text-gray-800 text-lg lg:text-base">
+          <div className="flex flex-col mx-auto mb-5">
+            <span className="text-center text-gray-800 text-sm">
               Already have an account?{" "}
               <Link
-                className="underline underline-offset-2 text-lg"
+                className="underline underline-offset-2 text-sm"
                 to="/login"
               >
                 Sign In

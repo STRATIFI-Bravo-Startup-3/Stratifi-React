@@ -1,4 +1,4 @@
-// import Faq from "react-faq-component";
+import Faq from "react-faq-component";
 import "../App.css";
 
 const data = {
@@ -71,7 +71,7 @@ const styles = {
 function FaqComp() {
   return (
     <div>
-      {/* <section className="faq">
+      <section className="faq">
         <div className="faqhead">
           <h1>FAQs</h1>
         </div>
@@ -110,7 +110,7 @@ function FaqComp() {
             </li>
           </ul>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }
