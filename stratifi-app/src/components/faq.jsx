@@ -76,15 +76,15 @@ function FaqComp() {
           <h1>FAQs</h1>
         </div>
 
-        <div>
-          <ul className="faqcontent">
+        <div className="mb-6 lg:px-9">
+          <ul className="faqcontent ">
             <li>
-              <div className="faqli">
-                <Faq data={data} config={config} styles={styles} />
+              <div className="lg:px-12 px-3 faqli bg-white ">
+                <Faq className="" data={data} config={config} styles={styles} />
               </div>
             </li>
             <li>
-              <div className="faqli">
+              <div className="lg:px-12 px-3 bg-white faqli">
                 <Faq
                   className="one"
                   data={dataone}
@@ -94,17 +94,17 @@ function FaqComp() {
               </div>
             </li>
             <li>
-              <div className="faqli">
+              <div className="lg:px-12 px-3 faqli bg-white ">
                 <Faq data={datatwo} config={config} styles={styles} />
               </div>
             </li>
             <li>
-              <div className="faqli">
+              <div className="lg:px-12 px-3 faqli bg-white">
                 <Faq data={datathree} config={config} styles={styles} />
               </div>
             </li>
             <li>
-              <div className="faqli">
+              <div className="lg:px-12 px-3 faqli bg-white">
                 <Faq data={datafour} config={config} styles={styles} />
               </div>
             </li>
