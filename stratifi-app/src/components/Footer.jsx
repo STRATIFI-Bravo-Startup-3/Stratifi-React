@@ -19,17 +19,30 @@ class Footer extends Component {
   support = ["Information", "Privacy Policy", "FAQs", "Community"];
 
   icons = [
-    <FaFacebook />,
-    <FaInstagram />,
-    <FaTiktok />,
-    <FaTwitter />,
     <FaLinkedin />,
+    <FaInstagram />,
+    <FaTwitter />,
+    <FaTiktok />,
     <FaYoutube />,
+    <FaFacebook />,
+  ];
+
+  links = [
+    "https://www.linkedin.com/company/stratifing/",
+
+    "https://www.instagram.com/stratifii_",
+
+    "https://www.twitter.com/stratifi_",
+
+    "https://www.tiktok.com/@stratifi?_t=8WSCyCGgdsb&_r=1",
+
+    "https://www.facebook.com/profile.php?id=100086511409939",
   ];
 
   render() {
     const url =
       "https://app.us13.list-manage.com/subscribe/post?u=311327338697ce69baa12d960&amp;id=3f88d6e974&amp;f_id=00c297e2f0";
+    console.log(this.links.map((link) => link));
     return (
       <div
         style={{ backgroundImage: `url(${backgroundfooter})` }}
@@ -42,8 +55,9 @@ class Footer extends Component {
               {this.company.map((item) => (
                 <h2 className="my-1">
                   <Link
+                    key={item}
                     className="hover:text-slate-300 active:text-slate-400"
-                    to="/"
+                    to={this.links.map((link) => link)}
                   >
                     {item}
                   </Link>
@@ -79,12 +93,13 @@ class Footer extends Component {
             <div className="flex flex-col max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-white">
               <div className="flex justify-between sm:w-[300px] pt-4 text-2xl">
                 {this.icons.map((icon) => (
-                  <Link
+                  <a
                     className="hover:text-slate-300 active:text-slate-400"
-                    to=""
+                    href={this.links.map((link) => link)}
+                    target="blank"
                   >
                     {icon}
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>
