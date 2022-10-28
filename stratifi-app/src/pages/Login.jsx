@@ -5,7 +5,7 @@ import Input from "../components/common/input";
 import Joi from "joi-browser";
 import backgroundfooter from "../images/backgroundfooter.svg";
 
-class Register extends Component {
+class Login extends Component {
   state = {
     account: {
       fullname: "",
@@ -18,19 +18,7 @@ class Register extends Component {
   };
 
   schema = {
-    fullname: Joi.string().min(3).required().label("Full name"),
-    username: Joi.string()
-      .alphanum()
-      .min(3)
-      .max(15)
-      .required()
-      .label("Username"),
     password: Joi.string().required().label("Password"),
-    repeat_password: Joi.any()
-      .valid(Joi.ref("password"))
-      .required()
-      .label("Passwords")
-      .options({ language: { any: { allowOnly: "do not match" } } }),
     email: Joi.string().email().required().label("Email"),
   };
 
@@ -85,13 +73,13 @@ class Register extends Component {
         style={{ backgroundImage: `url(${backgroundfooter})` }}
         className="flex justify-center  h-screen"
       >
-        <div className="flex flex-col gap-4 justify-center my-auto bg-white w-4/5 lg:w-6/12 h-auto rounded-xl shadow-2xl">
+        <div className="flex flex-col gap-4 justify-center my-auto bg-white w-4/5 lg:w-5/12 h-auto rounded-xl shadow-2xl">
           <div className="flex flex-col mx-auto mt-5">
             <h1 className=" mx-auto text-xl lg:text-2xl font-bold text-gray-800">
-              Create An Account
+              Sign In
             </h1>
             <span className="text-center text-gray-800 text-sm lg:text-base">
-              Sign up to get started
+              Log into your account to continue
             </span>
           </div>
           <form
@@ -102,16 +90,6 @@ class Register extends Component {
             justify-center"
           >
             <div className="flex gap-4 flex-col mx-auto w-11/12 lg:w-3/4">
-              <Input
-                autoFocus="autoFocus"
-                value={account.fullname}
-                onChange={this.handleChange}
-                name="fullname"
-                placeholder="Full Name"
-                type="text"
-                error={errors.fullname}
-              />
-
               <Input
                 value={account.email}
                 onChange={this.handleChange}
@@ -128,14 +106,6 @@ class Register extends Component {
                 type="password"
                 error={errors.password}
               />
-              <Input
-                value={account.repeat_password}
-                onChange={this.handleChange}
-                name="repeat_password"
-                placeholder="Repeat Password"
-                type="password"
-                error={errors.repeat_password}
-              />
             </div>
             <div className="flex flex-col">
               <button className="mx-auto bg-[#FF8F50] text-white h-12 w-[16rem] rounded-xl text-base hover:bg-orange-600 active:bg-orange-700">
@@ -145,12 +115,12 @@ class Register extends Component {
           </form>
           <div className="flex flex-col mx-auto mb-5">
             <span className="text-center text-gray-800 text-sm">
-              Already have an account?{" "}
+              Don't have an account?{" "}
               <Link
                 className="underline underline-offset-2 text-sm"
-                to="/login"
+                to="/register"
               >
-                Sign In
+                Sign Up
               </Link>
             </span>
           </div>
@@ -160,4 +130,4 @@ class Register extends Component {
   }
 }
 
-export default Register;
+export default Login;
