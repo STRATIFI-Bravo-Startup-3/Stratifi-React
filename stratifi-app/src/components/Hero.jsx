@@ -33,7 +33,7 @@ const Hero = () => {
               GET STARTED
             </button>
           </Link>
-          <Link>
+          <Link to="/login">
             <button className="text-sm lg:text-base ring-2 ring-white bg-[#AD6EC0] hover:bg-[#A960BF] active:bg-[#A752C0] rounded-md text-white py-1 px-6 w-30 lg:w-40">
               Sign In
             </button>
