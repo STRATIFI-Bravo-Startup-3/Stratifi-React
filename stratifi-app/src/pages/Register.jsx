@@ -105,7 +105,6 @@ class Register extends Component {
             >
               <div className="flex gap-4 flex-col mx-auto w-11/12 lg:w-3/4">
                 <Input
-                  autoFocus="autoFocus"
                   value={account.fullname}
                   onChange={this.handleChange}
                   name="fullname"
