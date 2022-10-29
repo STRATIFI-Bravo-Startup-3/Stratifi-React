@@ -129,7 +129,7 @@ class Footer extends Component {
                 </a>
                 <a
                   className="hover:text-slate-300 active:text-slate-400"
-                  href="#"
+                  href=""
                 >
                   <FaYoutube />
                 </a>
