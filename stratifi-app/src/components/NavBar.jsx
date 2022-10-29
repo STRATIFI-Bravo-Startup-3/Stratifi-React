@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const navItems = ["About Us", "Home", "Pricing", "Services", "Contact us"];
+  const nav = [];
 
   return (
     <header className=" bg-[#FFFFFF]">

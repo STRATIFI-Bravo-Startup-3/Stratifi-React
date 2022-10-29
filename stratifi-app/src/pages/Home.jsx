@@ -12,7 +12,6 @@ const Home = () => {
       <NavBar />
       <Hero />
       <About />
-      {/* <FaqComp /> */}
       <Howitworks />
       <Testimonial />
       <Footer />

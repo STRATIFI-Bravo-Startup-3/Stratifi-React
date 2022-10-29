@@ -92,15 +92,47 @@ class Footer extends Component {
             </div>
             <div className="flex flex-col max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-white">
               <div className="flex justify-between sm:w-[300px] pt-4 text-2xl">
-                {this.icons.map((icon) => (
-                  <a
-                    className="hover:text-slate-300 active:text-slate-400"
-                    href={this.links.map((link) => link)}
-                    target="blank"
-                  >
-                    {icon}
-                  </a>
-                ))}
+                <a
+                  className="hover:text-slate-300 active:text-slate-400"
+                  href="https://www.linkedin.com/company/stratifing/"
+                  target="blank"
+                >
+                  <FaLinkedin />
+                </a>
+                <a
+                  className="hover:text-slate-300 active:text-slate-400"
+                  href="https://www.facebook.com/profile.php?id=100086511409939"
+                  target="blank"
+                >
+                  <FaFacebook />
+                </a>
+                <a
+                  className="hover:text-slate-300 active:text-slate-400"
+                  href="https://www.instagram.com/stratifii_"
+                  target="blank"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  className="hover:text-slate-300 active:text-slate-400"
+                  href="https://www.tiktok.com/@stratifi?_t=8WSCyCGgdsb&_r=1"
+                  target="blank"
+                >
+                  <FaTiktok />
+                </a>
+                <a
+                  className="hover:text-slate-300 active:text-slate-400"
+                  href="https://www.twitter.com/stratifi_"
+                  target="blank"
+                >
+                  <FaTwitter />
+                </a>
+                <a
+                  className="hover:text-slate-300 active:text-slate-400"
+                  href="#"
+                >
+                  <FaYoutube />
+                </a>
               </div>
             </div>
           </div>
