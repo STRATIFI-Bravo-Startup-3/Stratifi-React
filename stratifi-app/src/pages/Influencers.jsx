@@ -52,13 +52,16 @@ const Influencers = () => {
 
           <div className="flex flex-col gap-2 md:flex-row items-center  ">
             <p className="text-sm mr-4">by</p>
-            <div className="w-16 h-16 bg-red-700 rounded-full mr-4"></div>
+            <div className="w-16 h-16 bg-gray-400 rounded-full mr-4"></div>
             <p className="text-sm">Fitness world</p>
           </div>
           {/* First Button */}
           <div className="flex flex-col gap-2  md:flex-row ">
             <button className="bg-transparent hover:bg-orange-500 text-black  hover:text-black  px-6 pr-16 border-orange-300 hover:border-transparent rounded mr-4 text-sm border-4 font-medium ">
-              Fashion
+              sports
+            </button>
+            <button className="bg-transparent hover:bg-orange-500 text-black  hover:text-black  px-6 pr-16  border-orange-300 hover:border-transparent rounded mr-4 text-sm border-4 font-medium">
+              Lifestyle
             </button>
             <button className="bg-transparent hover:bg-orange-500 text-black  hover:text-black  px-6 pr-16  border-orange-300 hover:border-transparent rounded mr-4 text-sm border-4 font-medium">
               Lifestyle
