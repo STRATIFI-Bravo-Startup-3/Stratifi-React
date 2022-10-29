@@ -13,16 +13,18 @@ const Influencers = () => {
           </h3>
 
           <div className="flex items-center ">
-            <p className="text-sm mr-3">by</p>
-            <div className="shadow-sm bg-gray-200"></div>
+            <p className="text-sm mr-4s">by</p>
+            <div className="shadow-sm bg-gray-200 mr-4">
+              <img src="" alt="" className="" />
+            </div>
             <p className="text-sm">House of thera</p>
           </div>
           {/* First Button */}
-          <div className="">
-            <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white  px-8 border border-blue-500 hover:border-transparent rounded">
-              Lifestyle
+          <div className="flex ">
+            <button class="bg-transparent hover:bg-orange-500 text-black  hover:text-black  px-6 pr-16 border-orange-300 hover:border-transparent rounded mr-4 text-sm border-4 font-medium ">
+              Fashion
             </button>
-            <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white  px-8 border border-blue-500 hover:border-transparent rounded">
+            <button class="bg-transparent hover:bg-orange-500 text-black  hover:text-black  px-6 pr-16  border-orange-300 hover:border-transparent rounded mr-4 text-sm border-4 font-medium">
               Lifestyle
             </button>
           </div>
