@@ -7,8 +7,8 @@ const Influencers = () => {
         {/* <!-- Heading --> */}
         <h2 className="text-4xl font-bold text-center ">Invitations</h2>
         {/* First container */}
-        <div className="shadow-lg space-y-8 p-10 space-x-4 ">
-          <h3 className="underline text-xl  font-semibold  ">
+        <div className="shadow-lg space-y-8 p-10 space-x-2 ">
+          <h3 className="underline text-xl  font-semibold px-2 ">
             House of Thera prelaunch campaign
           </h3>
 
@@ -33,7 +33,7 @@ const Influencers = () => {
             <button className="bg-transparent hover:bg-gray-500 text-gray hover:text-gray  px-6   border-gray-300 hover:border-transparent rounded mr-4 text-sm border-2 font-medium ">
               message
             </button>
-            <button className="bg-orange-500 hover:bg-orange-700 text-black font-bold py-2 px-10 rounded">
+            <button className="bg-orange-500 hover:bg-orange-700 text-black font-bold  px-14 rounded">
               view
             </button>
           </div>
