@@ -41,17 +41,19 @@ const Influencers = () => {
       {/* Second Section */}
       <div className=" px-20  mx-auto mt-10  container">
         {/* <!-- Heading --> */}
-        <h2 className="text-4xl font-bold text-center mb-10  ">Invitations</h2>
+        <h2 className="text-4xl font-bold text-center mb-10  ">
+          Collabs you may like
+        </h2>
         {/* First container */}
         <div className="shadow-lg space-y-8 p-10 space-x-2 ">
           <h3 className="underline text-xl  font-semibold px-2 ">
-            House of Thera prelaunch campaign
+            Anniversary giveaway
           </h3>
 
           <div className="flex flex-col gap-2 md:flex-row items-center  ">
             <p className="text-sm mr-4">by</p>
             <div className="w-16 h-16 bg-red-700 rounded-full mr-4"></div>
-            <p className="text-sm">House of thera</p>
+            <p className="text-sm">Fitness world</p>
           </div>
           {/* First Button */}
           <div className="flex flex-col gap-2  md:flex-row ">
