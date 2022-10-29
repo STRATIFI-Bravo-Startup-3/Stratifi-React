@@ -10,13 +10,13 @@ const Testimonial = () => {
       {/* <!-- Container to heading and testm blocks --> */}
       <div class="max-w-6xl px-5 mx-auto mt-10 text-center">
         {/* <!-- Heading --> */}
-        <h2 class="text-4xl font-bold text-center">
+        <h2 class="text-2xl lg:text-3xl font-bold text-center">
           Testimonials from our clients
         </h2>
         {/* <!-- Testimonials Container --> */}
         <div class="flex flex-col mt-10 md:flex-row md:space-x-6">
           {/* <!-- Testimonial 1 --> */}
-          <div class="flex flex-col  mb-4  rounded-lg  p-4 space-y-20 md:mb-32 shadow-sm md:w-1/3 md:shadow-md">
+          <div class="flex flex-col  mb-4  rounded-lg  p-4 space-y-20 md:mb-32 shadow-sm md:w-1/3 md:shadow-md ring-1 ring-slate-200">
             <p class="text-sm text-slate-600 font-semi-bold mb-10 pt-8">
               An absolute influencer marketing tool. Effective and trustworthy.
             </p>
@@ -27,7 +27,7 @@ const Testimonial = () => {
           </div>
 
           {/* <!-- Testimonial 2 --> */}
-          <div class="flex flex-col space-y-20  p-4 rounded-lg bg-veryLightGray mb-4 md:mb-32 shadow-sm md:w-1/3 md:shadow-md">
+          <div class="flex flex-col space-y-20  p-4 rounded-lg bg-veryLightGray mb-4 md:mb-32 shadow-sm md:w-1/3 md:shadow-md ring-1 ring-slate-200">
             <p class="text-sm pt-8 text-slate-600">
               Great service. I had an amazing experience using StratifI to get
               an influencer for my brand marketing campaign.An absolute
@@ -40,7 +40,7 @@ const Testimonial = () => {
           </div>
 
           {/* <!-- Testimonial 3 --> */}
-          <div class="flex flex-col  space-y-20  p-4 rounded-lg mb-4 md:mb-32  shadow-sm md:w-1/3 md:shadow-md">
+          <div class="flex flex-col  space-y-20  p-4 rounded-lg mb-4 md:mb-32  shadow-sm md:w-1/3 md:shadow-md ring-1 ring-slate-200">
             <p class="text-sm  mb-10 pt-8 text-slate-600">
               Simple and effective. no long hours searching for reliable
               influencers.

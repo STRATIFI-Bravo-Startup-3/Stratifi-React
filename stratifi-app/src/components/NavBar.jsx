@@ -6,9 +6,10 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const navItems = ["About Us", "Home", "Pricing", "Services", "Contact us"];
+  const nav = [];
 
   return (
-    <header className=" bg-[#FFFFFF] ">
+    <header className=" bg-[#FFFFFF]">
       <div className="flex items-center p-1  text-slate-600 justify-between xl:mx-auto xl:max-w-7xl max-w-full flex-wrap w-full">
         <div className="ml-16 lg:ml-10 flex justify-center w-[3rem]">
           <img className="" src={logo} alt="" srcSet="" />
