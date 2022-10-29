@@ -83,29 +83,7 @@ class SubscribeContent extends Component {
             </span>
           </div>
           <MailchimpDownload url={url} />
-          {/* <form
-            onSubmit={this.handleSubmit}
-            className="flex
-            flex-col
-            gap-4
-            justify-center"
-          >
-            <div className="flex gap-4 flex-col mx-auto w-11/12 lg:w-3/4">
-              <Input
-                value={account.email}
-                onChange={this.handleChange}
-                name="email"
-                placeholder="Email Address"
-                type="email"
-                error={errors.email}
-              />
-            </div>
-            <div className="flex flex-col">
-              <button className="mx-auto bg-[#FF8F50] text-white h-12 w-[16rem] rounded-xl text-base hover:bg-orange-600 active:bg-orange-700">
-                Download Now
-              </button>
-            </div>
-          </form> */}
+
           <div className="flex flex-col mx-auto mb-5">
             <span className="text-center text-gray-800 text-sm">
               Don't have an account yet?{" "}
