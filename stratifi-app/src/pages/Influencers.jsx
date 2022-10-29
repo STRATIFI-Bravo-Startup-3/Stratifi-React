@@ -3,6 +3,7 @@ import React from "react";
 const Influencers = () => {
   return (
     <section className="influencer">
+      {/* First Section */}
       <div className=" px-20  mx-auto mt-10  container">
         {/* <!-- Heading --> */}
         <h2 className="text-4xl font-bold text-center mb-10  ">Invitations</h2>
@@ -37,6 +38,7 @@ const Influencers = () => {
           </div>
         </div>
       </div>
+      {/* Second Section */}
       <div className=" px-20  mx-auto mt-10  container">
         {/* <!-- Heading --> */}
         <h2 className="text-4xl font-bold text-center mb-10  ">Invitations</h2>
