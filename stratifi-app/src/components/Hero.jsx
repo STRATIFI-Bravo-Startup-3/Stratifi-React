@@ -19,14 +19,14 @@ const Hero = () => {
       className="lg:flex grid grid-cols-1 w-auto h-full bg-cover bg-no-repeat relative "
     >
       <div className="mx-auto  items-start lg:ml-24 flex flex-col gap-16 lg:my-auto lg:pt-28 pt-8 w-9/12 lg:w-3/6  text-left text-white  ">
-        <div className=" md:mx-auto lg:mx-0 font-black text-3xl lg:text-[2.8rem]">
+        <div className=" md:mx-auto lg:mx-0 font-black text-3xl lg:text-[2.8rem] ">
           MARKETING WITH INFLUENCE
         </div>
         <div className="md:mx-auto lg:mx-0 flex flex-col gap-1">
           <span className="lg:text-xl">Real brands, Trusted Creators,</span>
           <span className="lg:text-xl">Guaranteed Results.</span>
         </div>
-        <div className="md:mx-auto lg:mx-0 flex justify-between gap-8  lg:gap-6">
+        <div className="md:mx-auto lg:mx-0 flex justify-between gap-8 animate__animated animate__bounce  lg:gap-6">
           <Link to="/register">
             {" "}
             <button className="text-sm lg:text-base ring-2 ring-white bg-white hover:bg-slate-100 active:bg-slate-200 rounded-md text-[#FF8F50] py-1 px-6 w-30 lg:w-40">
@@ -40,7 +40,7 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="h-auto items-center mx-auto lg:pt-12 lg:w-3/6">
+      <div className="h-auto items-center mx-auto lg:pt-12 lg:w-3/6 animate__animated animate__fadeInRight">
         <img className="w-full " src={influencer} alt="" />
       </div>
     </section>

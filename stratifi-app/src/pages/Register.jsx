@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Input from "../components/common/input";
 import Joi from "joi-browser";
 import backgroundfooter from "../images/backgroundfooter.svg";
+import logo from "../images/logo.png";
 
 class Register extends Component {
   state = {
@@ -82,77 +83,84 @@ class Register extends Component {
     const { account, errors } = this.state;
     return (
       <div
+        className="static flex flex-col"
         style={{ backgroundImage: `url(${backgroundfooter})` }}
-        className="flex justify-center  h-screen"
       >
-        <div className="flex flex-col gap-4 justify-center my-auto bg-white w-4/5 lg:w-6/12 h-auto rounded-xl shadow-2xl">
-          <div className="flex flex-col mx-auto mt-5">
-            <h1 className=" mx-auto text-xl lg:text-2xl font-bold text-gray-800">
-              Create An Account
-            </h1>
-            <span className="text-center text-gray-800 text-sm lg:text-base">
-              Sign up to get started
-            </span>
-          </div>
-          <form
-            onSubmit={this.handleSubmit}
-            className="flex
+        <div className="flex justify-center  h-screen">
+          <div className="flex flex-col gap-4 justify-center my-auto bg-white w-4/5 lg:w-6/12 h-auto rounded-xl shadow-2xl animate__animated animate__flipInX">
+            <div className="flex flex-col mx-auto mt-5">
+              <h1 className=" mx-auto text-xl lg:text-2xl font-bold text-gray-800">
+                Create An Account
+              </h1>
+              <span className="text-center text-gray-800 text-sm lg:text-base">
+                Sign up to get started
+              </span>
+            </div>
+            <form
+              onSubmit={this.handleSubmit}
+              className="flex
             flex-col
             gap-4
             justify-center"
-          >
-            <div className="flex gap-4 flex-col mx-auto w-11/12 lg:w-3/4">
-              <Input
-                autoFocus="autoFocus"
-                value={account.fullname}
-                onChange={this.handleChange}
-                name="fullname"
-                placeholder="Full Name"
-                type="text"
-                error={errors.fullname}
-              />
+            >
+              <div className="flex gap-4 flex-col mx-auto w-11/12 lg:w-3/4">
+                <Input
+                  value={account.fullname}
+                  onChange={this.handleChange}
+                  name="fullname"
+                  placeholder="Full Name"
+                  type="text"
+                  error={errors.fullname}
+                />
 
-              <Input
-                value={account.email}
-                onChange={this.handleChange}
-                name="email"
-                placeholder="Email Address"
-                type="email"
-                error={errors.email}
-              />
-              <Input
-                value={account.password}
-                onChange={this.handleChange}
-                name="password"
-                placeholder="Password"
-                type="password"
-                error={errors.password}
-              />
-              <Input
-                value={account.repeat_password}
-                onChange={this.handleChange}
-                name="repeat_password"
-                placeholder="Repeat Password"
-                type="password"
-                error={errors.repeat_password}
-              />
+                <Input
+                  value={account.email}
+                  onChange={this.handleChange}
+                  name="email"
+                  placeholder="Email Address"
+                  type="email"
+                  error={errors.email}
+                />
+                <Input
+                  value={account.password}
+                  onChange={this.handleChange}
+                  name="password"
+                  placeholder="Password"
+                  type="password"
+                  error={errors.password}
+                />
+                <Input
+                  value={account.repeat_password}
+                  onChange={this.handleChange}
+                  name="repeat_password"
+                  placeholder="Repeat Password"
+                  type="password"
+                  error={errors.repeat_password}
+                />
+              </div>
+              <div className="flex flex-col">
+                <button className="mx-auto bg-[#FF8F50] text-white h-12 w-[16rem] rounded-xl text-base hover:bg-orange-600 active:bg-orange-700">
+                  Create Account
+                </button>
+              </div>
+            </form>
+            <div className="flex flex-col mx-auto mb-5">
+              <span className="text-center text-gray-800 text-sm">
+                Already have an account?{" "}
+                <Link
+                  className="underline underline-offset-2 text-sm"
+                  to="/login"
+                >
+                  Sign In
+                </Link>
+              </span>
+              <div className="items-center flex flex-col  ">
+                <img className="mx-auto w-[3rem]" src={logo} alt="" srcSet="" />
+                <span className="font-black text-slate-700 text-lg my-auto">
+                  STRATIFI.NG
+                </span>
+              </div>
             </div>
-            <div className="flex flex-col">
-              <button className="mx-auto bg-[#FF8F50] text-white h-12 w-[16rem] rounded-xl text-base hover:bg-orange-600 active:bg-orange-700">
-                Create Account
-              </button>
-            </div>
-          </form>
-          <div className="flex flex-col mx-auto mb-5">
-            <span className="text-center text-gray-800 text-sm">
-              Already have an account?{" "}
-              <Link
-                className="underline underline-offset-2 text-sm"
-                to="/login"
-              >
-                Sign In
-              </Link>
-            </span>
           </div>
         </div>
       </div>
