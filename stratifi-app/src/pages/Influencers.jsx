@@ -7,12 +7,12 @@ const Influencers = () => {
         {/* <!-- Heading --> */}
         <h2 className="text-4xl font-bold text-center ">Invitations</h2>
         {/* First container */}
-        <div className="shadow-lg ">
-          <h3 className="underline text-xl mt-8 font-semibold ">
+        <div className="shadow-lg space-y-8  space-x-8 ">
+          <h3 className="underline text-xl  font-semibold  ">
             House of Thera prelaunch campaign
           </h3>
 
-          <div className="flex items-center mt-4">
+          <div className="flex items-center  ">
             <p className="text-sm mr-4">by</p>
             <div className="shadow-sm bg-gray-200 mr-4">
               <img src="" alt="" className="" />
@@ -20,7 +20,7 @@ const Influencers = () => {
             <p className="text-sm">House of thera</p>
           </div>
           {/* First Button */}
-          <div className="flex flex-col md:flex-row ">
+          <div className="flex flex-col gap-4  md:flex-row ">
             <button className="bg-transparent hover:bg-orange-500 text-black  hover:text-black  px-6 pr-16 border-orange-300 hover:border-transparent rounded mr-4 text-sm border-4 font-medium ">
               Fashion
             </button>
@@ -29,7 +29,7 @@ const Influencers = () => {
             </button>
           </div>
           {/* Second Button */}
-          <div className="flex justify-between mt-6 p-6">
+          <div className="flex justify-between mt-6 ">
             <button className="bg-transparent hover:bg-gray-500 text-gray hover:text-gray  px-6   border-gray-300 hover:border-transparent rounded mr-4 text-sm border-2 font-medium ">
               message
             </button>
