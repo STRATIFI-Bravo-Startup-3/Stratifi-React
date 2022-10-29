@@ -29,15 +29,16 @@ const Influencers = () => {
           </div>
           {/* Second Button */}
           <div className="flex flex-col gap-2 md:justify-between md:flex-row mt-6 ">
-            <button className="bg-transparent hover:bg-gray-500 text-gray hover:text-gray  px-6   border-gray-300 hover:border-transparent rounded mr-4 text-sm border-2 font-medium ">
+            <button className="bg-transparent hover:bg-gray-500 text-gray-300 hover:text-gray  px-6   border-gray-300 hover:border-transparent rounded mr-4 text-sm border-2 font-medium ">
               message
             </button>
-            <button className="bg-orange-500 hover:bg-orange-700 text-black font-bold  px-14 rounded">
+            <button className="bg-orange-500 hover:bg-orange-700 text-black font-normal  md:px-14 rounded text-sm">
               view
             </button>
           </div>
         </div>
       </div>
+
       {/* Second Section */}
       <div className=" px-20  mx-auto mt-10  container">
         {/* <!-- Heading --> */}
@@ -63,16 +64,16 @@ const Influencers = () => {
             <button className="bg-transparent hover:bg-orange-500 text-black  hover:text-black  px-6 pr-16  border-orange-300 hover:border-transparent rounded mr-4 text-sm border-4 font-medium">
               Lifestyle
             </button>
-            <button className="bg-transparent hover:bg-orange-500 text-black  hover:text-black  px-6 pr-16  border-orange-300 hover:border-transparent rounded mr-4 text-sm border-4 font-medium">
+            <button className="bg-transparent hover:bg-orange-500 text-black  hover:text-black md:px-6 pr-16  border-orange-300 hover:border-transparent rounded mr-4 text-sm border-4 font-medium">
               Health/fitness
             </button>
           </div>
           {/* Second Button */}
           <div className="flex flex-col gap-2 md:justify-between md:flex-row mt-6 ">
-            <button className="bg-transparent hover:bg-gray-500 text-gray hover:text-gray  px-6   border-gray-300 hover:border-transparent rounded mr-4 text-sm border-2 font-medium ">
+            <button className="bg-transparent hover:bg-gray-500 text-gray-300 hover:text-gray  px-6   border-gray-300 hover:border-transparent rounded mr-4 text-sm border-2 font-medium ">
               message
             </button>
-            <button className="bg-orange-500 hover:bg-orange-700 text-black font-bold  px-14 rounded">
+            <button className="bg-orange-500 hover:bg-orange-700 text-black font-normal  md:px-14 rounded text-sm">
               view
             </button>
           </div>
