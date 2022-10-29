@@ -64,7 +64,7 @@ const Influencers = () => {
               Lifestyle
             </button>
             <button className="bg-transparent hover:bg-orange-500 text-black  hover:text-black  px-6 pr-16  border-orange-300 hover:border-transparent rounded mr-4 text-sm border-4 font-medium">
-              Lifestyle
+              Health/fitness
             </button>
           </div>
           {/* Second Button */}
