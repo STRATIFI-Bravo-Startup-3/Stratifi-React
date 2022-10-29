@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Input from "../components/common/input";
 import Joi from "joi-browser";
 import backgroundfooter from "../images/backgroundfooter.svg";
+import Loginimage from "../images/Loginimage.png";
 
 class Login extends Component {
   state = {
@@ -75,9 +76,8 @@ class Login extends Component {
       >
         <div className="flex flex-col gap-4 justify-center my-auto bg-white w-4/5 lg:w-5/12 h-auto rounded-xl shadow-2xl">
           <div className="flex flex-col mx-auto mt-5">
-            <h1 className=" mx-auto text-xl lg:text-2xl font-bold text-gray-800">
-              Sign In
-            </h1>
+            <img className="w-40 h-25 img-center" src={Loginimage} alt="" />
+
             <span className="text-center text-gray-800 text-sm lg:text-base">
               Log into your account to continue
             </span>
@@ -109,7 +109,7 @@ class Login extends Component {
             </div>
             <div className="flex flex-col">
               <button className="mx-auto bg-[#FF8F50] text-white h-12 w-[16rem] rounded-xl text-base hover:bg-orange-600 active:bg-orange-700">
-                Create Account
+                Login
               </button>
             </div>
           </form>
