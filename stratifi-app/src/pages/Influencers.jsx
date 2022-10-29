@@ -7,7 +7,7 @@ const Influencers = () => {
         {/* <!-- Heading --> */}
         <h2 className="text-4xl font-bold text-center ">Invitations</h2>
         {/* First container */}
-        <div className="shadow-lg space-y-8  space-x-8 ">
+        <div className="shadow-lg space-y-8 p-10 space-x-4 ">
           <h3 className="underline text-xl  font-semibold  ">
             House of Thera prelaunch campaign
           </h3>
