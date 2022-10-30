@@ -6,7 +6,7 @@ import "../App.css";
 const Faq = () => {
   const [open, setOpen] = useState(null);
   const contentClass =
-    "accordion-content p-4  mx-auto w-full text-sm text-slate-800 bg-slate-300 ";
+    "accordion-content p-4  mx-auto w-full text-sm text-slate-800 bg-slate-200 ";
   const toggle = (i) => {
     if (open === i) {
       return setOpen(null);
@@ -66,7 +66,7 @@ const Faq = () => {
         <div className="w-full flex flex-col items-center px-[1rem]   lg:px-[4rem] py-2 ">
           <div
             onClick={() => toggle(i)}
-            className="cursor-pointer transition p-4 flex justify-between text-slate-800 content-center w-full text-start font-bold py-3 bg-slate-300 rounded"
+            className="cursor-pointer transition p-4 flex justify-between text-slate-800 content-center w-full text-start font-bold py-3 bg-slate-200 rounded"
           >
             <h2>{item.question}</h2>
             <div className="transform transition-transform duration-500">

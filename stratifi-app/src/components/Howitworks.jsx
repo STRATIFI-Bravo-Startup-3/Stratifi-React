@@ -11,6 +11,10 @@ function Box({ children, ...props }) {
 
 const Howitworks = () => {
   const items = ["Sign Up", "Choose a Niche", "Get Paired"];
+  const content = [
+    "Sign up is free,  join us to get amazing offers and premium service ",
+    "Make a choice, choose what fits your plan",
+  ];
   return (
     <section className=" items-center flex flex-col animate__animated  animate__fadeInLeft">
       <div className="flex flex-col items-center font-bold text-2xl lg:text-3xl py-12">
