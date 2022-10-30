@@ -1,10 +1,10 @@
 import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 import Testimonial from "../components/Testimonial";
-import Accordion from "../components/Accordion";
 import Howitworks from "../components/Howitworks";
 import Footer from "../components/Footer";
 import About from "../components/About";
+import Faq from "../components/Faq";
 
 const Home = () => {
   return (
@@ -12,10 +12,8 @@ const Home = () => {
       <NavBar />
       <Hero />
       <About />
-
-      <Accordion />
-
       <Howitworks />
+      <Faq />
       <Testimonial />
       <Footer />
     </main>

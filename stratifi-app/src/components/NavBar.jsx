@@ -30,7 +30,7 @@ const NavBar = () => {
             {navItems.map((navItem) => (
               <li
                 key={navItem}
-                className="px-3 block text-start border-b-[0.5px] lg:border-0 border-neutral-800"
+                className="p-3 block text-start border-b-[0.5px] lg:border-0 border-neutral-800"
               >
                 <Link className="hover:text-slate-800 active:text-black" to="/">
                   {navItem}
@@ -39,7 +39,7 @@ const NavBar = () => {
             ))}
             <Link to="/login">
               {" "}
-              <button className="ml-3 my-1 block text-white px-4 bg-[#FF8F50] hover:bg-[#FF7A30] active:bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
+              <button className="ml-3 my-3 block text-white px-4 bg-[#FF8F50] hover:bg-[#FF7A30] active:bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
                 Sign in
               </button>
             </Link>

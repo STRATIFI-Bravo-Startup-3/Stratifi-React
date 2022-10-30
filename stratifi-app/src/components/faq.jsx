@@ -1,11 +1,24 @@
-import Faq from "react-faq-component";
+import { HiChevronDown } from "react-icons/hi";
+import { HiChevronUp } from "react-icons/hi";
+import { useState } from "react";
 import "../App.css";
 
-const data = {
-  rows: [
+const Faq = () => {
+  const [open, setOpen] = useState(null);
+  const contentClass =
+    "accordion-content p-4  mx-auto w-full text-sm text-slate-800 bg-slate-300 ";
+  const toggle = (i) => {
+    if (open === i) {
+      return setOpen(null);
+    }
+    setOpen(i);
+  };
+
+  const data = [
     {
-      title: "What is Stratify",
-      content: `Stratifi is an online marketplace for businesses and start-up’s
+      id: 1,
+      question: "What is Stratify",
+      answer: `Stratifi is an online marketplace for businesses and start-up’s
       to connect with influencers in various niche. It is a website
       made for the sole purpose of connecting brands to online
       influencers.
@@ -15,104 +28,60 @@ const data = {
       get paid for the content they promote. All our influencer
       are vetted to ensure maximum delivery and professionalism.`,
     },
-  ],
-};
-const dataone = {
-  rows: [
+
     {
-      title: "What service does Stratifi offer",
-      content: `An online platform for influencer to connect with brands directly. As an influencer we solve the problem of brands not paying for the
+      id: 2,
+      question: "What service does Stratifi offer",
+      answer: `An online platform for influencer to connect with brands directly. As an influencer we solve the problem of brands not paying for the
       content you promote in the guise of not having enough visibility,
       sales, or ROI. Connection between brands and social media
       influencers.`,
     },
-  ],
-};
-const datatwo = {
-  rows: [
+
     {
-      title: "Is Stratifi free",
-      content: `Signing up as a brand or influencer is completely free, but we do
+      id: 3,
+      question: "Is Stratifi free",
+      answer: `Signing up as a brand or influencer is completely free, but we do
       charge a commission for every transaction done on stratify.`,
     },
-  ],
-};
-const datathree = {
-  rows: [
+
     {
-      title: "Is Stratifi trustworthy",
-      content: `At stratify your safety is important to us. Brands and influencers
+      id: 4,
+      question: "Is Stratifi trustworthy",
+      answer: `At stratify your safety is important to us. Brands and influencers
       must pass our quality assurance checks and must be vetted to ensure the safety of each user.`,
     },
-  ],
-};
-const datafour = {
-  rows: [
+
     {
-      title: "Why should I use Straifi",
-      content: ` We do the hard work so that you can enjoy a seamless interaction to meet you brand goals.`,
+      id: 5,
+      question: "Why should I use Stratifi",
+      answer: ` We do the hard work so that you can enjoy a seamless interaction to meet you brand goals. `,
     },
-  ],
-};
+  ];
 
-const config = {
-  animate: true,
-  arrowIcon: "v",
-  openOnload: 0,
-  // expandIcon: "+",
-  // collapseIcon: "-",
-};
-
-const styles = {
-  rowContentPaddingRight: "3em",
-  rowContentPaddingLeft: "1em",
-};
-
-function FaqComp() {
   return (
-    <div>
-      {/* <section className="faq">
-        <div className="faqhead">
-          <h1>FAQs</h1>
+    <div className="lg:mx-[20rem] mx-[2rem] flex flex-col justify-center items-center bg-[#AD6EC0] py-6 rounded">
+      <h1 className="text-xl font-bold text-slate-800">FAQS</h1>
+      {data.map((item, i) => (
+        <div className="w-full flex flex-col items-center px-[1rem]   lg:px-[4rem] py-2 ">
+          <div
+            onClick={() => toggle(i)}
+            className="cursor-pointer transition p-4 flex justify-between text-slate-800 content-center w-full text-start font-bold py-3 bg-slate-300 rounded"
+          >
+            <h2>{item.question}</h2>
+            <div className="transform transition-transform duration-500">
+              {open == i ? <HiChevronDown /> : <HiChevronUp />}
+            </div>
+          </div>
+          <div
+            className={open == i ? contentClass : "hidden accordion-content"}
+          >
+            {item.answer}
+          </div>
         </div>
-
-        <div className="mb-6 lg:px-9">
-          <ul className="faqcontent ">
-            <li>
-              <div className="lg:px-12 px-3 faqli bg-white ">
-                <Faq className="" data={data} config={config} styles={styles} />
-              </div>
-            </li>
-            <li>
-              <div className="lg:px-12 px-3 bg-white faqli">
-                <Faq
-                  className="one"
-                  data={dataone}
-                  config={config}
-                  styles={styles}
-                />
-              </div>
-            </li>
-            <li>
-              <div className="lg:px-12 px-3 faqli bg-white ">
-                <Faq data={datatwo} config={config} styles={styles} />
-              </div>
-            </li>
-            <li>
-              <div className="lg:px-12 px-3 faqli bg-white">
-                <Faq data={datathree} config={config} styles={styles} />
-              </div>
-            </li>
-            <li>
-              <div className="px-12 faqli bg-white">
-                <Faq data={datafour} config={config} styles={styles} />
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section> */}
+      ))}
     </div>
   );
-}
+};
 
-export default FaqComp;
+export default Faq;

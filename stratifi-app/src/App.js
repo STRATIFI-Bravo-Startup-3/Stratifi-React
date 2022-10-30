@@ -10,10 +10,9 @@ import Influencers from "./pages/Influencers";
 // import SubscribeContent from "./pages/SubscribeContent";
 import Mailchimp from "./pages/SubscribeContent";
 
-
 function App() {
   return (
-    <div className="App">
+    <div className="App ">
       <Router>
         <Routes>
           <Route path="/" element={<Home />}></Route>
