@@ -1,21 +1,20 @@
 import React, { Component } from "react";
-import desktopBackground from "../images/background.jpeg";
-import mobileBackground from "../images/background-sm.jpeg";
-import background from "../images/background.svg";
+import desktopBackground from "../images/desktopBackground.png";
+import mobileBackground from "../images/mobileBackground.png";
 import influencer from "../images/influencer.png";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
-  // const imageUrl =
-  //   useWindowWidth() >= 650 ? desktopBackground : mobileBackground;
+  const imageUrl =
+    useWindowWidth() >= 650 ? desktopBackground : mobileBackground;
 
   const url =
     "https://app.us13.list-manage.com/subscribe/post?u=311327338697ce69baa12d960&amp;id=3f88d6e974&amp;f_id=00c297e2f0";
 
   return (
     <section
-      style={{ backgroundImage: `url(${background})` }}
+      style={{ backgroundImage: `url(${imageUrl})` }}
       className="lg:flex grid grid-cols-1 w-auto h-full bg-cover bg-no-repeat relative "
     >
       <div className="mx-auto lg:px-[3rem]  items-start lg:ml-24 flex flex-col gap-16 lg:my-auto lg:pt-28 pt-8 w-9/12 lg:w-3/6  text-left text-white  ">
@@ -40,8 +39,8 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="h-auto items-center mx-auto lg:pt-12 lg:w-3/6 animate__animated animate__fadeInRight">
-        <img className="w-full " src={influencer} alt="" />
+      <div className="h-auto items-center mx-auto lg:pt-12 lg:w-3/5 animate__animated animate__fadeInRight">
+        <img className="w-full" src={influencer} alt="" />
       </div>
     </section>
   );
