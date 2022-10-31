@@ -1,8 +1,10 @@
 import React from "react";
+import InfluencersSection from "../components/common/InfluencersSection";
 
 const Influencers = () => {
   return (
     <section className="influencer">
+      <InfluencersSection></InfluencersSection>
       {/* First Section */}
       <div className=" px-20  mx-auto mt-10  container">
         {/* <!-- Heading --> */}
