@@ -3,10 +3,10 @@ import React from "react";
 const InfluencersSection = () => {
   return (
     <section className="bg-[#AD6EC0]">
-      <div className="mx-auto container px-10 py-10">
+      <div className="mx-auto container px-12 py-12">
         <div className="flex items-center mb-6">
-          <div className="w-56 h-56 bg-[#C4C4C4] rounded-full mr-8 font-bold"></div>
-          <p>
+          <div className="w-56 h-56 bg-[#C4C4C4] rounded-full mr-8 "></div>
+          <p className="font-semibold text-4xl">
             Hi, <br />
             Anna
           </p>
