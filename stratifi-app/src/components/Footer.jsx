@@ -42,7 +42,6 @@ class Footer extends Component {
   render() {
     const url =
       "https://app.us13.list-manage.com/subscribe/post?u=311327338697ce69baa12d960&amp;id=3f88d6e974&amp;f_id=00c297e2f0";
-    console.log(this.links.map((link) => link));
     return (
       <div
         style={{ backgroundImage: `url(${backgroundfooter})` }}
@@ -52,12 +51,12 @@ class Footer extends Component {
           <div className="w-6/12 lg:ml-[10rem] ml-[3rem]">
             <div className="ml-50 flex-col text-left">
               <h1 className="font-bold uppercase my-1">Company</h1>
-              {this.company.map((item) => (
+              {this.company.map((item, index) => (
                 <h2 className="my-1">
                   <Link
-                    key={item}
+                    key={index}
                     className="hover:text-slate-300 active:text-slate-400"
-                    to={this.links.map((link) => link)}
+                    to={this.links.map((link, index) => link)}
                   >
                     {item}
                   </Link>
@@ -68,9 +67,10 @@ class Footer extends Component {
           <div className="w-6/12">
             <div className="px-[2rem] flex-col text-left ">
               <h1 className="font-bold uppercase my-1">Support</h1>
-              {this.support.map((item) => (
+              {this.support.map((item, index) => (
                 <h2 className="my-1">
                   <Link
+                    key={index}
                     className="hover:text-slate-300 active:text-slate-400"
                     to="/"
                   >

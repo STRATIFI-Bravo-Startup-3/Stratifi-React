@@ -14,6 +14,7 @@ const Howitworks = () => {
   const content = [
     "Sign up is free,  join us to get amazing offers and premium service ",
     "Make a choice, choose what fits your plan",
+    "",
   ];
   return (
     <section className=" items-center flex flex-col animate__animated  animate__fadeInLeft">
@@ -23,7 +24,10 @@ const Howitworks = () => {
 
       <div className="grid grid-cols-1 lg:flex gap-12 lg:gap-[15rem] text-white">
         {items.map((item) => (
-          <div className="flex flex-col items-center gap-4 w-full mb-8 ">
+          <div
+            className="flex flex-col items-center gap-4 w-full mb-8 "
+            key={item}
+          >
             <img src={how1} alt="" className="w-[3rem] lg:w-[4rem]" />
             <div
               style={{ backgroundImage: `url(${backgroundfooter})` }}

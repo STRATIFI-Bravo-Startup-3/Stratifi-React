@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import desktopBackground from "../images/desktopBackground.png";
 import mobileBackground from "../images/mobileBackground.png";
 import influencer from "../images/influencer.png";

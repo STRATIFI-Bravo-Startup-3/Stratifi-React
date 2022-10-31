@@ -4,7 +4,7 @@ import Testimonial from "../components/Testimonial";
 import Howitworks from "../components/Howitworks";
 import Footer from "../components/Footer";
 import About from "../components/About";
-import Faq from "../components/Faq";
+import Faq from "../components/faq";
 
 const Home = () => {
   return (

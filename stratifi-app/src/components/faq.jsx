@@ -63,7 +63,10 @@ const Faq = () => {
     <div className="lg:mx-[20rem] mx-[2rem] flex flex-col justify-center items-center bg-[#AD6EC0] py-6 rounded">
       <h1 className="text-xl font-bold text-slate-800">FAQS</h1>
       {data.map((item, i) => (
-        <div className="w-full flex flex-col items-center px-[1rem]   lg:px-[4rem] py-2 ">
+        <div
+          key={i}
+          className="w-full flex flex-col items-center px-[1rem]   lg:px-[4rem] py-2 "
+        >
           <div
             onClick={() => toggle(i)}
             className="cursor-pointer transition p-4 flex justify-between text-slate-800 content-center w-full text-start font-bold py-3 bg-slate-200 rounded"
