@@ -100,7 +100,7 @@ class Footer extends Component {
             </div>
           </div>
         </div>
-        <div className="flex lg:w-8/12 w-full">
+        <div className="flex lg:w-8/12 w-full p-4 md:p-0">
           <div className="flex flex-col items-center w-6/12 ">
             <div className="flex flex-col text-left">
               <h1 className="font-bold uppercase my-1">Quick Links</h1>
