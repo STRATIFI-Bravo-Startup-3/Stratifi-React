@@ -1,9 +1,12 @@
 import React from "react";
 import InfluencersSection from "../components/common/InfluencersSection";
+import NavBar2 from "../components/common/NavBar2";
 
 const Influencers = () => {
   return (
     <section className="influencer">
+      <NavBar2></NavBar2>
+      <></>
       <InfluencersSection></InfluencersSection>
       {/* First Section */}
       <div className=" px-20  mx-auto mt-10  container">
