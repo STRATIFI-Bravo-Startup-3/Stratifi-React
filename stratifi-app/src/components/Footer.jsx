@@ -14,7 +14,7 @@ import MailchimpSubscribe from "./mailchimpSubscribe";
 import backgroundfooter from "../images/backgroundfooter.svg";
 
 class Footer extends Component {
-  company = ["About us", "Our Services", "Contact us", "Pricing"];
+  company = ["Home", "About us", "Contact", "Log In", "Sign Up", "Blog"];
 
   support = ["Information", "Privacy Policy", "FAQs", "Community"];
 
@@ -45,44 +45,10 @@ class Footer extends Component {
     return (
       <div
         style={{ backgroundImage: `url(${backgroundfooter})` }}
-        className="md:flex grid-cols-1 justify-between mx-50 w-full bg-[#AD6EC0] text-white py-8 px-4 "
+        className="md:flex grid-cols-1 justify-between mx-50 w-full bg-[#AD6EC0] text-white py-8 px-4 lg:gap-[5rem]"
       >
-        <div className="flex justify-between lg:w-8/12 w-full">
-          <div className="w-6/12 lg:ml-[10rem] ml-[3rem]">
-            <div className="ml-50 flex-col text-left">
-              <h1 className="font-bold uppercase my-1">Company</h1>
-              {this.company.map((item, index) => (
-                <h2 className="my-1">
-                  <Link
-                    key={index}
-                    className="hover:text-slate-300 active:text-slate-400"
-                    to={this.links.map((link, index) => link)}
-                  >
-                    {item}
-                  </Link>
-                </h2>
-              ))}
-            </div>
-          </div>
-          <div className="w-6/12">
-            <div className="px-[2rem] flex-col text-left ">
-              <h1 className="font-bold uppercase my-1">Support</h1>
-              {this.support.map((item, index) => (
-                <h2 className="my-1">
-                  <Link
-                    key={index}
-                    className="hover:text-slate-300 active:text-slate-400"
-                    to="/"
-                  >
-                    {item}
-                  </Link>
-                </h2>
-              ))}
-            </div>
-          </div>
-        </div>
-        <div className="w-full lg:w-4/12 ml-[3rem] mt-6">
-          <div className="flex-col text-left">
+        <div className="w-full lg:w-4/12 lg:pl-[8rem]">
+          <div className="flex flex-col text-left items-center">
             <h1 className="font-bold uppercase my-1">
               Subscribe to our Newsletter
             </h1>
@@ -90,8 +56,8 @@ class Footer extends Component {
             <div className="my-1">
               <MailchimpSubscribeSmall url={url} />
             </div>
-            <div className="flex flex-col max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-white">
-              <div className="flex justify-between sm:w-[300px] pt-4 text-2xl">
+            <div className="flex flex-col px-2 py-4 mx-auto justify-between text-center text-white">
+              <div className="flex gap-5 pt-4 text-2xl">
                 <a
                   className="hover:text-slate-300 active:text-slate-400"
                   href="https://www.linkedin.com/company/stratifing/"
@@ -127,13 +93,44 @@ class Footer extends Component {
                 >
                   <FaTwitter />
                 </a>
-                <a
-                  className="hover:text-slate-300 active:text-slate-400"
-                  href=""
-                >
+                <a className="hover:text-slate-300 active:text-slate-400">
                   <FaYoutube />
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex lg:w-8/12 w-full">
+          <div className="flex flex-col items-center w-6/12 ">
+            <div className="flex flex-col text-left">
+              <h1 className="font-bold uppercase my-1">Quick Links</h1>
+              {this.company.map((item, index) => (
+                <h2 className="my-1">
+                  <Link
+                    key={index}
+                    className="hover:text-slate-300 active:text-slate-400"
+                    to={this.links.map((link, index) => link)}
+                  >
+                    {item}
+                  </Link>
+                </h2>
+              ))}
+            </div>
+          </div>
+          <div className="w-6/12">
+            <div className="px-[2rem] flex-col text-left ">
+              <h1 className="font-bold uppercase my-1">Support</h1>
+              {this.support.map((item, index) => (
+                <h2 className="my-1">
+                  <Link
+                    key={index}
+                    className="hover:text-slate-300 active:text-slate-400"
+                    to="/"
+                  >
+                    {item}
+                  </Link>
+                </h2>
+              ))}
             </div>
           </div>
         </div>

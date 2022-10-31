@@ -19,7 +19,7 @@ const SimpleFormSmall = ({
   return (
     <div>
       <div
-        className="flex  form-input h-10 w-60 mt-5 rounded p-1"
+        className="flex  form-input h-10 w-64 mt-5 rounded p-1"
         style={style}
       >
         <input
