@@ -24,3 +24,87 @@
 .accordion-content {
   transition: max-height 0.3s ease-out, padding 0.3s ease;
 }
+
+.container {
+  box-sizing: border-box;
+  width: 100vw;
+  background-color: rgba(173, 110, 192, 1);
+}
+.content {
+  /* margin-block: 1em; */
+  width: 70vw;
+  margin-inline: auto;
+  padding-inline: 4em;
+  background-color: #fff;
+}
+
+.heading {
+  text-align: center;
+  padding-block: 2em;
+}
+
+.heading p {
+  font-size: 0.7rem;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+.platf {
+  width: 25vw;
+}
+.platform {
+  display: flex;
+  justify-content: space-between;
+}
+
+.describe {
+  height: 20vh;
+  margin-bottom: 2em;
+}
+
+.choose {
+  padding-block: 1.5em;
+}
+
+.checkbox {
+  margin-top: 1em;
+}
+
+.checkbox input {
+  border-radius: 50%;
+}
+
+.checkbox li {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.form-btn {
+  justify-content: space-between;
+  display: flex;
+  gap: 2em;
+  padding-bottom: 2em;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+.btn {
+  background-color: #cc5500;
+  padding: 1em 3em;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.back-btn {
+  background-color: #f3ceb4;
+}
+
+option {
+  background-color: #ddd9d9;
+}
