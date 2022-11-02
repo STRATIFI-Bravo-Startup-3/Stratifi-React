@@ -9,7 +9,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Influencers from "./pages/Influencers";
 // import SubscribeContent from "./pages/SubscribeContent";
 import Mailchimp from "./pages/SubscribeContent";
-import Brandreg from "./pages/Brandreg";
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
           <Route path="/influencers" element={<Influencers />} />
           <Route path="/get-content" element={<Mailchimp />} />
           <Route path="/update-profile" element={<UpdateProfile />} />
-          <Route path="/brand-registration" element={<Brandreg />} />
         </Routes>
       </Router>
     </div>
