@@ -14,9 +14,51 @@ import MailchimpSubscribe from "./mailchimpSubscribe";
 import backgroundfooter from "../images/backgroundfooter.svg";
 
 class Footer extends Component {
-  company = ["Home", "About us", "Contact", "Log In", "Sign Up", "Blog"];
+  company = [
+    {
+      id: 0,
+      name: "Home",
+    },
+    {
+      id: 1,
+      name: "About us",
+    },
+    {
+      id: 2,
+      name: "Contact",
+    },
+    {
+      id: 3,
+      name: "Log In",
+    },
+    {
+      id: 4,
+      name: "Sign Up",
+    },
+    {
+      id: 5,
+      name: "Blog",
+    },
+  ];
 
-  support = ["Information", "Privacy Policy", "FAQs", "Community"];
+  support = [
+    {
+      id: 0,
+      name: "Information",
+    },
+    {
+      id: 1,
+      name: "Privacy Policy",
+    },
+    {
+      id: 2,
+      name: "FAQs",
+    },
+    {
+      id: 3,
+      name: "Community",
+    },
+  ];
 
   icons = [
     <FaLinkedin />,
@@ -104,14 +146,13 @@ class Footer extends Component {
           <div className="flex flex-col items-center w-6/12 ">
             <div className="flex flex-col text-left">
               <h1 className="font-bold uppercase my-1">Quick Links</h1>
-              {this.company.map((item, index) => (
-                <h2 className="my-1">
+              {this.company.map((item) => (
+                <h2 key={item.id} className="my-1">
                   <Link
-                    key={index}
                     className="hover:text-slate-300 active:text-slate-400"
                     to={this.links.map((link, index) => link)}
                   >
-                    {item}
+                    {item.name}
                   </Link>
                 </h2>
               ))}
@@ -120,14 +161,13 @@ class Footer extends Component {
           <div className="w-6/12">
             <div className="px-[2rem] flex-col text-left ">
               <h1 className="font-bold uppercase my-1">Support</h1>
-              {this.support.map((item, index) => (
-                <h2 className="my-1">
+              {this.support.map((item) => (
+                <h2 key={item.id} className="my-1">
                   <Link
-                    key={index}
                     className="hover:text-slate-300 active:text-slate-400"
                     to="/"
                   >
-                    {item}
+                    {item.name}
                   </Link>
                 </h2>
               ))}

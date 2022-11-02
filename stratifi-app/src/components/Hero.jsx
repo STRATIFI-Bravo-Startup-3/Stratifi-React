@@ -2,7 +2,7 @@ import React from "react";
 import desktopBackground from "../images/desktopBackground.png";
 import mobileBackground from "../images/mobileBackground.png";
 import influencer from "../images/influencer.png";
-import { useEffect, useState } from "react";
+import useWindowWidth from "./common/windowWidth";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -46,22 +46,22 @@ const Hero = () => {
   );
 };
 
-const useWindowWidth = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+// const useWindowWidth = () => {
+//   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
+//   useEffect(() => {
+//     const handleWindowResize = () => {
+//       setWindowWidth(window.innerWidth);
+//     };
 
-    window.addEventListener("resize", handleWindowResize);
+//     window.addEventListener("resize", handleWindowResize);
 
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
+//     return () => {
+//       window.removeEventListener("resize", handleWindowResize);
+//     };
+//   }, []);
 
-  return windowWidth;
-};
+//   return windowWidth;
+// };
 
 export default Hero;

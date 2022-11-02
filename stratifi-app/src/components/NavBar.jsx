@@ -5,8 +5,33 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
-  const navItems = ["About Us", "Home", "Pricing", "Services", "Contact us"];
-  const nav = [];
+  const navItems = [
+    {
+      id: 0,
+      item: "About Us",
+      link: `/about us`,
+    },
+    {
+      id: 1,
+      item: "Home",
+      link: `/`,
+    },
+    {
+      id: 2,
+      item: "Pricing",
+      link: `/pricing`,
+    },
+    {
+      id: 3,
+      item: "Services",
+      link: `/services`,
+    },
+    {
+      id: 4,
+      item: "Contact",
+      link: `/contact-us`,
+    },
+  ];
 
   return (
     <header className=" bg-[#FFFFFF]">
@@ -27,13 +52,16 @@ const NavBar = () => {
           } lg:flex lg:items-center lg:w-auto `}
         >
           <ul className="lg:flex lg:justify-between items-center text-md lg:text-base">
-            {navItems.map((navItem) => (
+            {navItems.map((nav) => (
               <li
-                key={navItem}
+                key={nav.id}
                 className="p-3 block text-start border-b-[0.5px] lg:border-0 border-neutral-800"
               >
-                <Link className="hover:text-slate-800 active:text-black" to="/">
-                  {navItem}
+                <Link
+                  className="hover:text-slate-800 active:text-black"
+                  to={nav.link}
+                >
+                  {nav.item}
                 </Link>
               </li>
             ))}

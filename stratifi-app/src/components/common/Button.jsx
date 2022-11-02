@@ -1,7 +1,7 @@
-const Button = () => {
+const Button = (props) => {
   return (
-    <button className="ml-3 my-1 block px-4 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 ring-2 ring-blue-500 rounded">
-      Log in
+    <button className="mx-auto bg-[#FF8F50] text-white h-12 w-[16rem] rounded-xl text-base hover:bg-orange-600 active:bg-orange-700">
+      {props.label}
     </button>
   );
 };
