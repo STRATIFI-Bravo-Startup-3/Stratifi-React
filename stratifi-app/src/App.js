@@ -9,6 +9,7 @@ import Influencers from "./pages/Influencers";
 // import SubscribeContent from "./pages/SubscribeContent";
 import Mailchimp from "./pages/SubscribeContent";
 import Contact from "./pages/Contact";
+import Brandreg from "./pages/Brandreg";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/get-content" element={<Mailchimp />} />
           <Route path="/update-profile" element={<UpdateProfile />} />
           <Route path="/contact-us" element={<Contact />} />
+          <Route path="/brand-registration" element={<Brandreg />} />
         </Routes>
       </Router>
     </div>

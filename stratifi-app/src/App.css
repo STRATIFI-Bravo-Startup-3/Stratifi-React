@@ -24,8 +24,6 @@
 .accordion-content {
   transition: max-height 0.3s ease-out, padding 0.3s ease;
 }
-<<<<<<< Updated upstream
-=======
 
 .brandregcontainer {
   box-sizing: border-box;
@@ -37,6 +35,11 @@
   margin-inline: auto;
   padding-inline: 4em;
   background-color: #fff;
+}
+
+.brandregcontent select,
+button {
+  border-radius: 5px;
 }
 
 .brandregheading {
@@ -63,8 +66,13 @@
 }
 
 .brandregdescribe {
+  border-radius: 5px;
   height: 20vh;
   margin-bottom: 2em;
+}
+
+.brandregwebsite {
+  border-radius: 5px;
 }
 
 .chosen {
@@ -86,20 +94,20 @@
 }
 
 .brandform-btn {
-  justify-content: space-between;
   display: flex;
-  gap: 2em;
+  justify-content: space-between;
   padding-bottom: 2em;
-  font-size: 0.6rem;
-  font-weight: 700;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .brandregbtn {
   background-color: #cc5500;
-  padding: 1em 3em;
+  padding: 1em 2em;
 }
 
 .brandregbtn:hover {
+  opacity: 0.7;
   cursor: pointer;
 }
 
@@ -110,4 +118,48 @@
 option {
   background-color: #ddd9d9;
 }
->>>>>>> Stashed changes
+
+.brandregbudget,
+.brandreginfluencertype,
+.brandregcategory,
+.brandreggender {
+  border-radius: 5px;
+}
+
+@media (max-width: 376px) {
+  .brandregcontent {
+    width: 90vw;
+    margin-inline: auto;
+    padding-inline: 4em;
+    background-color: #fff;
+  }
+  .platformchoice {
+    display: block;
+  }
+
+  .platf {
+    width: 100%;
+  }
+
+  .brandform-btn {
+    display: flex;
+    gap: 2em;
+
+    padding-bottom: 2em;
+    font-size: 0.6rem;
+    font-weight: 600;
+  }
+
+  .brandregbtn {
+    background-color: #cc5500;
+    padding: 1em 1em;
+  }
+
+  .back-brandregbtn {
+    background-color: #f7d7c1;
+  }
+
+  .brandregcontent option {
+    width: 80vw;
+  }
+}

@@ -7,12 +7,12 @@ export default class Brandreg extends Component {
     application: {
       description: "",
       website: "",
-      preferred_platform: "Instagram",
-      secondary_platform: "Instagram",
-      target_audience: "female",
-      target_age: "18-21",
-      category: "arts/entertainment",
-      influencer_type: " Micro influencer ( 10k - 100k followers)",
+      // preferred_platform: "Instagram",
+      // secondary_platform: "Instagram",
+      // target_audience: "female",
+      // target_age: "18-21",
+      // category: "arts/entertainment",
+      // influencer_type: " Micro influencer ( 10k - 100k followers)",
       budget_range: "",
     },
     errors: {},
@@ -20,13 +20,13 @@ export default class Brandreg extends Component {
 
   schema = {
     description: Joi.string().required().label("description"),
-    website: Joi.string().label("website"),
-    preferred_platform: Joi.required().label("preferred_platform"),
-    secondary_platform: Joi.label("secondary_platform"),
-    target_audience: Joi.label("target_audience"),
-    target_age: Joi.label("target_age"),
-    category: Joi.label("category"),
-    influencer_type: Joi.label("influencer_type"),
+    website: Joi.label("website"),
+    // preferred_platform: Joi.required().label("preferred_platform"),
+    // secondary_platform: Joi.required().label("secondary_platform"),
+    // target_audience: Joi.required().label("target_audience"),
+    // target_age: Joi.label("target_age"),
+    // category: Joi.required().label("category"),
+    // influencer_type: Joi.label("influencer_type"),
     budget_range: Joi.number().label("budget_range"),
   };
 
@@ -50,11 +50,15 @@ export default class Brandreg extends Component {
 
     if (!result.error) return null;
 
-    const errors = {};
+    let errors = {};
+
+    if (this.state.application.preferred_platform === "") {
+      errors.preferred_platform = "Please select one option";
+    }
+    console.log(errors);
 
     for (let item of result.error.details) errors[item.path[0]] = item.message;
 
-    console.log(errors);
     return errors;
   };
 
@@ -63,6 +67,8 @@ export default class Brandreg extends Component {
     const errors = this.validate();
     this.setState({ errors: errors || {} });
     if (errors) return;
+
+    console.log("Submitted");
   };
 
   handleChange = ({ currentTarget: input }) => {
@@ -71,16 +77,19 @@ export default class Brandreg extends Component {
 
     if (errorMessage) {
       errors[input.name] = errorMessage;
-    } else {
-      delete errors[input.name];
     }
+    // else {
+    //   delete errors[input.name];
+    // }
 
-    const application = { ...this.state.account };
+    const application = { ...this.state.application };
     application[input.name] = input.value;
     this.setState({ application, errors });
   };
 
   render() {
+    const { application, errors } = this.state;
+
     return (
       <div className="brandregcontainer">
         <section className="brandregcontent">
@@ -89,23 +98,30 @@ export default class Brandreg extends Component {
             <p>Help us find the right influencer for your brand</p>
           </div>
 
-          <form>
+          <form onSubmit={this.handleSubmit}>
             <div className="loriara">
               <label>Brand description *</label>
               <textarea
                 className="brandregdescribe"
-                value={this.state.application.description}
+                value={application.description}
                 name="description"
                 onChange={this.handleChange}
                 type="text"
                 placeholder="Description"
+                error={errors.description}
               />
+              {errors && (
+                <div className="text-[0.7rem] lg:text-sm text-red-600">
+                  {errors.description}
+                </div>
+              )}
             </div>
 
             <div className="loriara">
-              <label>Website</label>
+              <label>Website (optional)</label>
+
               <input
-                className=""
+                className="brandregwebsite"
                 type="text"
                 value={this.state.application.website}
                 name="website"
@@ -125,12 +141,19 @@ export default class Brandreg extends Component {
                     name="preferred_platform"
                     id=""
                     onChange={this.handleChange}
+                    error={errors.preferred_platform}
                   >
+                    <option value="">Choose one</option>
                     <option value="Instagram">Instagram</option>
                     <option value="Facebook">Facebook</option>
                     <option value="Tiktok">Tiktok</option>
                     <option value="Twiter">Twiter</option>
                   </select>
+                  {errors && (
+                    <div className="text-[0.7rem] lg:text-sm text-red-600">
+                      {errors.preferred_platform}
+                    </div>
+                  )}
                 </div>
                 <div className="loriara platf">
                   <label>Secondary Platform</label>
@@ -139,6 +162,7 @@ export default class Brandreg extends Component {
                     id=""
                     onChange={this.handleChange}
                   >
+                    <option value="Choose one">Choose one</option>
                     <option value="Instagram">Instagram</option>
                     <option value="Facebook">Facebook</option>
                     <option value="Tiktok">Tiktok</option>
@@ -149,7 +173,12 @@ export default class Brandreg extends Component {
             </div>
             <div className="loriara">
               <label>Target Audience</label>
-              <select name="target_audience" id="" onChange={this.handleChange}>
+              <select
+                name="target_audience"
+                id=""
+                className="brandreggender"
+                onChange={this.handleChange}
+              >
                 <option value="female">Female</option>
                 <option value="male">Male</option>
                 <option value="both">Both</option>
@@ -157,7 +186,9 @@ export default class Brandreg extends Component {
             </div>
 
             <div>
-              <label>Target age range</label>
+              <label>
+                Target age range <span>(if applicable)</span>
+              </label>
               <ul className="checkindbox">
                 <li>
                   <input
@@ -253,8 +284,15 @@ export default class Brandreg extends Component {
             </div>
 
             <div className="loriara">
-              <label className="chosen">Choose Category</label>
-              <select id="" name="category" onChange={this.handleChange}>
+              <label className="chosen">
+                Choose Category <span>*</span>
+              </label>
+              <select
+                id=""
+                name="category"
+                onChange={this.handleChange}
+                className="brandregcategory"
+              >
                 <option value="animals/pets">Animals/pets</option>
                 <option value="arts/entertainment">Arts/entertainment</option>
                 <option value="beauty">Beauty</option>
@@ -274,7 +312,12 @@ export default class Brandreg extends Component {
 
             <div className="loriara">
               <label>chosen type of influencer</label>
-              <select name="influencer_type" id="" onChange={this.handleChange}>
+              <select
+                name="influencer_type"
+                id=""
+                className="brandreginfluencertype"
+                onChange={this.handleChange}
+              >
                 <option value="Nano influencer (1k - 10k following)">
                   Nano influencer (1k - 10k following)
                 </option>
@@ -293,16 +336,24 @@ export default class Brandreg extends Component {
             <div className="loriara">
               <label>Your budget range</label>
               <input
+                className="brandregbudget"
                 type="text"
+                value={this.state.application.budget_range}
                 name="budget_range"
                 onChange={this.handleChange}
+                error={errors.budget_range}
               />
+              {errors && (
+                <div className="text-[0.7rem] lg:text-sm text-red-600">
+                  {errors.budget_range}
+                </div>
+              )}
+            </div>
+            <div className="brandform-btn">
+              <button className="brandregbtn back-brandregbtn">Back</button>
+              <button className="brandregbtn">Submit my application</button>
             </div>
           </form>
-          <div className="brandform-btn">
-            <button className="brandregbtn back-brandregbtn">Back</button>
-            <button className="brandregbtn">Submit my application </button>
-          </div>
         </section>
       </div>
     );
