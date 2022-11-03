@@ -14,6 +14,7 @@ import EmailVerification from "./pages/EmailVerification";
 import Error404 from "./pages/Error404";
 import ChooseAccount from "./pages/ChooseAccount";
 import BlogHome from "./blog/Blog";
+import Brandreg from "./pages/Brandreg";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/verify-email" element={<EmailVerification />} />
           <Route path="/choose-account" element={<ChooseAccount />} />
           <Route path="/blog/home" element={<BlogHome />} />
+          <Route path="/register/brand" element={<Brandreg />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </Router>

@@ -13,8 +13,7 @@ const Error404 = () => {
             Oops! Something went wrong
           </h1>
           <span className="text-start  lg:w-[25rem] mt-3">
-            Sorry, the page you were looking for was not found at this time. Try
-            another page or return to Home.
+            Sorry, our website is still under construction. Return to Home.
           </span>
 
           <Link to="/">

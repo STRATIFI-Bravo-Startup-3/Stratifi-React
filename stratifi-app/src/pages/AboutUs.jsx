@@ -12,7 +12,7 @@ const AboutUs = () => {
     <div>
       <NavBar />
 
-      <div className="py-16 border-t-2 border-slate-100">
+      <div className="py-16 border-t-2 border-slate-200">
         <section className="px-20 grid grid-cols-1 items-center lg:gap-4 lg:flex lg:justify-items-center p-8 gap-8 animate__animated animate__zoomIn">
           <div className=" w-[15rem] lg:ml-48 mx-auto bg-[#FF8F50] rounded-full ">
             <img className="" src={about1} alt="" />

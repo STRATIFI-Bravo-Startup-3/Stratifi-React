@@ -43,7 +43,7 @@ class Footer extends Component {
     {
       id: 5,
       name: "Blog",
-      link: "/blog",
+      link: "/blog/home",
     },
   ];
 
