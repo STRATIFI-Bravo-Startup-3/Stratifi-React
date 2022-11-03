@@ -20,7 +20,6 @@ export default class Brandreg extends Component {
 
   schema = {
     description: Joi.string().required().label("description"),
-<<<<<<< Updated upstream
     website: Joi.label("website"),
     // preferred_platform: Joi.required().label("preferred_platform"),
     // secondary_platform: Joi.required().label("secondary_platform"),
@@ -29,16 +28,6 @@ export default class Brandreg extends Component {
     // category: Joi.required().label("category"),
     // influencer_type: Joi.label("influencer_type"),
     budget_range: Joi.number().label("budget_range"),
-=======
-    website: Joi.string().required().label("website"),
-    preferred_platform: Joi.required().label("preferred_platform"),
-    secondary_platform: Joi.required().label("secondary_platform"),
-    target_audience: Joi.required().label("target_audience"),
-    target_age: Joi.required().label("target_age"),
-    category: Joi.required().label("category"),
-    influencer_type: Joi.required().label("influencer_type"),
-    budget_range: Joi.required().number().label("budget_range"),
->>>>>>> Stashed changes
   };
 
   validateOnChange = ({ name, value }) => {
