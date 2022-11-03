@@ -59,7 +59,7 @@ const AboutUs = () => {
           <div className="mx-auto lg:ml-48 lg:w-2/5 w-full flex flex-col gap-6">
             <h1 className="mx-auto lg:mx-0 text-xl font-bold">Our Goals</h1>
             <span className="text-slate-600  w-full text-center lg:text-left ">
-              <h1 className="text-left">it is our goal to:</h1>
+              <h1 className="text-left font-semibold">It's our goal to:</h1>
               <ul className="list-disc ml-[1rem] text-left lg:ml-5 w-full flex flex-col gap-3 lg:gap-0">
                 <li className="">
                   increase brand recognition and strengthen brand image
