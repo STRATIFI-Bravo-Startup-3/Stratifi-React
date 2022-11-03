@@ -24,3 +24,90 @@
 .accordion-content {
   transition: max-height 0.3s ease-out, padding 0.3s ease;
 }
+<<<<<<< Updated upstream
+=======
+
+.brandregcontainer {
+  box-sizing: border-box;
+  width: 100vw;
+  background-color: rgba(173, 110, 192, 1);
+}
+.brandregcontent {
+  width: 70vw;
+  margin-inline: auto;
+  padding-inline: 4em;
+  background-color: #fff;
+}
+
+.brandregheading {
+  text-align: center;
+  padding-block: 2em;
+}
+
+.brandregheading p {
+  font-size: 0.7rem;
+}
+.loriara {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+.platf {
+  width: 25vw;
+}
+.platformchoice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brandregdescribe {
+  height: 20vh;
+  margin-bottom: 2em;
+}
+
+.chosen {
+  padding-block: 1.5em;
+}
+
+.checkindbox {
+  margin-top: 1em;
+}
+
+.checkindbox input {
+  border-radius: 50%;
+}
+
+.checkindbox li {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.brandform-btn {
+  justify-content: space-between;
+  display: flex;
+  gap: 2em;
+  padding-bottom: 2em;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+.brandregbtn {
+  background-color: #cc5500;
+  padding: 1em 3em;
+}
+
+.brandregbtn:hover {
+  cursor: pointer;
+}
+
+.back-brandregbtn {
+  background-color: #f3ceb4;
+}
+
+option {
+  background-color: #ddd9d9;
+}
+>>>>>>> Stashed changes
