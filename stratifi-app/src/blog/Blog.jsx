@@ -37,7 +37,7 @@ class BlogHome extends Component {
       <div className="">
         <NavBar />
         <div className="h-[30rem] flex flex-col items-center justify-center border-t-2 border-slate-200">
-          <h1 className="italic font-semibold tracking-wide text-slate-800">
+          <h1 className="italic font-semibold tracking-wide text-slate-800 animate__animated animate__backInUp">
             No Blog Posts yet, check back soon.
           </h1>
         </div>

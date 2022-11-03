@@ -7,7 +7,7 @@ const Error404 = () => {
     <div>
       <NavBar />
       <div className="h-screen bg-[#AD6EC0] flex flex-col items-center border-b-2 border-gray-100 text-white px-6 gap-2">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 animate__animated animate__zoomInDown">
           <h1 className="font-bold text-4xl lg:mt-[15rem] mt-[10rem]">404</h1>
           <h1 className="text-start font-bold text-xl">
             Oops! Something went wrong

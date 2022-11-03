@@ -1,5 +1,6 @@
 import about1 from "../images/about1.png";
 import about2 from "../images/about2.png";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -14,9 +15,11 @@ const About = () => {
             We are an influencer marketplace. We connect brands with influencers
             from various niches to meet your marketing needs
           </span>
-          <button className="w-32 lg:mx-0 mx-auto my-1 text-white px-4 py-2 bg-[#FF8F50] hover:bg-[#FF7A30] active:bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
-            Learn more
-          </button>
+          <Link to="/about-us">
+            <button className=" w-32 lg:mx-0 mx-auto my-1 text-white px-4 py-2 bg-[#FF8F50] hover:bg-[#FF7A30] active:bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
+              Learn more
+            </button>
+          </Link>
         </div>
       </section>
       <section className="px-20 grid grid-cols-1 items-center lg:gap-4 lg:flex lg:flex-row-reverse lg:justify-items-center p-8 gap-8">
@@ -34,9 +37,11 @@ const About = () => {
             opinions about your products and services with their audience to
             boost your brand exposure and grow your sales.
           </span>
-          <button className=" w-32 lg:mx-0 mx-auto my-1 text-white px-4 py-2 bg-[#FF8F50] hover:bg-[#FF7A30] active:bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
-            Learn more
-          </button>
+          <Link to="/about-us">
+            <button className=" w-32 lg:mx-0 mx-auto my-1 text-white px-4 py-2 bg-[#FF8F50] hover:bg-[#FF7A30] active:bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
+              Learn more
+            </button>
+          </Link>
         </div>
       </section>
     </div>

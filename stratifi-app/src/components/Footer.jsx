@@ -51,18 +51,22 @@ class Footer extends Component {
     {
       id: 0,
       name: "Information",
+      link: "/info",
     },
     {
       id: 1,
       name: "Privacy Policy",
+      link: "/info",
     },
     {
       id: 2,
       name: "FAQs",
+      link: "/info",
     },
     {
       id: 3,
       name: "Community",
+      link: "/info",
     },
   ];
 
@@ -169,7 +173,10 @@ class Footer extends Component {
               <h1 className="font-bold uppercase my-1">Support</h1>
               {this.support.map((item) => (
                 <h2 key={item.id} className="my-1">
-                  <Link className="hover:text-slate-300 active:text-slate-400">
+                  <Link
+                    className="hover:text-slate-300 active:text-slate-400"
+                    to={item.link}
+                  >
                     {item.name}
                   </Link>
                 </h2>
