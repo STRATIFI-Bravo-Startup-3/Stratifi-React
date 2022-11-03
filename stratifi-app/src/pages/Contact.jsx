@@ -107,12 +107,12 @@ const Contact = () => {
         <form
           id="contact_form"
           onSubmit={handleSubmit}
-          className="flex flex-col items-center gap-8 h-full w-full"
+          className="flex flex-col items-center gap-8 h-full w-full animate__animated animate__flipInX "
         >
           <div className="font-bold text-4xl text-white mt-[4rem] lg:mt-[8rem]">
             <h1>Contact Us</h1>
           </div>
-          <div className=" w-5/6 lg:w-[40rem]  flex flex-col gap-4 text-black">
+          <div className=" w-5/6 lg:w-[40rem]  flex flex-col gap-4 text-black ">
             <Input
               type="text"
               placeholder="Full name"

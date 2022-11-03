@@ -9,7 +9,7 @@ const NavBar = () => {
     {
       id: 0,
       item: "About Us",
-      link: `/about us`,
+      link: `/about-us`,
     },
     {
       id: 1,
@@ -36,10 +36,13 @@ const NavBar = () => {
   return (
     <header className=" bg-[#FFFFFF]">
       <div className="flex items-center lg:px-[5rem] p-1  text-slate-600 justify-between xl:mx-auto xl:max-w-7xl max-w-full flex-wrap w-full">
-        <div className="ml-16 lg:ml-10 flex justify-center w-[3rem]">
-          <img className="" src={logo} alt="" srcSet="" />
-          <span className="font-black text-lg my-auto">STRATIFI.NG</span>
-        </div>
+        <Link to="/">
+          {" "}
+          <div className="ml-16 lg:ml-10 flex justify-center w-[3rem]">
+            <img className="" src={logo} alt="" srcSet="" />
+            <span className="font-black text-lg my-auto">STRATIFI.NG</span>
+          </div>
+        </Link>
         <HiMenu
           className={`${
             open ? "rotate-90 ease-in delay-150" : ""

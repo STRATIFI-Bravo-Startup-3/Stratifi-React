@@ -5,6 +5,7 @@ import Input from "../components/common/input";
 import Joi from "joi-browser";
 import backgroundfooter from "../images/backgroundfooter.svg";
 import logo from "../images/logo.png";
+import GoHome from "../components/common/GoHome";
 
 class Register extends Component {
   state = {
@@ -86,6 +87,9 @@ class Register extends Component {
         className="static flex flex-col"
         style={{ backgroundImage: `url(${backgroundfooter})` }}
       >
+        <div className="absolute top-10 left-10">
+          <GoHome />
+        </div>
         <div className="flex justify-center  h-screen">
           <div className="flex flex-col gap-4 justify-center my-auto bg-white w-4/5 lg:w-6/12 h-auto rounded-xl shadow-2xl animate__animated animate__flipInX">
             <div className="flex flex-col mx-auto mt-5">

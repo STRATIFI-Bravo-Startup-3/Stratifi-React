@@ -1,8 +1,10 @@
 import React from "react";
 import axios from "axios";
 import fileDownload from "js-file-download";
+
 import { saveAs } from "file-saver";
 var FileSaver = require("file-saver");
+
 // a basic form
 const SimpleFormDownload = ({
   status,
@@ -28,7 +30,6 @@ const SimpleFormDownload = ({
       (await onSubmitted({
         EMAIL: input.value,
       }));
-    FileSaver.saveAs("https://httpbin.org/image", "image.jpg");
   };
 
   return (
@@ -41,10 +42,10 @@ const SimpleFormDownload = ({
           placeholder="Enter your email address"
         />
       </div>
-      <div className="flex flex-col items-start">
+      <div className="flex flex-col items-center">
         {status === "sending" && (
           <div
-            className="text-sm w-8/12 mx-auto mb-3"
+            className="text-sm w-8/12 mx-auto lg:ml-[8rem] mb-3"
             style={{ color: "#16a34a" }}
           >
             sending...
@@ -53,13 +54,13 @@ const SimpleFormDownload = ({
         {status === "error" && (
           <div
             style={{ color: "#b91c1c" }}
-            className="text-sm w-8/12 mx-auto mb-3"
+            className="text-sm w-8/12 mx-auto mb-3 lg:ml-[8rem]"
             dangerouslySetInnerHTML={{ __html: message }}
           />
         )}
         {status === "success" && (
           <div
-            className="text-sm w-8/12 mx-auto mb-3"
+            className="text-sm w-8/12 mx-auto lg:ml-[8rem]  mb-3"
             style={{ color: "#16a34a" }}
             dangerouslySetInnerHTML={{ __html: message }}
           />
@@ -68,7 +69,7 @@ const SimpleFormDownload = ({
           onClick={submit}
           className="mx-auto bg-[#FF8F50] text-white h-12 w-[16rem] rounded-xl text-base hover:bg-orange-600 active:bg-orange-700"
         >
-          Download Now
+          Submit
         </button>
       </div>
     </div>

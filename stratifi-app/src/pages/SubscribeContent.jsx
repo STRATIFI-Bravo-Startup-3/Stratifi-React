@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "../index.css";
 import { Link } from "react-router-dom";
-import Input from "../components/common/input";
 import Joi from "joi-browser";
-import backgroundfooter from "../images/backgroundfooter.svg";
 import MailchimpDownload from "../components/mailchimpDownload";
 import logo from "../images/logo.png";
+import subscribeBackground from "../images/subscribe-background.png";
+import GoHome from "../components/common/GoHome";
 
 class SubscribeContent extends Component {
   state = {
@@ -70,22 +70,26 @@ class SubscribeContent extends Component {
 
     return (
       <div
-        style={{ backgroundImage: `url(${backgroundfooter})` }}
-        className="flex justify-center  h-screen"
+        style={{ backgroundImage: `url(${subscribeBackground})` }}
+        className="flex justify-center  h-screen bg-cover"
       >
+        <div className="absolute top-10 left-10">
+          <GoHome />
+        </div>
         <div className="flex flex-col gap-4 justify-center my-auto bg-white w-4/5 lg:w-5/12 h-auto rounded-xl shadow-2xl">
           <div className="flex flex-col mx-auto mt-5">
             <h1 className=" mx-auto text-xl lg:text-2xl font-bold text-gray-800">
               Hey there!
             </h1>
-            <span className="mx-auto text-center text-gray-800 text-sm lg:text-base lg:w-full w-10/12">
-              Enter your email below to download your free package
+            <span className="mx-auto my-3 text-center text-slate-600 text-sm lg:text-[.9rem] lg:w-4/5 w-10/12">
+              Enter your email below to subscribe to our newsletter and download
+              your free package
             </span>
           </div>
           <MailchimpDownload url={url} />
 
-          <div className="flex flex-col mx-auto mb-5">
-            <span className="text-center text-gray-800 text-sm">
+          <div className="flex flex-col mx-auto my-2">
+            <span className="text-center text-slate-600 text-sm">
               Don't have an account yet?{" "}
               <Link
                 className="underline underline-offset-2 text-sm"

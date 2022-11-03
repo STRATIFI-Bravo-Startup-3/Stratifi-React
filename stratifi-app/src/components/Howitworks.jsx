@@ -10,7 +10,24 @@ function Box({ children, ...props }) {
 }
 
 const Howitworks = () => {
-  const items = ["Sign Up", "Choose a Niche", "Get Paired"];
+  const itemList = [
+    {
+      id: 0,
+      title: "Sign Up",
+      content: "Create an account for free, it’s simple and easy",
+    },
+    {
+      id: 1,
+      title: "Choose a Category",
+      content: "Make a choice, choose what aligns with your target and goals",
+    },
+    {
+      id: 0,
+      title: "Get Paired",
+      content: "Get paired in with a verified Influencer",
+    },
+  ];
+  const items = ["Sign Up", "", "Get Paired"];
   const content = [
     "Sign up is free,  join us to get amazing offers and premium service ",
     "Make a choice, choose what fits your plan",
@@ -23,17 +40,20 @@ const Howitworks = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:flex gap-12 lg:gap-[15rem] text-white">
-        {items.map((item) => (
+        {itemList.map((item) => (
           <div
             className="flex flex-col items-center gap-4 w-full mb-8 "
-            key={item}
+            key={item.id}
           >
             <img src={how1} alt="" className="w-[3rem] lg:w-[4rem]" />
             <div
               style={{ backgroundImage: `url(${backgroundfooter})` }}
-              className="rounded-full bg-[#FF8F50] w-24 h-20 flex flex-col items-center shadow-sm shadow-slate-600"
+              className="rounded-3xl bg-[#AD6EC0] w-[12rem] h-[8rem] flex flex-col gap-2 text-sm text-slate-800 items-center shadow-sm shadow-slate-600"
             >
-              <h1 className="my-auto text-center">{item}</h1>
+              <h1 className=" text-center mt-4 text-black font-bold">
+                {item.title}
+              </h1>
+              <span className="text-center px-4">{item.content}</span>
             </div>
           </div>
         ))}
