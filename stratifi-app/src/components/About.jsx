@@ -16,7 +16,7 @@ const About = () => {
             from various niches to meet your marketing needs
           </span>
           <Link to="/about-us">
-            <button className=" w-32 lg:mx-0 mx-auto my-1 text-white px-4 py-2 bg-[#FF8F50] hover:bg-[#FF7A30] active:bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
+            <button className=" w-32 lg:mx-0 mx-auto my-1 text-white px-4 py-2 active:bg-[#FF8F50] hover:bg-[#FF7A30] bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
               Learn more
             </button>
           </Link>
@@ -38,7 +38,7 @@ const About = () => {
             boost your brand exposure and grow your sales.
           </span>
           <Link to="/about-us">
-            <button className=" w-32 lg:mx-0 mx-auto my-1 text-white px-4 py-2 bg-[#FF8F50] hover:bg-[#FF7A30] active:bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
+            <button className=" w-32 lg:mx-0 mx-auto my-1 text-white px-4 py-2 active:bg-[#FF8F50] hover:bg-[#FF7A30] bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
               Learn more
             </button>
           </Link>

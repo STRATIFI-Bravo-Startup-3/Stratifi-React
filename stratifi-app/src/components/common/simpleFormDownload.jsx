@@ -67,7 +67,7 @@ const SimpleFormDownload = ({
         )}
         <button
           onClick={submit}
-          className="mx-auto bg-[#FF8F50] text-white h-12 w-[16rem] rounded-xl text-base hover:bg-orange-600 active:bg-orange-700"
+          className="mx-auto active:bg-[#FF8F50] text-white h-12 w-[16rem] rounded-xl text-base hover:bg-[#FF7A30] bg-[#FF6610]"
         >
           Submit
         </button>

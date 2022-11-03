@@ -51,7 +51,7 @@ class Footer extends Component {
     {
       id: 0,
       name: "Information",
-      link: "/info",
+      link: "/subscribe-content",
     },
     {
       id: 1,
