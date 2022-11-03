@@ -18,7 +18,7 @@ const AboutUs = () => {
             <img className="" src={about1} alt="" />
           </div>
           <div className="mx-auto lg:w-2/5 w-full flex flex-col gap-6">
-            <h1 className="mx-auto lg:mx-0 text-xl font-bold">About us</h1>
+            <h1 className="mx-auto lg:mx-0 text-xl font-bold">Our Services</h1>
             <span className="text-slate-600 lg:w-4/5 w-full text-center lg:text-left">
               We are an influencer marketplace. We connect brands with
               influencers from various niches to meet your marketing needs

@@ -18,26 +18,32 @@ class Footer extends Component {
     {
       id: 0,
       name: "Home",
+      link: "/",
     },
     {
       id: 1,
       name: "About us",
+      link: "/about-us",
     },
     {
       id: 2,
       name: "Contact",
+      link: "/contact-us",
     },
     {
       id: 3,
       name: "Log In",
+      link: "/login",
     },
     {
       id: 4,
       name: "Sign Up",
+      link: "register",
     },
     {
       id: 5,
       name: "Blog",
+      link: "/blog",
     },
   ];
 
@@ -150,7 +156,7 @@ class Footer extends Component {
                 <h2 key={item.id} className="my-1">
                   <Link
                     className="hover:text-slate-300 active:text-slate-400"
-                    to={this.links.map((link, index) => link)}
+                    to={item.link}
                   >
                     {item.name}
                   </Link>
@@ -163,10 +169,7 @@ class Footer extends Component {
               <h1 className="font-bold uppercase my-1">Support</h1>
               {this.support.map((item) => (
                 <h2 key={item.id} className="my-1">
-                  <Link
-                    className="hover:text-slate-300 active:text-slate-400"
-                    to="/"
-                  >
+                  <Link className="hover:text-slate-300 active:text-slate-400">
                     {item.name}
                   </Link>
                 </h2>
