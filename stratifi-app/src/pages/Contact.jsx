@@ -102,7 +102,7 @@ const Contact = () => {
       <NavBar />
       <div
         style={{ backgroundImage: `url(${imageUrl})` }}
-        className="h-screen relative "
+        className="h-screen relative bg-cover"
       >
         <form
           id="contact_form"
