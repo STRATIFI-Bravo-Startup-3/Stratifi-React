@@ -19,12 +19,12 @@ const Howitworks = () => {
     {
       id: 1,
       title: "Choose a Category",
-      content: "Make a choice, choose what aligns with your target and goals",
+      content: "Choose what aligns with your target and goals",
     },
     {
       id: 0,
       title: "Get Paired",
-      content: "Get paired in with a verified Influencer",
+      content: "Get paired instantly with a verified Influencer",
     },
   ];
   const items = ["Sign Up", "", "Get Paired"];
