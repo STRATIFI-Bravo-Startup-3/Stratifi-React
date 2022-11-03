@@ -10,13 +10,15 @@ const About = () => {
           <img className="" src={about1} alt="" />
         </div>
         <div className="mx-auto lg:w-2/5 w-full flex flex-col gap-6">
-          <h1 className="mx-auto lg:mx-0 text-xl font-bold">About us</h1>
+          <h1 className="mx-auto lg:mx-0 text-xl font-bold text-center lg:text-start">
+            About us
+          </h1>
           <span className="text-slate-600 lg:w-4/5 w-full text-center lg:text-left">
             We are an influencer marketplace. We connect brands with influencers
             from various niches to meet your marketing needs
           </span>
-          <Link to="/about-us">
-            <button className=" w-32 lg:mx-0 mx-auto my-1 text-white px-4 py-2 active:bg-[#FF8F50] hover:bg-[#FF7A30] bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
+          <Link to="/about-us" className="lg:mx-0 mx-auto">
+            <button className=" w-32  my-1 text-white px-4 py-2 active:bg-[#FF8F50] hover:bg-[#FF7A30] bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
               Learn more
             </button>
           </Link>
@@ -27,7 +29,7 @@ const About = () => {
           <img className="" src={about2} alt="" />
         </div>
         <div className="mx-auto lg:ml-48 lg:w-2/5 w-full flex flex-col gap-6">
-          <h1 className="mx-auto lg:mx-0 text-xl font-bold">
+          <h1 className="mx-auto text-center lg:text-start lg:mx-0 text-xl font-bold">
             What is influencer marketing?
           </h1>
           <span className="text-slate-600 lg:w-4/5 w-full text-center lg:text-left">
@@ -37,8 +39,8 @@ const About = () => {
             opinions about your products and services with their audience to
             boost your brand exposure and grow your sales.
           </span>
-          <Link to="/about-us">
-            <button className=" w-32 lg:mx-0 mx-auto my-1 text-white px-4 py-2 active:bg-[#FF8F50] hover:bg-[#FF7A30] bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
+          <Link to="/about-us" className="lg:mx-0 mx-auto">
+            <button className=" w-32 l my-1 text-white px-4 py-2 active:bg-[#FF8F50] hover:bg-[#FF7A30] bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
               Learn more
             </button>
           </Link>
