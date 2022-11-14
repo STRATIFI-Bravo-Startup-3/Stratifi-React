@@ -1,13 +1,7 @@
 import React from "react";
 import how1 from "../images/how1.png";
-import how2 from "../images/how2.png";
-import how3 from "../images/how3.png";
 import backgroundfooter from "../images/backgroundfooter.svg";
 import { Link } from "react-router-dom";
-
-function Box({ children, ...props }) {
-  return <div {...props}>{children}</div>;
-}
 
 const Howitworks = () => {
   const itemList = [
@@ -22,17 +16,12 @@ const Howitworks = () => {
       content: "Choose what aligns with your target and goals",
     },
     {
-      id: 0,
+      id: 2,
       title: "Get Paired",
       content: "Get paired instantly with a verified Influencer",
     },
   ];
-  const items = ["Sign Up", "", "Get Paired"];
-  const content = [
-    "Sign up is free,  join us to get amazing offers and premium service ",
-    "Make a choice, choose what fits your plan",
-    "",
-  ];
+
   return (
     <section className=" items-center flex flex-col animate__animated  animate__fadeInLeft">
       <div className="flex flex-col items-center font-bold text-2xl lg:text-3xl py-12">

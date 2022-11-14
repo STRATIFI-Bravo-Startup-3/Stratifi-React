@@ -14,7 +14,10 @@ import EmailVerification from "./pages/EmailVerification";
 import Error404 from "./pages/Error404";
 import ChooseAccount from "./pages/ChooseAccount";
 import BlogHome from "./blog/Blog";
-import Brandreg from "./pages/Brandreg";
+import BrandInformation from "./pages/BrandInformation";
+import InfluencerInformation from "./pages/InfluencerInformation";
+import InfluencerInformation2 from "./pages/InfluencerInformation2";
+import ResetPassword from "./pages/ResetPassword";
 
 function App() {
   return (
@@ -32,8 +35,18 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/verify-email" element={<EmailVerification />} />
           <Route path="/choose-account" element={<ChooseAccount />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/blog/home" element={<BlogHome />} />
-          <Route path="/register/brand" element={<Brandreg />} />
+          <Route path="/register/brand" element={<BrandInformation />} />
+          <Route
+            path="/register/influencer"
+            element={<InfluencerInformation />}
+          />
+          <Route
+            path="/register/influencer/last-step"
+            element={<InfluencerInformation2 />}
+          />
+
           <Route path="*" element={<Error404 />} />
         </Routes>
       </Router>

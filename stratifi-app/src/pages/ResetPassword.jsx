@@ -1,26 +1,20 @@
 import React, { Component } from "react";
-import "../index.css";
-import { Link } from "react-router-dom";
-import Input from "../components/common/input";
-import Joi from "joi-browser";
 import backgroundfooter from "../images/backgroundfooter.svg";
+import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 import GoHome from "../components/common/GoHome";
+import Input from "../components/common/input";
+import Joi from "joi-browser";
 
-class Login extends Component {
+class ResetPassword extends Component {
   state = {
     account: {
-      fullname: "",
-      username: "",
-      password: "",
       email: "",
-      repeat_password: "",
     },
     errors: {},
   };
 
   schema = {
-    password: Joi.string().required().label("Password"),
     email: Joi.string().email().required().label("Email"),
   };
 
@@ -79,58 +73,37 @@ class Login extends Component {
           <GoHome />
         </div>
         <div className="flex flex-col gap-4 justify-center my-auto bg-white w-4/5 lg:w-5/12 h-auto rounded-xl shadow-2xl animate__animated animate__flipInX">
-          <div className="flex flex-col mx-auto mt-5">
+          <div className="flex flex-col mx-auto mt-5 gap-2">
             <h1 className=" mx-auto text-xl lg:text-2xl font-bold text-gray-800">
-              Sign In
+              Password Reset
             </h1>
             <span className="text-center text-gray-800 text-sm lg:text-base">
-              Log into your account to continue
+              Enter your email to continue.
             </span>
-          </div>
-          <form
-            onSubmit={this.handleSubmit}
-            className="flex
-            flex-col
-            gap-4
-            justify-center"
-          >
-            <div className="flex gap-4 flex-col mx-auto w-11/12 lg:w-3/4">
+            <form
+              className="flex flex-col gap-6 lg:w-[20rem] w-[18rem] mx-auto "
+              onSubmit={this.handleSubmit}
+            >
               <Input
-                value={account.email}
                 onChange={this.handleChange}
+                error={errors.email}
+                value={account.email}
+                autoFocus
                 name="email"
                 placeholder="Email Address"
                 type="email"
-                error={errors.email}
               />
-              <Input
-                value={account.password}
-                onChange={this.handleChange}
-                name="password"
-                placeholder="Password"
-                type="password"
-                error={errors.password}
-              />
-            </div>
-            <div className="flex flex-col">
-              <button className="mx-auto active:bg-[#FF8F50] text-white h-12 w-[16rem] rounded-xl text-base hover:bg-[#FF7A30] bg-[#FF6610] ">
-                Log in
+              <button className="mx-auto active:bg-[#FF8F50] text-white h-12 w-11/12 lg:w-3/4 rounded-xl text-base hover:bg-[#FF7A30] bg-[#FF6610] ">
+                Continue
               </button>
-            </div>
-          </form>
-          <div className="flex flex-col mx-auto mb-5">
-            <span className="text-center text-gray-800 text-sm mb-5">
-              <Link className="underline underline-offset-2 text-sm" to="">
-                Forgot Password?{" "}
-              </Link>
-            </span>
+            </form>
+          </div>
+
+          <div className="flex flex-col gap-2 mx-auto mb-5">
             <span className="text-center text-gray-800 text-sm">
-              Don't have an account yet?{" "}
-              <Link
-                className="underline underline-offset-2 text-sm"
-                to="/register"
-              >
-                Sign Up
+              Didn't recieve any email?{" "}
+              <Link className="underline underline-offset-2 text-sm">
+                Resend email
               </Link>
             </span>
             <div className="items-center flex flex-col  ">
@@ -146,4 +119,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default ResetPassword;
