@@ -122,7 +122,7 @@ class InfluencerInformation2 extends Component {
               name="influencer_level"
               value={account.influencer_level}
               onChange={this.handleChange}
-              errors={errors.influencer_level}
+              error={errors.influencer_level}
               label="What level of influencer are you?"
               required="*"
             />

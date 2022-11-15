@@ -6,10 +6,13 @@ import contactBackgroundSmall from "../images/contact-background-sm.png";
 import useWindowWidth from "../components/common/windowWidth";
 import { useState } from "react";
 import Input from "../components/common/input";
+import FormInput from "../components/common/FormInput";
 import Button from "../components/common/Button";
 import Joi from "joi-browser";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
+import { HiOutlineSupport } from "react-icons/hi";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 const Contact = () => {
   const imageUrl =
@@ -21,9 +24,10 @@ const Contact = () => {
 
   const [account, setAccount] = useState({});
   const [errors, setErrors] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
 
   const schema = {
-    fullname: Joi.string().min(2).required().label("Password"),
+    fullname: Joi.string().min(2).required().label("Name"),
     email: Joi.string().email().required().label("Email"),
     phone: Joi.number().required().label("Phone"),
     message: Joi.string().min(10).required().label("Message"),
@@ -71,11 +75,19 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsLoading(true);
+
     const error = validate();
-    setErrors({ errors: error || {} });
-    if (error) return;
-    const templateParams = { ...account };
-    console.log(templateParams);
+
+    setErrors(error || {});
+    // console.log(errors);
+    if (error) {
+      setIsLoading(false);
+      return;
+    }
+
+    // const templateParams = { ...account };
+    // console.log(templateParams);
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, "#contact_form", USER_ID).then(
       (response) => {
@@ -84,6 +96,7 @@ const Contact = () => {
           icon: "success",
           title: "Message Sent Successfully",
         });
+        setIsLoading(false);
       },
       (err) => {
         console.log("FAILED!", err);
@@ -93,8 +106,27 @@ const Contact = () => {
           text: error.text,
           confirmButtonColor: "#AD6EC0",
         });
+        setIsLoading(false);
       }
     );
+  };
+
+  const renderButton = () => {
+    if (isLoading)
+      return (
+        <button className="mx-auto active:bg-[#FF8F50] text-white h-12 w-[16rem] rounded-xl text-base hover:bg-[#FF7A30] bg-[#FF6610] ">
+          <div className="flex gap-2 justify-center items-center">
+            <AiOutlineLoading3Quarters className="animate-spin" /> Sending...
+          </div>
+        </button>
+      );
+    else {
+      return (
+        <button className="mx-auto active:bg-[#FF8F50] text-white h-12 w-[16rem] rounded-xl text-base hover:bg-[#FF7A30] bg-[#FF6610] ">
+          Send Message
+        </button>
+      );
+    }
   };
 
   return (
@@ -112,44 +144,69 @@ const Contact = () => {
           <div className="font-bold text-4xl text-white mt-[4rem] lg:mt-[8rem]">
             <h1>Contact Us</h1>
           </div>
-          <div className=" w-5/6 lg:w-[40rem]  flex flex-col gap-4 text-black ">
-            <Input
-              type="text"
-              placeholder="Full name"
-              onChange={handleChange}
-              name="fullname"
-              error={errors.fullname}
-            />
-            <div className="grid grid-cols-1 gap-4 lg:gap-0 lg:grid-cols-2 lg:mx-auto lg:w-[34rem]">
-              <Input
+          <div className=" w-5/6 md:w-[40rem]  flex flex-col gap-4 text-black ">
+            <div className="w-full flex flex-col">
+              <input
                 type="text"
-                placeholder="Email address"
+                placeholder="Full name"
                 onChange={handleChange}
-                name="email"
-                error={errors.email}
+                name="fullname"
+                className="mx-auto w-11/12 rounded-lg lg:w-[30rem]"
               />
-              <Input
-                type="text"
-                placeholder="Phone number"
-                onChange={handleChange}
-                name="phone"
-                error={errors.phone}
-              />
+              {errors && (
+                <div className="lg:ml-20 ml-6 text-[0.7rem] lg:text-[0.8rem] text-red-600">
+                  {errors.fullname}
+                </div>
+              )}
             </div>
-            <textarea
-              type="textarea"
-              placeholder="Message"
-              name="message"
-              className="w-11/12 lg:w-[30rem] h-[10rem] mx-auto rounded"
-              onChange={handleChange}
-            />
-            {errors && (
-              <div className="lg:ml-20 ml-5 text-[0.7rem] lg:text-sm text-red-600">
-                {errors.message}
+
+            <div className="grid w-11/12 mx-auto grid-cols-1 gap-4 lg:grid-cols-2 lg:mx-auto lg:w-[30rem]">
+              <div className="flex flex-col">
+                <input
+                  type="text"
+                  placeholder="Email address"
+                  onChange={handleChange}
+                  name="email"
+                  className="rounded-lg w-full"
+                  error={errors.email}
+                />
+                {errors && (
+                  <div className=" ml-2 text-[0.7rem] lg:text-[0.8rem] text-red-600">
+                    {errors.email}
+                  </div>
+                )}
               </div>
-            )}
+              <div className="flex flex-col">
+                <input
+                  type="text"
+                  placeholder="Phone number"
+                  onChange={handleChange}
+                  name="phone"
+                  className="rounded-lg w-full"
+                />
+                {errors && (
+                  <div className=" ml-2 text-[0.7rem] lg:text-[0.8rem] text-red-600">
+                    {errors.phone}
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <textarea
+                type="textarea"
+                placeholder="Message"
+                name="message"
+                className="w-11/12 lg:w-[30rem] h-[10rem] mx-auto rounded"
+                onChange={handleChange}
+              />
+              {errors && (
+                <div className="lg:ml-20 ml-6 text-[0.7rem] lg:text-sm text-red-600">
+                  {errors.message}
+                </div>
+              )}
+            </div>
           </div>
-          <Button label="Send Message" />
+          {renderButton()}
         </form>
       </div>
       <Footer />

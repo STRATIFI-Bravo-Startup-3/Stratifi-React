@@ -194,42 +194,50 @@ class InfluencerInformation extends Component {
             </div>
           </div> */}
 
-          <div className="grid grid-cols-1 gap-4 md:flex lg:gap-[10rem]">
-            <SelectPlatform
-              name="main_platform"
-              value={account.main_platform}
-              onChange={this.handleChange}
-              errors={errors.main_platform}
-              label="Main Publishing Platform"
-              required="*"
-            />
-            <SelectPlatform
-              name="secondary_platform"
-              value={account.secondary_platform}
-              onChange={this.handleChange}
-              errors={errors.secondary_platform}
-              label="Secondary Publishing Platform"
-              required=""
-            />
+          <div className="grid grid-cols-1 gap-4 md:flex ">
+            <div className="flex flex-col lg:w-[25rem] w-[18rem] items-center">
+              <SelectPlatform
+                name="main_platform"
+                value={account.main_platform}
+                onChange={this.handleChange}
+                errors={errors.main_platform}
+                label="Main Publishing Platform"
+                required="*"
+              />
+            </div>
+            <div className="flex flex-col lg:w-[25rem] w-[18rem] items-center">
+              <SelectPlatform
+                name="secondary_platform"
+                value={account.secondary_platform}
+                onChange={this.handleChange}
+                errors={errors.secondary_platform}
+                label="Secondary Publishing Platform"
+                required=""
+              />
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 md:flex lg:gap-[10rem]">
-            <SelectRegion
-              name="main_region"
-              value={account.main_region}
-              onChange={this.handleChange}
-              errors={errors.main_region}
-              label="Main Region of Influence"
-              required="*"
-            />
-            <SelectRegion
-              name="secondary_region"
-              value={account.secondary_region}
-              onChange={this.handleChange}
-              errors={errors.secondary_region}
-              label="Secondary Region of Influence"
-              required=""
-            />
+          <div className="grid grid-cols-1 gap-4 md:flex">
+            <div className="flex flex-col lg:w-[25rem] w-[18rem] items-center">
+              <SelectRegion
+                name="main_region"
+                value={account.main_region}
+                onChange={this.handleChange}
+                errors={errors.main_region}
+                label="Main Region of Influence"
+                required="*"
+              />
+            </div>
+            <div className="flex flex-col lg:w-[25rem] w-[18rem] items-center">
+              <SelectRegion
+                name="secondary_region"
+                value={account.secondary_region}
+                onChange={this.handleChange}
+                errors={errors.secondary_region}
+                label="Secondary Region of Influence"
+                required=""
+              />
+            </div>
           </div>
 
           <div>
