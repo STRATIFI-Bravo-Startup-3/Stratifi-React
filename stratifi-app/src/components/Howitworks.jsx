@@ -1,7 +1,4 @@
 import React from "react";
-import how1 from "../images/how1.png";
-import backgroundfooter from "../images/backgroundfooter.svg";
-import { Link } from "react-router-dom";
 
 const Howitworks = () => {
   const itemList = [
@@ -34,9 +31,9 @@ const Howitworks = () => {
             className="flex flex-col items-center gap-4 w-full mb-8 "
             key={item.id}
           >
-            <img src={how1} alt="" className="w-[3rem] lg:w-[4rem]" />
+            <img src="" alt="" className="w-[3rem] lg:w-[4rem]" />
             <div
-              style={{ backgroundImage: `url(${backgroundfooter})` }}
+              // style={{ backgroundImage: `url(${backgroundfooter})` }}
               className="rounded-3xl bg-[#AD6EC0] w-[12rem] h-[8rem] flex flex-col gap-2 text-sm text-slate-800 items-center shadow-sm shadow-slate-600"
             >
               <h1 className=" text-center mt-4 text-black font-bold">
@@ -48,11 +45,11 @@ const Howitworks = () => {
         ))}
       </div>
       <div className="flex flex-col py-10">
-        <Link to="/register">
+        <a href="/register">
           <button className="w-36 text-white active:bg-[#FF8F50] hover:bg-[#FF7A30] bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
             Sign Up for Free
           </button>
-        </Link>
+        </a>
       </div>
     </section>
   );

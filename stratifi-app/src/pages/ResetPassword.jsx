@@ -107,7 +107,7 @@ class ResetPassword extends Component {
               </Link>
             </span>
             <div className="items-center flex flex-col  ">
-              <img className="mx-auto w-[3rem]" src={logo} alt="" srcSet="" />
+              <img className="mx-auto w-[3rem]" src="" alt="" srcSet="" />
               <span className="font-black text-slate-700 text-lg my-auto">
                 STRATIFI.NG
               </span>

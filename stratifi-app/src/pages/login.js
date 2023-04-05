@@ -1,10 +1,6 @@
 import React, { Component } from "react";
-import "../index.css";
-import { Link } from "react-router-dom";
 import Input from "../components/common/input";
 import Joi from "joi-browser";
-import backgroundfooter from "../images/backgroundfooter.svg";
-import logo from "../images/logo.png";
 import GoHome from "../components/common/GoHome";
 
 class Login extends Component {
@@ -71,10 +67,7 @@ class Login extends Component {
   render() {
     const { account, errors } = this.state;
     return (
-      <div
-        style={{ backgroundImage: `url(${backgroundfooter})` }}
-        className="flex justify-center  h-screen relative"
-      >
+      <div className="flex justify-center  h-screen relative">
         <div className="absolute top-10 left-10">
           <GoHome />
         </div>
@@ -120,21 +113,21 @@ class Login extends Component {
           </form>
           <div className="flex flex-col mx-auto mb-5">
             <span className="text-center text-gray-800 text-sm mb-5">
-              <Link className="underline underline-offset-2 text-sm" to="">
+              <a className="underline underline-offset-2 text-sm" href="">
                 Forgot Password?{" "}
-              </Link>
+              </a>
             </span>
             <span className="text-center text-gray-800 text-sm">
               Don't have an account yet?{" "}
-              <Link
+              <a
                 className="underline underline-offset-2 text-sm"
-                to="/register"
+                href="/register"
               >
                 Sign Up
-              </Link>
+              </a>
             </span>
             <div className="items-center flex flex-col  ">
-              <img className="mx-auto w-[3rem]" src={logo} alt="" srcSet="" />
+              <img className="mx-auto w-[3rem]" src="" alt="" srcSet="" />
               <span className="font-black text-slate-700 text-lg my-auto">
                 STRATIFI.NG
               </span>

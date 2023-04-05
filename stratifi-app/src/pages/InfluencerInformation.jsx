@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-import backgroundfooter from "../images/backgroundfooter.svg";
 import Input from "../components/common/input";
 import Logo from "../components/common/Logo";
 import SelectPlatform from "../components/common/SelectPlatform";
 import SelectRegion from "../components/common/SelectRegion";
-import { Link } from "react-router-dom";
 
 class InfluencerInformation extends Component {
   state = {
@@ -67,7 +65,6 @@ class InfluencerInformation extends Component {
     return (
       <form
         onSubmit={this.handleSubmit}
-        style={{ backgroundImage: `url(${backgroundfooter})` }}
         className=" flex flex-col text-[0.92rem] text-slate-700"
       >
         <div className="flex flex-col bg-white lg:w-[50rem] lg:mx-auto m-[2rem] rounded-xl items-center gap-6 animate__animated animate__fadeInDown shadow-lg shadow-slate-800">
@@ -177,23 +174,6 @@ class InfluencerInformation extends Component {
             </div>
           </div>
 
-          {/* <div className="flex">
-            <div className="flex flex-col lg:w-[25rem] w-[18rem]">
-              <label htmlFor="linkedIn" className="ml-4 lg:ml-16 mb-2">
-                LinkedIn
-                <span className="text-red-600"></span>
-              </label>
-              <Input
-                onChange={this.handleChange}
-                value={account.linkedIn}
-                name="linkedIn"
-                placeholder="LinkedIn profile link"
-                type="text"
-                error={errors.linkedIn}
-              />
-            </div>
-          </div> */}
-
           <div className="grid grid-cols-1 gap-4 md:flex ">
             <div className="flex flex-col lg:w-[25rem] w-[18rem] items-center">
               <SelectPlatform
@@ -242,11 +222,9 @@ class InfluencerInformation extends Component {
 
           <div>
             <div className="flex flex-col m-6">
-              {/* <Link to="/register/influencer/last-step"> */}
               <button className="mx-auto bg-[#FF6610] text-white h-12 w-[5rem] md:w-[12rem] rounded-xl text-base hover:bg-[#FF7A30] active:bg-[#FF8F50]">
                 Next
               </button>
-              {/* </Link> */}
             </div>
           </div>
 

@@ -1,14 +1,9 @@
-import backgroundfooter from "../images/backgroundfooter.svg";
 import { Link } from "react-router-dom";
-import logo from "../images/logo.png";
 import GoHome from "../components/common/GoHome";
 
 const EmailVerification = () => {
   return (
-    <div
-      style={{ backgroundImage: `url(${backgroundfooter})` }}
-      className="flex justify-center  h-screen relative"
-    >
+    <div className="flex justify-center  h-screen relative">
       <div className="absolute top-10 left-10">
         <GoHome />
       </div>
@@ -33,7 +28,7 @@ const EmailVerification = () => {
             </Link>
           </span>
           <div className="items-center flex flex-col  ">
-            <img className="mx-auto w-[3rem]" src={logo} alt="" srcSet="" />
+            <img className="mx-auto w-[3rem]" src="" alt="" srcSet="" />
             <span className="font-black text-slate-700 text-lg my-auto">
               STRATIFI.NG
             </span>

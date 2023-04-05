@@ -2,11 +2,6 @@ import React from "react";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import About from "../components/About";
-import about1 from "../images/about1.png";
-import about3 from "../images/about3.png";
-import about4 from "../images/about4.png";
-import about5 from "../images/about5.png";
-import about2 from "../images/about2.png";
 
 const AboutUs = () => {
   return (
@@ -16,7 +11,7 @@ const AboutUs = () => {
       <div className="py-16 border-t-2 border-slate-200">
         <section className="px-20 grid grid-cols-1 items-center lg:gap-8 lg:flex lg:justify-items-center p-8 gap-8 animate__animated animate__fadeInLeft">
           <div className=" w-[15rem] lg:ml-48 mx-auto bg-[#FF8F50] rounded-full ">
-            <img className="" src={about1} alt="" />
+            <img className="" src="" alt="" />
           </div>
           <div className="mx-auto lg:w-2/5 w-full flex flex-col gap-6">
             <h1 className="mx-auto lg:mx-0 text-xl font-bold">About Us</h1>
@@ -31,7 +26,7 @@ const AboutUs = () => {
         </section>
         <section className="px-20 grid grid-cols-1 items-center lg:gap-4 lg:flex lg:flex-row-reverse lg:justify-items-center p-8 gap-8 animate__animated animate__fadeInRight">
           <div className=" w-[15rem] lg:mr-48 mx-auto bg-[#FF8F50] rounded-full">
-            <img className="" src={about3} alt="" />
+            <img className="" src="" alt="" />
           </div>
           <div className="mx-auto lg:ml-48 lg:w-2/5 w-full flex flex-col gap-6">
             <h1 className="mx-auto lg:mx-0 text-xl font-bold">Our Vision</h1>
@@ -45,7 +40,7 @@ const AboutUs = () => {
 
         <section className="px-20 grid grid-cols-1 items-center lg:gap-4 lg:flex lg:justify-items-center p-8 gap-8 animate__animated animate__fadeInLeft">
           <div className="w-[15rem] lg:ml-48 mx-auto bg-[#FF8F50] rounded-full ">
-            <img className="" src={about4} alt="" />
+            <img className="" src="" alt="" />
           </div>
           <div className="mx-auto lg:ml-48 lg:w-2/5 w-full flex flex-col gap-6">
             <h1 className="mx-auto lg:mx-0 text-xl font-bold">Our Mission</h1>
@@ -58,7 +53,7 @@ const AboutUs = () => {
 
         <section className="px-20 grid grid-cols-1 items-center lg:gap-4 lg:flex lg:flex-row-reverse lg:justify-items-center p-8 gap-8 animate__animated animate__fadeInRight">
           <div className=" w-[15rem] lg:mr-48 mx-auto bg-[#FF8F50] rounded-full">
-            <img className="" src={about5} alt="" />
+            <img className="" src="" alt="" />
           </div>
           <div className="mx-auto lg:ml-48 lg:w-2/5 w-full flex flex-col gap-6">
             <h1 className="mx-auto lg:mx-0 text-xl font-bold">Our Goals</h1>
@@ -80,7 +75,7 @@ const AboutUs = () => {
 
         <section className="px-20 grid grid-cols-1 items-center lg:gap-4 lg:flex lg:justify-items-center p-8 gap-8 animate__animated animate__fadeInLeft">
           <div className="w-[15rem] lg:ml-48 mx-auto bg-[#FF8F50] rounded-full ">
-            <img className="" src={about2} alt="" />
+            <img className="" src="" alt="" />
           </div>
           <div className="mx-auto lg:ml-48 lg:w-2/5 w-full flex flex-col gap-6">
             <h1 className="mx-auto lg:mx-0 text-xl font-bold">Our Services</h1>

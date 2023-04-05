@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import contactBackground from "../images/contact-background.png";
-import contactBackgroundSmall from "../images/contact-background-sm.png";
 import useWindowWidth from "../components/common/windowWidth";
 import { useState } from "react";
 import Input from "../components/common/input";
@@ -15,8 +13,8 @@ import { HiOutlineSupport } from "react-icons/hi";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 const Contact = () => {
-  const imageUrl =
-    useWindowWidth() >= 650 ? contactBackground : contactBackgroundSmall;
+  // const imageUrl =
+  //   useWindowWidth() >= 650 ? contactBackground : contactBackgroundSmall;
 
   const SERVICE_ID = "service_6pqkwl5";
   const TEMPLATE_ID = "template_vok9xgx";
@@ -132,10 +130,7 @@ const Contact = () => {
   return (
     <div>
       <NavBar />
-      <div
-        style={{ backgroundImage: `url(${imageUrl})` }}
-        className="h-screen relative bg-cover"
-      >
+      <div className="h-screen relative bg-cover">
         <form
           id="contact_form"
           onSubmit={handleSubmit}

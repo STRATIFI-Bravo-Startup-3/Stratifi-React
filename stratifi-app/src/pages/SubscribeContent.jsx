@@ -69,10 +69,7 @@ class SubscribeContent extends Component {
       "https://app.us13.list-manage.com/subscribe/post?u=311327338697ce69baa12d960&amp;id=3f88d6e974&amp;f_id=00c297e2f0";
 
     return (
-      <div
-        style={{ backgroundImage: `url(${subscribeBackground})` }}
-        className="flex justify-center  h-screen bg-cover"
-      >
+      <div className="flex justify-center  h-screen bg-cover">
         <div className="absolute top-10 left-10">
           <GoHome />
         </div>
@@ -91,15 +88,15 @@ class SubscribeContent extends Component {
           <div className="flex flex-col mx-auto my-2">
             <span className="text-center text-slate-600 text-sm">
               Don't have an account yet?{" "}
-              <Link
+              <a
                 className="underline underline-offset-2 text-sm"
-                to="/register"
+                href="/register"
               >
                 Sign Up
-              </Link>
+              </a>
             </span>
             <div className="items-center flex flex-col  ">
-              <img className="mx-auto w-[3rem]" src={logo} alt="" srcSet="" />
+              <img className="mx-auto w-[3rem]" src="" alt="" srcSet="" />
               <span className="font-black text-slate-700 text-lg my-auto">
                 STRATIFI.NG
               </span>

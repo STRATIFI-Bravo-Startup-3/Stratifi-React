@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-import backgroundfooter from "../images/backgroundfooter.svg";
-import { Link } from "react-router-dom";
 import GoHome from "../components/common/GoHome";
 
 class ChooseAccount extends Component {
@@ -40,10 +38,7 @@ class ChooseAccount extends Component {
   render() {
     const { account, errors } = this.state;
     return (
-      <div
-        style={{ backgroundImage: `url(${backgroundfooter})` }}
-        className="flex justify-center  h-screen relative"
-      >
+      <div className="flex justify-center  h-screen relative">
         <div className="absolute top-10 left-10">
           <GoHome />
         </div>

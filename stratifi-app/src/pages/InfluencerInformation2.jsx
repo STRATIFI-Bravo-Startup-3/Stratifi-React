@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import backgroundfooter from "../images/backgroundfooter.svg";
 import Input from "../components/common/input";
 import Logo from "../components/common/Logo";
 import SelectCategory from "../components/common/SelectCategory";
@@ -64,7 +63,6 @@ class InfluencerInformation2 extends Component {
     return (
       <form
         onSubmit={this.handleSubmit}
-        style={{ backgroundImage: `url(${backgroundfooter})` }}
         className=" flex flex-col text-[0.92rem] text-slate-700 lg:h-screen"
       >
         <div className="flex flex-col bg-white lg:w-[50rem] lg:mx-auto m-[2rem] rounded-xl items-center gap-6 animate__animated animate__fadeInDown shadow-lg shadow-slate-800">

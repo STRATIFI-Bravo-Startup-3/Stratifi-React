@@ -1,9 +1,5 @@
 import React from "react";
 
-import img5 from "../images/img5.png";
-import img6 from "../images/img6.png";
-
-import img8 from "../images/img8.png";
 const Testimonial = () => {
   return (
     <section>
@@ -21,7 +17,7 @@ const Testimonial = () => {
               An absolute influencer marketing tool. Effective and trustworthy.
             </p>
             <div className="flex items-center ">
-              <img src={img6} className="w-9  rounded-full mr-4" alt="" />
+              <img src="" className="w-9  rounded-full mr-4" alt="" />
               <h5 className="text-md font-normal">Ovie Boco</h5>
             </div>
           </div>
@@ -34,7 +30,7 @@ const Testimonial = () => {
               influencer marketing tool. Effective and trustworthy.
             </p>
             <div className="flex items-center">
-              <img src={img5} className="w-9  rounded-full mr-4" alt="" />
+              <img src="" className="w-9  rounded-full mr-4" alt="" />
               <h5 className="text-md font-normal">Jamila Datti </h5>
             </div>
           </div>
@@ -46,7 +42,7 @@ const Testimonial = () => {
               influencers.
             </p>
             <div className="flex mb">
-              <img src={img8} className="w-9  rounded-full mr-4" alt="" />
+              <img src="" className="w-9  rounded-full mr-4" alt="" />
               <h5 className="text-md font-normal">Dayo Inaolaji</h5>
             </div>
           </div>

@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import Joi from "joi-browser";
 import "../App.css";
 import Logo from "../components/common/Logo";
-import backgroundfooter from "../images/backgroundfooter.svg";
 import SelectCategory from "../components/common/SelectCategory";
 import Input from "../components/common/input";
 import SelectEarning from "../components/common/SelectEarning";
@@ -77,7 +75,6 @@ export default class BrandInformation extends Component {
     const { brand, errors } = this.state;
     return (
       <form
-        style={{ backgroundImage: `url(${backgroundfooter})` }}
         className=" flex flex-col text-[0.92rem] text-slate-700"
         onSubmit={this.handleSubmit}
       >
@@ -203,11 +200,9 @@ export default class BrandInformation extends Component {
 
           <div>
             <div className="flex flex-col m-6">
-              {/* <Link to="/register/influencer/last-step"> */}
               <button className="mx-auto bg-[#FF6610] text-white h-12 w-[12rem] rounded-xl text-base hover:bg-[#FF7A30] active:bg-[#FF8F50]">
                 Submit
               </button>
-              {/* </Link> */}
             </div>
           </div>
 

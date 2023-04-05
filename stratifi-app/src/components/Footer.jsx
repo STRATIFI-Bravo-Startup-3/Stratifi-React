@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 import {
   FaFacebook,
@@ -9,9 +8,9 @@ import {
   FaTiktok,
   FaLinkedin,
 } from "react-icons/fa";
+
 import MailchimpSubscribeSmall from "./mailchimpSubscribeSmall";
 import MailchimpSubscribe from "./mailchimpSubscribe";
-import backgroundfooter from "../images/backgroundfooter.svg";
 
 class Footer extends Component {
   company = [
@@ -23,12 +22,12 @@ class Footer extends Component {
     {
       id: 1,
       name: "About us",
-      link: "/about-us",
+      link: "/about",
     },
     {
       id: 2,
       name: "Contact",
-      link: "/contact-us",
+      link: "/contact",
     },
     {
       id: 3,
@@ -51,7 +50,7 @@ class Footer extends Component {
     {
       id: 0,
       name: "Information",
-      link: "/subscribe-content",
+      link: "/subscribe",
     },
     {
       id: 1,
@@ -95,10 +94,7 @@ class Footer extends Component {
     const url =
       "https://app.us13.list-manage.com/subscribe/post?u=311327338697ce69baa12d960&amp;id=3f88d6e974&amp;f_id=00c297e2f0";
     return (
-      <div
-        style={{ backgroundImage: `url(${backgroundfooter})` }}
-        className="md:flex grid-cols-1 justify-between mx-50 w-full bg-[#AD6EC0] text-white py-8 px-4 lg:gap-[5rem]"
-      >
+      <div className="md:flex grid-cols-1 justify-between mx-50 w-full bg-[#AD6EC0] text-white py-8 px-4 lg:gap-[5rem]">
         <div className="w-full lg:w-4/12 lg:pl-[8rem]">
           <div className="flex flex-col text-left items-center">
             <h1 className="font-bold uppercase my-1">
@@ -158,12 +154,12 @@ class Footer extends Component {
               <h1 className="font-bold uppercase my-1">Quick Links</h1>
               {this.company.map((item) => (
                 <h2 key={item.id} className="my-1">
-                  <Link
+                  <a
                     className="hover:text-slate-300 active:text-slate-400"
-                    to={item.link}
+                    href={item.link}
                   >
                     {item.name}
-                  </Link>
+                  </a>
                 </h2>
               ))}
             </div>
@@ -173,12 +169,12 @@ class Footer extends Component {
               <h1 className="font-bold uppercase my-1">Support</h1>
               {this.support.map((item) => (
                 <h2 key={item.id} className="my-1">
-                  <Link
+                  <a
                     className="hover:text-slate-300 active:text-slate-400"
-                    to={item.link}
+                    href={item.link}
                   >
                     {item.name}
-                  </Link>
+                  </a>
                 </h2>
               ))}
             </div>

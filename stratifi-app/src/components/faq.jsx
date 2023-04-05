@@ -1,7 +1,6 @@
 import { HiChevronDown } from "react-icons/hi";
 import { HiChevronUp } from "react-icons/hi";
 import { useState } from "react";
-import "../App.css";
 
 const Faq = () => {
   const [open, setOpen] = useState(null);
