@@ -1,9 +1,17 @@
+import Image from "next/image";
+
 const About = () => {
   return (
     <div>
-      <section className="px-20 grid grid-cols-1 items-center lg:gap-4 lg:flex lg:justify-items-center p-8 gap-8 animate__animated animate__zoomIn">
+      <section className="px-20 grid grid-cols-1 items-center lg:gap-4 lg:flex lg:justify-items-center p-8 gap-8 animate__animated animate__zoomIn ">
         <div className=" w-[15rem] lg:ml-48 mx-auto bg-[#FF8F50] rounded-full ">
-          <img className="" src="" alt="" />
+          <Image
+            className=""
+            src="/images/about1.svg"
+            alt=""
+            width={500}
+            height={500}
+          />
         </div>
         <div className="mx-auto lg:w-2/5 w-full flex flex-col gap-6">
           <h1 className="mx-auto lg:mx-0 text-xl font-bold text-center lg:text-start">
@@ -22,7 +30,13 @@ const About = () => {
       </section>
       <section className="px-20 grid grid-cols-1 items-center lg:gap-4 lg:flex lg:flex-row-reverse lg:justify-items-center p-8 gap-8">
         <div className=" w-[15rem] lg:mr-48 mx-auto bg-[#FF8F50] rounded-full">
-          <img className="" src="" alt="" />
+          <Image
+            className=""
+            src="/images/about2.svg"
+            alt=""
+            width={500}
+            height={500}
+          />
         </div>
         <div className="mx-auto lg:ml-48 lg:w-2/5 w-full flex flex-col gap-6">
           <h1 className="mx-auto text-center lg:text-start lg:mx-0 text-xl font-bold">

@@ -1,18 +1,12 @@
 import React from "react";
-import useWindowWidth from "./common/windowWidth";
+import Image from "next/image";
 
 const Hero = () => {
-  // const imageUrl =
-  //   useWindowWidth() >= 650 ? desktopBackground : mobileBackground;
-
   const url =
     "https://app.us13.list-manage.com/subscribe/post?u=311327338697ce69baa12d960&amp;id=3f88d6e974&amp;f_id=00c297e2f0";
 
   return (
-    <section
-      // style={{ backgroundImage: `url(${imageUrl})` }}
-      className="lg:flex grid grid-cols-1 w-auto h-full bg-cover bg-no-repeat relative "
-    >
+    <section className="lg:flex grid grid-cols-1 w-auto h-full bg-cover bg-no-repeat relative bg-primary ">
       <div className="mx-auto lg:px-[3rem]  items-start lg:ml-24 flex flex-col gap-16 lg:my-auto lg:pt-28 pt-8 w-9/12 lg:w-3/6  text-left text-white  ">
         <div className=" md:mx-auto lg:mx-0 font-black text-3xl lg:text-[2.5rem] ">
           MARKETING WITH INFLUENCE
@@ -36,7 +30,13 @@ const Hero = () => {
         </div>
       </div>
       <div className="h-auto items-center mx-auto lg:pt-12 lg:w-3/5 animate__animated animate__fadeInRight">
-        <img className="w-full" src="" alt="" />
+        <Image
+          className="w-full"
+          src="/images/influencer.png"
+          alt=""
+          width={500}
+          height={500}
+        />
       </div>
     </section>
   );

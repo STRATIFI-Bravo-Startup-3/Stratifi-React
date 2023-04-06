@@ -33,8 +33,8 @@ const NavBar = () => {
   ];
 
   return (
-    <header className=" bg-[#9B00C2]">
-      <div className="flex items-center lg:px-[5rem] p-1  text-gray-100 justify-between xl:mx-auto xl:max-w-7xl max-w-full flex-wrap w-full">
+    <header className="">
+      <div className="flex items-center lg:px-[5rem] p-1  text-gray-600 justify-between xl:mx-auto xl:max-w-7xl max-w-full flex-wrap w-full">
         <a to="/">
           {" "}
           <div className="ml-16 lg:ml-10 flex justify-center w-[3rem]">

@@ -1,0 +1,11 @@
+.bg-primary {
+  background-image: url("/images/desktopBackground.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-secondary {
+  background-image: url("/images/backgroundfooter.svg");
+  background-size: cover;
+  background-position: center;
+}

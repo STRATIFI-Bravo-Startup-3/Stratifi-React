@@ -1,4 +1,28 @@
+import Image from "next/image";
 import React from "react";
+
+const testimonials = [
+  {
+    id: "0",
+    comment: `Great service. I had an amazing experience using Stratifi to get
+    an influencer for my brand marketing campaign.`,
+    image: "/images/img5.png",
+    name: "Jamila Datti",
+  },
+  {
+    id: "1",
+    comment: `An absolute influencer marketing tool. Effective and trustworthy.`,
+    image: "/images/img6.png",
+    name: "Ovie Boco",
+  },
+  {
+    id: "2",
+    comment: `Simple and effective. no long hours searching for reliable
+    influencers.`,
+    image: "/images/img7.png",
+    name: "Dayo Inaolaji",
+  },
+];
 
 const Testimonial = () => {
   return (
@@ -11,41 +35,22 @@ const Testimonial = () => {
         </h2>
         {/* <!-- Testimonials Container --> */}
         <div className="flex flex-col mt-10 md:flex-row md:space-x-6">
-          {/* <!-- Testimonial 1 --> */}
-          <div className="flex flex-col  mb-4  rounded-lg  p-4 space-y-20 md:mb-32 shadow-sm md:w-1/3 md:shadow-md ring-1 ring-slate-200">
-            <p className="text-sm text-slate-600 font-semi-bold mb-10 pt-8">
-              An absolute influencer marketing tool. Effective and trustworthy.
-            </p>
-            <div className="flex items-center ">
-              <img src="" className="w-9  rounded-full mr-4" alt="" />
-              <h5 className="text-md font-normal">Ovie Boco</h5>
+          {/* <!-- Testimonials --> */}
+          {testimonials.map((item) => (
+            <div className="flex flex-col space-y-20  p-4 rounded-lg bg-veryLightGray mb-4 md:mb-32 shadow-sm md:w-1/3 md:shadow-md ring-1 ring-slate-200">
+              <p className="text-sm pt-8 text-slate-600">{item.comment}</p>
+              <div className="flex items-center text-gray-600">
+                <Image
+                  src={item.image}
+                  className="w-9  rounded-full mr-4"
+                  width={500}
+                  height={500}
+                  alt=""
+                />
+                <h5 className="text-md font-normal">{item.name}</h5>
+              </div>
             </div>
-          </div>
-
-          {/* <!-- Testimonial 2 --> */}
-          <div className="flex flex-col space-y-20  p-4 rounded-lg bg-veryLightGray mb-4 md:mb-32 shadow-sm md:w-1/3 md:shadow-md ring-1 ring-slate-200">
-            <p className="text-sm pt-8 text-slate-600">
-              Great service. I had an amazing experience using StratifI to get
-              an influencer for my brand marketing campaign.An absolute
-              influencer marketing tool. Effective and trustworthy.
-            </p>
-            <div className="flex items-center">
-              <img src="" className="w-9  rounded-full mr-4" alt="" />
-              <h5 className="text-md font-normal">Jamila Datti </h5>
-            </div>
-          </div>
-
-          {/* <!-- Testimonial 3 --> */}
-          <div className="flex flex-col  space-y-20  p-4 rounded-lg mb-4 md:mb-32  shadow-sm md:w-1/3 md:shadow-md ring-1 ring-slate-200">
-            <p className="text-sm  mb-10 pt-8 text-slate-600">
-              Simple and effective. no long hours searching for reliable
-              influencers.
-            </p>
-            <div className="flex mb">
-              <img src="" className="w-9  rounded-full mr-4" alt="" />
-              <h5 className="text-md font-normal">Dayo Inaolaji</h5>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
