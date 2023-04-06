@@ -101,7 +101,7 @@ const Contact = () => {
         Swal.fire({
           icon: "error",
           title: "Oops! Something went wrong!",
-          text: error.text,
+          // text: error.text,
           confirmButtonColor: "#AD6EC0",
         });
         setIsLoading(false);
@@ -128,80 +128,82 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div className="bg-white">
       <NavBar />
-      <div className="h-screen relative bg-cover">
+      <div className="h-screen relative bg-contact">
         <form
           id="contact_form"
           onSubmit={handleSubmit}
-          className="flex flex-col items-center gap-8 h-full w-full animate__animated animate__flipInX "
+          className="flex flex-col items-center justify-center gap-8 h-full w-full animate__animated animate__flipInX "
         >
-          <div className="font-bold text-4xl text-white mt-[4rem] lg:mt-[8rem]">
-            <h1>Contact Us</h1>
-          </div>
-          <div className=" w-5/6 md:w-[40rem]  flex flex-col gap-4 text-black ">
-            <div className="w-full flex flex-col">
-              <input
-                type="text"
-                placeholder="Full name"
-                onChange={handleChange}
-                name="fullname"
-                className="mx-auto w-11/12 rounded-lg lg:w-[30rem]"
-              />
-              {errors && (
-                <div className="lg:ml-20 ml-6 text-[0.7rem] lg:text-[0.8rem] text-red-600">
-                  {errors.fullname}
-                </div>
-              )}
+          <div className="flex flex-col items-center justify-center w-full md:w-[40rem] shadow-lg rounded-lg bg-secondary py-12">
+            <div className="font-bold text-4xl text-white p-4">
+              <h1>Contact Us</h1>
             </div>
+            <div className=" w-5/6 flex flex-col gap-4 text-black p-4">
+              <div className="w-full flex flex-col">
+                <input
+                  type="text"
+                  placeholder="Full name"
+                  onChange={handleChange}
+                  name="fullname"
+                  className="mx-auto w-11/12 rounded-lg lg:w-[30rem] py-2 px-4 bg-white"
+                />
+                {errors && (
+                  <div className="ml-6 text-[0.7rem] lg:text-[0.8rem] text-red-800 ">
+                    {errors.fullname}
+                  </div>
+                )}
+              </div>
 
-            <div className="grid w-11/12 mx-auto grid-cols-1 gap-4 lg:grid-cols-2 lg:mx-auto lg:w-[30rem]">
-              <div className="flex flex-col">
-                <input
-                  type="text"
-                  placeholder="Email address"
-                  onChange={handleChange}
-                  name="email"
-                  className="rounded-lg w-full"
-                  error={errors.email}
-                />
-                {errors && (
-                  <div className=" ml-2 text-[0.7rem] lg:text-[0.8rem] text-red-600">
-                    {errors.email}
-                  </div>
-                )}
-              </div>
-              <div className="flex flex-col">
-                <input
-                  type="text"
-                  placeholder="Phone number"
-                  onChange={handleChange}
-                  name="phone"
-                  className="rounded-lg w-full"
-                />
-                {errors && (
-                  <div className=" ml-2 text-[0.7rem] lg:text-[0.8rem] text-red-600">
-                    {errors.phone}
-                  </div>
-                )}
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <textarea
-                type="textarea"
-                placeholder="Message"
-                name="message"
-                className="w-11/12 lg:w-[30rem] h-[10rem] mx-auto rounded"
-                onChange={handleChange}
-              />
-              {errors && (
-                <div className="lg:ml-20 ml-6 text-[0.7rem] lg:text-sm text-red-600">
-                  {errors.message}
+              <div className="grid w-11/12 mx-auto grid-cols-1 gap-4 lg:grid-cols-2 lg:mx-auto lg:w-[30rem]">
+                <div className="flex flex-col">
+                  <input
+                    type="text"
+                    placeholder="Email address"
+                    onChange={handleChange}
+                    name="email"
+                    className="rounded-lg w-full py-2 px-4 bg-white"
+                    error={errors.email}
+                  />
+                  {errors && (
+                    <div className="ml-1 text-[0.7rem] lg:text-[0.8rem] text-red-800">
+                      {errors.email}
+                    </div>
+                  )}
                 </div>
-              )}
+                <div className="flex flex-col ">
+                  <input
+                    type="text"
+                    placeholder="Phone number"
+                    onChange={handleChange}
+                    name="phone"
+                    className="rounded-lg w-full py-2 px-4 bg-white"
+                  />
+                  {errors && (
+                    <div className=" ml-1 text-[0.7rem] lg:text-[0.8rem] text-red-800">
+                      {errors.phone}
+                    </div>
+                  )}
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <textarea
+                  type="textarea"
+                  placeholder="Message"
+                  name="message"
+                  className="w-11/12 lg:w-[30rem] h-[10rem] mx-auto rounded-lg py-2 px-4 bg-white"
+                  onChange={handleChange}
+                />
+                {errors && (
+                  <div className="ml-6 text-[0.7rem] lg:text-sm text-red-800">
+                    {errors.message}
+                  </div>
+                )}
+              </div>
+              {renderButton()}
             </div>
           </div>
-          {renderButton()}
         </form>
       </div>
       <Footer />

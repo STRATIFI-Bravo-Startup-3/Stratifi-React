@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import About from "../components/About";
 import Image from "next/image";
 
 const AboutUs = () => {
@@ -9,7 +8,7 @@ const AboutUs = () => {
     <div className="bg-white">
       <NavBar />
 
-      <div className="py-16 border-t-2 border-slate-200 text-gray-600">
+      <div className="py-16 border-t-2 border-slate-200 text-gray-600 bg-gray-100">
         <section className="px-20 grid grid-cols-1 items-center lg:gap-8 lg:flex lg:justify-items-center p-8 gap-8 animate__animated animate__fadeInLeft">
           <div className=" w-[15rem] lg:ml-48 mx-auto bg-[#FF8F50] rounded-full ">
             <Image
