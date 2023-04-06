@@ -8,7 +8,7 @@ import Faq from "../components/faq";
 
 const Home = () => {
   return (
-    <main className="bg-white">
+    <main className="bg">
       <NavBar />
       <Hero />
       <About />
