@@ -1,22 +1,12 @@
 import React, { Component } from "react";
 import Input from "../components/common/input";
 import Joi from "joi-browser";
-import GoHome from "../components/common/GoHome";
 import NavBar from "@/components/NavBar";
+import { useState } from "react";
+import { useRouter } from "next/router";
 
-class Register extends Component {
-  state = {
-    account: {
-      fullname: "",
-      username: "",
-      password: "",
-      email: "",
-      repeat_password: "",
-    },
-    errors: {},
-  };
-
-  schema = {
+const Register = () => {
+  const schema = {
     fullname: Joi.string().min(3).required().label("Full name"),
     username: Joi.string()
       .alphanum()
@@ -33,16 +23,30 @@ class Register extends Component {
     email: Joi.string().email().required().label("Email"),
   };
 
-  validateOnChange = ({ name, value }) => {
+  const [account, setAccount] = useState({
+    fullname: "",
+    username: "",
+    email: "",
+    password: "",
+    repeat_password: "",
+  });
+  const [errors, setErrors] = useState({});
+  const router = useRouter();
+  // const schema = {
+  //   password: Joi.string().required().label("Password"),
+  //   email: Joi.string().email().required().label("Email"),
+  // };
+
+  const validateOnChange = ({ name, value }) => {
     const obj = { [name]: value };
-    const schema = { [name]: this.schema[name] };
-    const { error } = Joi.validate(obj, schema);
+    const newSchema = { [name]: schema[name] };
+    const { error } = Joi.validate(obj, newSchema);
     return error ? error.details[0].message : null;
   };
 
-  validate = () => {
+  const validate = () => {
     const options = { abortEarly: false };
-    const result = Joi.validate(this.state.account, this.schema, options);
+    const result = Joi.validate(account, schema, options);
 
     if (!result.error) return null;
 
@@ -50,113 +54,123 @@ class Register extends Component {
 
     for (let item of result.error.details) errors[item.path[0]] = item.message;
 
-    console.log(errors);
+    // console.log(errors);
     return errors;
   };
 
-  handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const errors = this.validate();
-    this.setState({ errors: errors || {} });
-    if (errors) return;
-    // console.log("Submitted");
+    const newErrors = validate();
+    setErrors(newErrors || {});
+    if (newErrors) return;
+
+    router.push({
+      pathname: "/verify-email",
+      query: { email: account.email },
+    });
   };
 
-  handleChange = ({ currentTarget: input }) => {
-    const errors = { ...this.state.errors };
-    const errorMessage = this.validateOnChange(input);
+  const handleChange = ({ currentTarget: input }) => {
+    const newErrors = { ...errors };
+    const errorMessage = validateOnChange(input);
 
     if (errorMessage) {
-      errors[input.name] = errorMessage;
+      newErrors[input.name] = errorMessage;
     } else {
-      delete errors[input.name];
+      delete newErrors[input.name];
     }
 
-    const account = { ...this.state.account };
-    account[input.name] = input.value;
-    this.setState({ account, errors });
+    const newAccount = { ...account };
+    newAccount[input.name] = input.value;
+    setErrors(newErrors);
+    setAccount(newAccount);
   };
 
-  render() {
-    const { account, errors } = this.state;
-    return (
-      <div className="bg">
-        <NavBar />
-        <div className="static flex flex-col bg-tertiary">
-          <div className="flex justify-center  h-screen ">
-            <div className="flex flex-col gap-4 justify-center my-auto bg-secondary w-4/5 lg:w-6/12 h-auto rounded-xl shadow-2xl animate__animated animate__flipInX">
-              <div className="flex flex-col mx-auto mt-5 text-white">
-                <h1 className=" mx-auto text-xl lg:text-2xl font-bold ">
-                  Create An Account
-                </h1>
-                <span className="text-center text-sm lg:text-base">
-                  Sign up to get started
-                </span>
-              </div>
-              <form
-                onSubmit={this.handleSubmit}
-                className="flex
-            flex-col
-            gap-4
-            justify-center"
-              >
-                <div className="flex gap-4 flex-col mx-auto w-11/12 lg:w-3/4">
-                  <Input
-                    value={account.fullname}
-                    onChange={this.handleChange}
-                    name="fullname"
-                    placeholder="Full Name"
-                    type="text"
-                    error={errors.fullname}
-                  />
+  return (
+    <div className="bg">
+      <NavBar />
+      <div className="static flex flex-col bg-tertiary">
+        <div className="flex justify-center  h-screen ">
+          <div className="flex flex-col gap-4 justify-center my-auto bg-secondary w-4/5 lg:w-6/12 h-auto rounded-xl shadow-2xl animate__animated animate__flipInX">
+            <div className="flex flex-col mx-auto mt-5 text-white">
+              <h1 className=" mx-auto text-xl lg:text-2xl font-bold ">
+                Sign Up
+              </h1>
+              <span className="text-center text-sm lg:text-base">
+                Create an account to continue
+              </span>
+            </div>
+            <form
+              onSubmit={handleSubmit}
+              className="flex
+    flex-col
+    gap-4
+    justify-center"
+            >
+              <div className="flex gap-4 flex-col mx-auto w-11/12 lg:w-3/4">
+                <Input
+                  value={account.fullname}
+                  onChange={handleChange}
+                  name="fullname"
+                  placeholder="Full Name"
+                  type="text"
+                  error={errors.email}
+                />
+                <Input
+                  value={account.username}
+                  onChange={handleChange}
+                  name="username"
+                  placeholder="Username"
+                  type="text"
+                  error={errors.username}
+                />
+                <Input
+                  value={account.email}
+                  onChange={handleChange}
+                  name="email"
+                  placeholder="Email Address"
+                  type="email"
+                  error={errors.email}
+                />
+                <Input
+                  value={account.password}
+                  onChange={handleChange}
+                  name="password"
+                  placeholder="Password"
+                  type="password"
+                  error={errors.password}
+                />
+                <Input
+                  value={account.repeat_password}
+                  onChange={handleChange}
+                  name="repeat_password"
+                  placeholder="Repeat Password"
+                  type="password"
+                  error={errors.repeat_password}
+                />
 
-                  <Input
-                    value={account.email}
-                    onChange={this.handleChange}
-                    name="email"
-                    placeholder="Email Address"
-                    type="email"
-                    error={errors.email}
-                  />
-                  <Input
-                    value={account.password}
-                    onChange={this.handleChange}
-                    name="password"
-                    placeholder="Password"
-                    type="password"
-                    error={errors.password}
-                  />
-                  <Input
-                    value={account.repeat_password}
-                    onChange={this.handleChange}
-                    name="repeat_password"
-                    placeholder="Repeat Password"
-                    type="password"
-                    error={errors.repeat_password}
-                  />
-                  <button className="cursor-not-allowed mx-auto active:bg-[#FF8F50] text-white h-12 w-11/12  md:w-[20rem]  rounded-xl text-base hover:bg-[#FF7A30] bg-[#FF6610]">
-                    Create Account
-                  </button>
-                </div>
-                <div className="flex flex-col"></div>
-              </form>
-              <div className="flex flex-col mx-auto mb-5">
-                <span className="text-center text-white text-sm">
-                  Already have an account?{" "}
-                  <a
-                    className="underline underline-offset-2 text-sm"
-                    href="/login"
-                  >
-                    Sign In
-                  </a>
-                </span>
+                <button className="mx-auto active:bg-[#FF8F50] text-white h-12 w-11/12  md:w-[20rem]  rounded-xl text-base hover:bg-[#FF7A30] bg-[#FF6610]">
+                  Create Account
+                </button>
               </div>
+              <div className="flex flex-col"></div>
+            </form>
+            <div className="flex flex-col mx-auto mb-5">
+              <span className="text-center text-white text-sm">
+                Already have an account?{" "}
+                <a
+                  className="underline underline-offset-2 text-sm"
+                  href="/login"
+                >
+                  Log In
+                </a>
+              </span>
             </div>
           </div>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Register;
