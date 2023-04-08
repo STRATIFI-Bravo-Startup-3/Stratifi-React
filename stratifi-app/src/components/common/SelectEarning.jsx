@@ -6,7 +6,7 @@ const SelectEarning = ({ value, onChange, name, error }) => {
           <input
             onChange={onChange}
             value={value}
-            className="rounded-xl text-sm w-11/12 h-10  mx-auto"
+            className="rounded-lg p-2 text-sm w-11/12 mx-auto"
             name={name}
             placeholder="0"
             type="text"

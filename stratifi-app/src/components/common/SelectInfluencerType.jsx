@@ -8,7 +8,7 @@ const SelectInfluencerType = ({
 }) => {
   return (
     <div className="flex flex-col w-[17rem]">
-      <label htmlFor={name} className="ml-2 mb-2">
+      <label htmlFor={name} className="mb-1">
         {label}
         <span className="text-red-600">{required}</span>
       </label>
@@ -16,7 +16,7 @@ const SelectInfluencerType = ({
         (This is the platform you're most active in)
       </span> */}
       <select
-        className="rounded-xl"
+        className="rounded-lg p-2"
         name={name}
         value={value}
         onChange={onChange}
@@ -37,7 +37,7 @@ const SelectInfluencerType = ({
          
       </select>
       {error && (
-        <div className=" text-[0.7rem] ml-1 lg:text-[0.8rem] text-red-600">
+        <div className="text-[0.7rem] ml-1 lg:text-[0.8rem] text-red-600">
           {error}
         </div>
       )}

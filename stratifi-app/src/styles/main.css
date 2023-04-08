@@ -22,3 +22,9 @@
   background-blend-mode: overlay;
   background-size: cover;
 }
+.bg-brand {
+  background: url("/images/brand-background.jpeg") no-repeat center center fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+  background-size: cover;
+}

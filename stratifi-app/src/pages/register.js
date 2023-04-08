@@ -114,7 +114,7 @@ const Register = () => {
                   name="fullname"
                   placeholder="Full Name"
                   type="text"
-                  error={errors.email}
+                  error={errors.fullname}
                 />
                 <Input
                   value={account.username}

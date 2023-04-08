@@ -1,83 +1,70 @@
 import React, { Component } from "react";
+import { useRouter } from "next/router";
+import { useState } from "react";
 
-import GoHome from "../components/common/GoHome";
+const ChooseAcount = () => {
+  const [account, setAccount] = useState({
+    type: "",
+  });
+  const [error, setError] = useState("");
+  const route = useRouter();
 
-class ChooseAccount extends Component {
-  state = {
-    account: {
-      mode: "",
-    },
-    errors: {},
-  };
-
-  validate = () => {
-    let errors = {};
-    const account = { ...this.state.account };
-    if (account.mode === "") {
-      errors.mode = "Please select one option";
+  const validate = () => {
+    let error = "";
+    const newAccount = { ...account };
+    if (newAccount.type === "") {
+      error = "Please select one option";
     }
-    console.log(errors);
-    return errors;
+    console.log(error);
+    return error;
   };
 
-  handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const errors = this.validate();
-    this.setState({ errors: errors || {} });
-    if (errors) return;
+    const newError = validate();
+    setError(newError || "");
+    if (newError) return;
     console.log("Submitted");
+    route.push("/brand-information");
   };
 
-  handleChange = ({ currentTarget: input }) => {
-    const errors = { ...this.state.errors };
-    const account = { ...this.state.account };
-    account[input.name] = input.value;
-    this.setState({ account, errors });
-  };
+  return (
+    <div className="flex justify-center  h-screen  bg-tertiary">
+      <div className="flex flex-col gap-4 justify-center my-auto w-4/5 lg:w-5/12 h-auto rounded-xl shadow-2xl animate__animated animate__flipInX bg-secondary">
+        <div className="flex flex-col mx-auto mt-5 gap-4">
+          <h1 className=" mx-auto text-xl lg:text-2xl font-bold text-gray-800">
+            Complete your profile
+          </h1>
+          <span className="text-center text-gray-800 text-sm lg:text-base">
+            Choose an Account Type
+          </span>
 
-  render() {
-    const { account, errors } = this.state;
-    return (
-      <div className="flex justify-center  h-screen  bg-tertiary">
-        <div className="flex flex-col gap-4 justify-center my-auto w-4/5 lg:w-5/12 h-auto rounded-xl shadow-2xl animate__animated animate__flipInX bg-secondary">
-          <div className="flex flex-col mx-auto mt-5 gap-4">
-            <h1 className=" mx-auto text-xl lg:text-2xl font-bold text-gray-800">
-              Choose an Account Type
-            </h1>
-            <span className="text-center text-gray-800 text-sm lg:text-base">
-              Are you an Influencer or a Brand? Select below
-            </span>
-
-            <form
-              className="mx-auto flex flex-col gap-2"
-              onSubmit={this.handleSubmit}
+          <form className="mx-auto flex flex-col gap-2" onSubmit={handleSubmit}>
+            <select
+              className="rounded-lg w-[10rem] p-2 bg-gray-100"
+              name="type"
+              id=""
+              onChange={(e) => setAccount({ ...account, type: e.target.value })}
             >
-              <select
-                className="rounded w-[10rem] p-2 bg-gray-100"
-                name="mode"
-                id=""
-                onChange={this.handleChange}
-              >
-                <option value="">Choose one ...</option>
-                <option value="Influencer">Influencer</option>
-                <option value="Brand">Brand</option>
-              </select>
-              {errors && (
-                <div className=" text-[0.7rem] lg:text-sm text-red-600">
-                  {errors.mode}
-                </div>
-              )}
-              <div className="flex flex-col mb-5">
-                <button className="mx-auto bg-[#FF8F50] text-white h-12 w-[8rem] rounded-xl text-base hover:bg-orange-600 active:bg-orange-700">
-                  Next
-                </button>
+              <option value="">Choose one ...</option>
+              <option value="Influencer">Influencer</option>
+              <option value="Brand">Brand</option>
+            </select>
+            {error && (
+              <div className=" text-[0.7rem] lg:text-sm text-red-600">
+                {error}
               </div>
-            </form>
-          </div>
+            )}
+            <div className="flex flex-col mb-5">
+              <button className="mx-auto bg-[#FF8F50] text-white h-12 w-[10rem] rounded-xl text-base hover:bg-orange-600 active:bg-orange-700">
+                Next
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
-export default ChooseAccount;
+export default ChooseAcount;
