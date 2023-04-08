@@ -87,9 +87,9 @@ const Register = () => {
   };
 
   return (
-    <div className="bg">
+    <div className="">
       <NavBar />
-      <div className="static flex flex-col bg-tertiary">
+      <div className="static flex flex-col bg-tertiary bg-opacity-50">
         <div className="flex justify-center  h-screen ">
           <div className="flex flex-col gap-4 justify-center my-auto bg-secondary w-4/5 lg:w-6/12 h-auto rounded-xl shadow-2xl animate__animated animate__flipInX">
             <div className="flex flex-col mx-auto mt-5 text-white">

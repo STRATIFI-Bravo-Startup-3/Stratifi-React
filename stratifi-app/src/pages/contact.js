@@ -128,7 +128,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-white">
+    <div className="">
       <NavBar />
       <div className="h-screen relative bg-contact">
         <form

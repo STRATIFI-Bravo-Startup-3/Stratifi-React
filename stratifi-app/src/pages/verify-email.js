@@ -23,9 +23,9 @@ const VerifyEmail = () => {
                 Be sure to check your spam folder
               </span>
 
-              <a href="/login">
+              <a href="/account-type">
                 <button className="mx-auto active:bg-[#FF8F50] text-white h-12 w-11/12  md:w-[10rem]  rounded-xl text-base hover:bg-[#FF7A30] bg-[#FF6610]">
-                  Login
+                  Continue
                 </button>
               </a>
             </div>

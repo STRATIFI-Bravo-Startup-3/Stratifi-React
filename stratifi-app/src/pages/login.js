@@ -115,7 +115,7 @@ const Login = () => {
                 Don't have an account?{" "}
                 <a
                   className="underline underline-offset-2 text-sm"
-                  href="/verify-email"
+                  href="/register"
                 >
                   Sign up
                 </a>

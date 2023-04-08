@@ -38,11 +38,8 @@ class ChooseAccount extends Component {
   render() {
     const { account, errors } = this.state;
     return (
-      <div className="flex justify-center  h-screen relative">
-        <div className="absolute top-10 left-10">
-          <GoHome />
-        </div>
-        <div className="flex flex-col gap-4 justify-center my-auto bg-white w-4/5 lg:w-5/12 h-auto rounded-xl shadow-2xl animate__animated animate__flipInX">
+      <div className="flex justify-center  h-screen  bg-tertiary">
+        <div className="flex flex-col gap-4 justify-center my-auto w-4/5 lg:w-5/12 h-auto rounded-xl shadow-2xl animate__animated animate__flipInX bg-secondary">
           <div className="flex flex-col mx-auto mt-5 gap-4">
             <h1 className=" mx-auto text-xl lg:text-2xl font-bold text-gray-800">
               Choose an Account Type
@@ -56,7 +53,7 @@ class ChooseAccount extends Component {
               onSubmit={this.handleSubmit}
             >
               <select
-                className="rounded"
+                className="rounded w-[10rem] p-2 bg-gray-100"
                 name="mode"
                 id=""
                 onChange={this.handleChange}
