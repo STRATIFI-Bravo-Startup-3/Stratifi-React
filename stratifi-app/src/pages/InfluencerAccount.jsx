@@ -1,10 +1,12 @@
 import React from "react";
+import Image from "next/image";
+import image from "../../public/images/prelaunchimages.jpg";
 
 const InfluencerAccount = () => {
   return (
-    <div>
+    <section>
       <div>
-        <div className="items-center flex ml-6 space-x-16 pt-7 pb-96 px-96">
+        <div className="items-center flex ml-6 space-x-16 pt-7 pb-16 px-10">
           <div className="text-orange-400 text-4xl font-bold">
             Show Profile Details
           </div>
@@ -24,7 +26,7 @@ const InfluencerAccount = () => {
           </div>
         </div>
 
-        <div className="items-center bg-purple-700 border-black border flex space-x-8   cntainer mx-auto">
+        <div className="items-center  border-black border flex space-x-10 container mx-auto">
           {/* Profile */}
           <div className="space-y-3.5">
             <div className="bg-orange-400 rounded-lg pt-0.5 pb-3 pl-12 pr-10">
@@ -41,7 +43,7 @@ const InfluencerAccount = () => {
                 />
               </svg>
             </div>
-            <div className="text-2xl underline">Profile</div>
+            <div className="text-2xl underline">View Profile</div>
           </div>
 
           {/* invitation */}
@@ -60,7 +62,7 @@ const InfluencerAccount = () => {
                 />
               </svg>
             </div>
-            <div className="text-2xl underline">Profile</div>
+            <div className="text-2xl underline">invitation</div>
           </div>
           {/* Recent collabs */}
           <div className="space-y-3.5">
@@ -78,10 +80,10 @@ const InfluencerAccount = () => {
                 />
               </svg>
             </div>
-            <div className="text-2xl underline">Profile</div>
+            <div className="text-2xl underline">Recent collabs</div>
           </div>
           {/* Messages */}
-          <div className="">
+          <div className="space-y-3.5">
             <div className="bg-orange-400 rounded-lg pt-0.5 pb-3 pl-12 pr-10">
               <svg
                 width="94"
@@ -140,8 +142,55 @@ const InfluencerAccount = () => {
             <div className="text-2xl underline">Security</div>
           </div>
         </div>
+        {/* first section */}
+        <div className="container mx-auto py-6 px-20 pt-20 ">
+          <h1 className="text-4xl font-bold text-center">Invitations</h1>
+          <div className="bg-purple-500 rounded-lg shadow w-[543]px">
+            <div className="text-xl font-medium px-8 py-8">
+              <div className="text-center font-bold text-3xl underline">
+                House of Thera Pre-launch campaign
+              </div>
+            </div>
+            <div className="items-start flex ">
+              <div className="flex-col py-4 px-4">
+                <div className="text-xl font-medium px-8 py-8">
+                  <div className="bg-white rounded-lg px-14 py-5">
+                    Lifestyle
+                  </div>
+                </div>
+                <div className="items-center flex text-xl font-medium px-8  ">
+                  <div className="bg-white rounded-lg pt-4 pb-7 px-16">
+                    Fashion
+                  </div>
+                </div>
+              </div>
+
+              <div className="">
+                <div className="px-20 pb-4">
+                  {" "}
+                  <Image src={image} alt="" width={500} height={500} />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-between">
+            <div className="text-xl font-medium px-8 py-8">
+              <div className="bg-orange-400 rounded-lg px-14 py-5">
+                Lifestyle
+              </div>
+            </div>
+            <div className="text-xl font-medium px-8 py-8 ">
+              <div className="bg-orange-400 rounded-lg px-14 py-5">
+                Lifestyle
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* second section */}
       </div>
-    </div>
+    </section>
   );
 };
 
