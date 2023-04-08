@@ -10,30 +10,48 @@ const InfluencerAccount = () => {
     <section>
       <NavBar />
       <div>
-        <div className="items-center flex ml-6 space-x-16 pt-7 pb-16 px-10">
-          <div className="text-orange-400 text-4xl font-bold">
-            Show Profile Details
-          </div>
-          <div>
-            <svg
-              width="23"
-              height="14"
-              viewBox="0 0 23 14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.20081 5.05274L9.30223 12.7057C10.5221 13.8581 12.4927 13.8581 13.7127 12.7057L21.8141 5.05274C23.7847 3.1912 22.3771 0 19.5932 0H3.39038C0.606494 0 -0.769809 3.1912 1.20081 5.05274Z"
-                fill="#FE9C67"
+        <div className=" ">
+          <div className="items-center flex px-32 space-y-10 pt-7 pb-16 mx-auto container ">
+            {" "}
+            <div className=" w-[15rem] lg:ml-48 mx-auto bg-[#FF8F50] rounded-full ">
+              <Image
+                className=""
+                src="/images/Ellipse 25.png"
+                alt=""
+                width={500}
+                height={500}
               />
-            </svg>
+            </div>
+            <div className=" px-10">
+              <p className="text-purple-600 md:text-4xl font-bold">
+                Hi, <br />
+                Anna
+              </p>
+              <div className="text-orange-400 text-4xl font-bold">
+                Show Profile Details
+              </div>
+            </div>
+            <div className="pt-20">
+              <svg
+                width="23"
+                height="14"
+                viewBox="0 0 23 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.20081 5.05274L9.30223 12.7057C10.5221 13.8581 12.4927 13.8581 13.7127 12.7057L21.8141 5.05274C23.7847 3.1912 22.3771 0 19.5932 0H3.39038C0.606494 0 -0.769809 3.1912 1.20081 5.05274Z"
+                  fill="#FE9C67"
+                />
+              </svg>
+            </div>
           </div>
         </div>
 
-        <div className="items-center  border-black border flex space-x-10 container mx-auto">
+        <div className="items-center  border-black border flex space-x-10 container mx-auto flex">
           {/* Profile */}
           <div className="space-y-3.5">
-            <div className="bg-orange-400 rounded-lg pt-0.5 pb-3 pl-12 pr-10">
+            <div className="bg-orange-400 lg:rounded-lg lg:pt-0.5 lg:pb-3 lg:pl-12 lg:pr-10">
               <svg
                 width="96"
                 height="76"
