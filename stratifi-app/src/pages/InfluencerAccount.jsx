@@ -1,10 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import image from "../../public/images/prelaunchimages.jpg";
+import Hero from "@/components/Hero";
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const InfluencerAccount = () => {
   return (
     <section>
+      <NavBar />
       <div>
         <div className="items-center flex ml-6 space-x-16 pt-7 pb-16 px-10">
           <div className="text-orange-400 text-4xl font-bold">
@@ -143,7 +147,7 @@ const InfluencerAccount = () => {
           </div>
         </div>
         {/* first section */}
-        <div className="container mx-auto py-6 px-20 pt-20 ">
+        <section className="container mx-auto py-6 px-20 pt-20 ">
           <h1 className="text-4xl font-bold text-center">Invitations</h1>
           <div className="bg-purple-500 rounded-lg shadow w-[543]px">
             <div className="text-xl font-medium px-8 py-8">
@@ -176,20 +180,64 @@ const InfluencerAccount = () => {
 
           <div className="flex justify-between">
             <div className="text-xl font-medium px-8 py-8">
-              <div className="bg-orange-400 rounded-lg px-14 py-5">
-                Lifestyle
-              </div>
+              <div className="bg-orange-400 rounded-lg px-14 py-5">Message</div>
             </div>
             <div className="text-xl font-medium px-8 py-8 ">
-              <div className="bg-orange-400 rounded-lg px-14 py-5">
-                Lifestyle
+              <div className="bg-orange-400 rounded-lg px-14 py-5">View</div>
+            </div>
+          </div>
+        </section>
+
+        {/* second section */}
+        <section className="container mx-auto py-6 px-20 pt-20 ">
+          <h1 className="text-4xl font-bold text-center">
+            Collabs you may like
+          </h1>
+          <div className="bg-purple-500 rounded-lg shadow w-[543]px">
+            <div className="text-xl font-medium px-8 py-8">
+              <div className="text-center font-bold text-3xl underline">
+                Fitness World
+              </div>
+            </div>
+            <div className="items-start flex ">
+              <div className="flex-col py-4 px-4">
+                <div className="items-center flex text-xl font-medium px-8  ">
+                  <div className="bg-white rounded-lg pt-4 pb-7 px-16 py-2">
+                    Sports
+                  </div>
+                </div>
+                <div className="text-xl font-medium px-8 py-8">
+                  <div className="bg-white rounded-lg px-14 py-5">
+                    Lifestyle
+                  </div>
+                </div>
+                <div className="items-center flex text-xl font-medium px-8  ">
+                  <div className="bg-white rounded-lg pt-4 pb-7 px-16">
+                    Health/fitness
+                  </div>
+                </div>
+              </div>
+
+              <div className="">
+                <div className="px-20 pb-4">
+                  {" "}
+                  <Image src={image} alt="" width={500} height={500} />
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* second section */}
+          <div className="flex justify-between">
+            <div className="text-xl font-medium px-8 py-8">
+              <div className="bg-orange-400 rounded-lg px-14 py-5">Message</div>
+            </div>
+            <div className="text-xl font-medium px-8 py-8 ">
+              <div className="bg-orange-400 rounded-lg px-14 py-5">View</div>
+            </div>
+          </div>
+        </section>
       </div>
+      <Footer />
     </section>
   );
 };
