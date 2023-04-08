@@ -4,11 +4,11 @@ import image from "../../public/images/prelaunchimages.jpg";
 import Hero from "@/components/Hero";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-
+import InfluencerNavBar from "../components/InfluencerNavBar";
 const InfluencerAccount = () => {
   return (
     <section>
-      <NavBar />
+      <InfluencerNavBar />
       <div>
         <div className=" ">
           <div className="items-center flex px-32 space-y-10 pt-7 pb-16 mx-auto container ">
