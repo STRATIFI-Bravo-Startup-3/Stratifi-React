@@ -21,7 +21,7 @@ const Profile = () => {
   };
 
   return (
-    <div className="m-4 flex flex-col items-center w-full">
+    <div className="m-4 flex flex-col items-center w-full overflow-x-scroll">
       <form
         disabled
         // onSubmit={handleSubmit}
