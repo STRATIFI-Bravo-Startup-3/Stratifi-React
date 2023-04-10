@@ -1,8 +1,6 @@
-import React, { Component } from "react";
 import GoHome from "../components/common/GoHome";
 import Input from "../components/common/input";
 import Link from "next/link";
-import Joi from "joi-browser";
 
 const ResetPassword = () => {
   return (
