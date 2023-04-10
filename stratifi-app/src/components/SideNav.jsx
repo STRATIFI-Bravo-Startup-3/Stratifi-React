@@ -1,11 +1,8 @@
 import { useState } from "react";
-import Image from "next/image";
-import { HiMenu } from "react-icons/hi";
 import { HiOutlineSpeakerWave, HiOutlineWallet } from "react-icons/hi2";
 import { CgProfile } from "react-icons/cg";
-import { MdOutlineCampaign } from "react-icons/md";
 import { TiMessages } from "react-icons/ti";
-import { IoWalletOutline, IoSettingsOutline } from "react-icons/io5";
+import { IoSettingsOutline } from "react-icons/io5";
 
 const SideNav = ({ isOpen, onClick }) => {
   const [selected, setSelected] = useState(1);
@@ -21,7 +18,7 @@ const SideNav = ({ isOpen, onClick }) => {
         className={`${
           isOpen
             ? ""
-            : "invisible md:visible -translate-x-full md:-translate-x-0"
+            : "invisible lg:visible -translate-x-full md:-translate-x-0"
         } md:flex md:flex-shrink-0 transition-transform duration-500 ease-in-out transform `}
       >
         <div className="px-2 py-6 h-screen w-[14rem] border-r-[0.08rem] bg-secondary border-gray-200 text-gray-700 flex flex-col justify-between">

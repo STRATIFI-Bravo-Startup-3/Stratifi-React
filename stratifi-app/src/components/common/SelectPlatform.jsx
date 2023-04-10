@@ -1,4 +1,4 @@
-const SelectPlatform = ({ value, onChange, name, errors, label, required }) => {
+const SelectPlatform = ({ disabled, value, onChange, name, errors, label, required }) => {
   return (
     <div className="flex flex-col w-[17rem]">
       <label htmlFor="main_platform" className="mb-1">
@@ -9,6 +9,7 @@ const SelectPlatform = ({ value, onChange, name, errors, label, required }) => {
       (This is the platform you're most active in)
     </span> */}
       <select
+      disabled={disabled}
         className="rounded-lg p-2"
         name={name}
         value={value}

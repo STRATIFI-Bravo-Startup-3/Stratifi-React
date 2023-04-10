@@ -1,4 +1,5 @@
 const SelectAudienceAge = ({
+  disabled,
   value,
   onChange,
   name,
@@ -16,6 +17,7 @@ const SelectAudienceAge = ({
         (This is the platform you're most active in)
       </span> */}
       <select
+        disabled={disabled}
         className="rounded-lg p-2"
         name={name}
         value={value}

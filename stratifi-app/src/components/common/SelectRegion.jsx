@@ -1,4 +1,4 @@
-const SelectRegion = ({ name, value, onChange, label, errors, required }) => {
+const SelectRegion = ({ disabled, name, value, onChange, label, errors, required }) => {
   return (
     <div className="flex flex-col w-[17rem]">
       <label htmlFor="main_region" className="mb-1">
@@ -9,6 +9,7 @@ const SelectRegion = ({ name, value, onChange, label, errors, required }) => {
       (This is the platform you're most active in)
     </span> */}
       <select
+      disabled={disabled}
         className="rounded-lg p-2"
         name={name}
         value={value}

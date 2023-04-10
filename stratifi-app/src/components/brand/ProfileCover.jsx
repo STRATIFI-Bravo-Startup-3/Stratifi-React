@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ProfileCover = () => {
   return (
-    <div className="bg-secondary w-full h-[7rem] md:h-[10rem] rounded-lg relative ">
+    <div className="bg-secondary w-full py-4 rounded-lg relative ">
       <div className="px-4 flex h-full items-center">
         <Image
           src="/images/about1.svg"

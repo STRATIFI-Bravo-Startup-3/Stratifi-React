@@ -3,10 +3,11 @@ import SideNav from "@/components/SideNav";
 import ProfileCover from "@/components/brand/ProfileCover";
 import { HiMenu } from "react-icons/hi";
 import Profile from "@/components/brand/Profile";
+import Campaigns from "@/components/brand/Campaigns";
 
 const BrandDashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [selectedComponent, setSelectedComponent] = useState(null);
+  const [selectedComponent, setSelectedComponent] = useState("Profile");
 
   const handleToggle = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -17,22 +18,25 @@ const BrandDashboard = () => {
     case "Profile":
       componentToRender = <Profile />;
       break;
+    case "Campaigns":
+      componentToRender = <Campaigns />;
+      break;
     default:
       componentToRender = null;
   }
   return (
     <div className="relative overflow-x-hidden">
-      <div className="md:hidden p-4 bg-[#AD6EC0]">
+      <div className="lg:hidden p-4 bg-[#AD6EC0]">
         <HiMenu onClick={() => handleToggle()} />
       </div>
-      <div className="flex min-h-screen md:h-screen">
-        <div className="absolute md:relative z-10">
+      <div className="flex min-h-screen lg:h-screen">
+        <div className="absolute lg:relative z-10">
           <SideNav
             onClick={(component) => setSelectedComponent(component)}
             isOpen={isSidebarOpen}
           />
         </div>
-        <div className="w-full m-6 flex-grow flex flex-col gap-4 overflow-y-auto">
+        <div className="w-full m-6 flex-grow items-center flex flex-col gap-4 overflow-y-auto overflow-x-auto">
           <ProfileCover />
           {componentToRender}
         </div>

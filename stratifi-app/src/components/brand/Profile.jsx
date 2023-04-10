@@ -12,18 +12,32 @@ import SelectEarning from "../common/SelectEarning";
 const Profile = () => {
   const [brand, setBrand] = useState({});
   const [errors, setErrors] = useState({});
+  const [isDisabled, setIsDisabled] = useState(true);
   const router = useRouter();
+
+  const toggleEdit = (e) => {
+    e.preventDefault();
+    setIsDisabled(false);
+  };
 
   return (
     <div className="m-4 flex flex-col items-center w-full">
       <form
+        disabled
         // onSubmit={handleSubmit}
-        className="flex flex-col bg-gray-100 px-4 m-[1rem] items-center rounded-xl  gap-4 animate__animated animate__fadeInDown  shadow-slate-800"
+        className="flex flex-col bg-gray-100 px-4 md:px-8 m-[1rem] items-center rounded-xl  gap-4 animate__animated animate__fadeInDown  shadow-slate-800"
       >
-        <div className="mt-6 flex flex-col items-center gap-2 mx-auto px-4 py-8">
-          <h1 className="text-center text-lg font-bold text-slate-800">
-            Update Profile Information
+        <div className="mt-6 flex items-center gap-2 w-full py-8 justify-between">
+          <h1 className="text-center text-sm md:text-base font-bold text-slate-800">
+            Profile Information
           </h1>
+
+          <button
+            onClick={toggleEdit}
+            className=" bg-[#FF6610] text-white h-12 w-[6rem] rounded-xl text-base hover:bg-[#FF7A30] active:bg-[#FF8F50]"
+          >
+            Edit
+          </button>
 
           {/* <span className="text-red-600 text-[0.8rem] italic">
               (All fields marked * are required)
@@ -36,7 +50,8 @@ const Profile = () => {
             <span className="text-red-600">*</span>
           </label>
           <textarea
-            className="rounded-xl h-[10rem] w-full text-sm ring-grey-200 ring-1 p-4"
+            disabled={isDisabled}
+            className="rounded-xl h-[10rem] sm:min-w-[35rem] text-sm ring-grey-200 ring-1 p-4"
             placeholder="In a few words, tell us about your brand..."
             name="description"
             value={brand.description}
@@ -48,12 +63,13 @@ const Profile = () => {
           )}
         </div>
 
-        <div className="grid grid-cols-1 gap-4 md:flex items-center md:justify-between mx-auto md:w-[40rem]">
+        <div className="grid grid-cols-1 gap-4 sm:flex items-center sm:justify-between mx-auto md:w-[40rem]">
           <div className="w-[17rem]">
             <label className="mb-1" htmlFor="website">
               Business Name<span className="text-red-600">*</span>
             </label>
             <input
+              disabled={isDisabled}
               className="p-2 rounded-lg w-full"
               type="text"
               name="business_name"
@@ -72,6 +88,7 @@ const Profile = () => {
               Website<span className="text-red-600">*</span>
             </label>
             <input
+              disabled={isDisabled}
               className="p-2 rounded-lg w-full"
               type="text"
               name="website"
@@ -86,8 +103,9 @@ const Profile = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 md:gap-[6rem] items-center md:flex mx-auto">
+        <div className="grid grid-cols-1 gap-4 md:gap-[6rem] items-center sm:flex mx-auto">
           <SelectPlatform
+            disabled={isDisabled}
             name="preferred_platform"
             value={brand.preferred_platform}
             errors={errors.preferred_platform}
@@ -95,6 +113,7 @@ const Profile = () => {
             required="*"
           />
           <SelectCategory
+            disabled={isDisabled}
             name="category"
             value={brand.category}
             errors={errors.category}
@@ -103,8 +122,9 @@ const Profile = () => {
           />
         </div>
 
-        <div className="grid grid-cols-1 gap-4 md:gap-[6rem] items-center md:flex mx-auto">
+        <div className="grid grid-cols-1 gap-4 md:gap-[6rem] items-center sm:flex mx-auto">
           <SelectAudience
+            disabled={isDisabled}
             label="Target Audience"
             required="*"
             value={brand.target_audience}
@@ -112,6 +132,7 @@ const Profile = () => {
             name="target_audience"
           />
           <SelectAudienceAge
+            disabled={isDisabled}
             label="Audience Age"
             required="*"
             value={brand.audience_age}
@@ -119,8 +140,9 @@ const Profile = () => {
             name="audience_age"
           />
         </div>
-        <div className="grid grid-cols-1 content-center gap-4 md:gap-[6rem] items-center md:flex mx-auto">
+        <div className="grid grid-cols-1 content-center gap-4 md:gap-[6rem] items-center sm:flex mx-auto">
           <SelectInfluencerType
+            disabled={isDisabled}
             label="Preferred Influencer Type"
             required="*"
             name="influencer_type"
@@ -133,9 +155,14 @@ const Profile = () => {
             </label>
             <div className="flex items-center w-full justify-center">
               <div className="">
-                <SelectCurrency name="currency" value={brand.currency} />
+                <SelectCurrency
+                  disabled={isDisabled}
+                  name="currency"
+                  value={brand.currency}
+                />
               </div>
               <SelectEarning
+                disabled={isDisabled}
                 name="budget_range"
                 value={brand.budget_range || ""}
               />
