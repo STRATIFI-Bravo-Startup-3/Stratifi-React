@@ -7,21 +7,28 @@ import { MdOutlineCampaign } from "react-icons/md";
 import { TiMessages } from "react-icons/ti";
 import { IoWalletOutline, IoSettingsOutline } from "react-icons/io5";
 
-const SideNav = ({ isOpen }) => {
+const SideNav = ({ isOpen, onClick }) => {
   const [selected, setSelected] = useState(1);
 
-  const handleClick = (index) => {
+  const handleClick = (index, component) => {
     setSelected(index);
+    onClick(component);
   };
 
   return (
-    <div className="flex flex-col">
-      <div className={`${isOpen ? "" : "hidden"} md:flex md:flex-shrink-0 `}>
-        <div className="px-2 py-6 h-[49rem] w-[14rem] border-r-[0.08rem] bg-secondary border-gray-200 text-gray-700 flex flex-col justify-between">
+    <nav className="flex flex-col">
+      <div
+        className={`${
+          isOpen
+            ? ""
+            : "invisible md:visible -translate-x-full md:-translate-x-0"
+        } md:flex md:flex-shrink-0 transition-transform duration-500 ease-in-out transform `}
+      >
+        <div className="px-2 py-6 h-screen w-[14rem] border-r-[0.08rem] bg-secondary border-gray-200 text-gray-700 flex flex-col justify-between">
           <div className="flex flex-col gap-5">
-            <div className="text-white px-2">House of Thera</div>
+            <div className="text-white p-2"></div>
             <div
-              onClick={() => handleClick(1)}
+              onClick={() => handleClick(1, "Profile")}
               className={
                 selected === 1
                   ? "flex items-center gap-2 border-l-2 border-white text-white px-2"
@@ -40,7 +47,7 @@ const SideNav = ({ isOpen }) => {
               </div>
             </div>
             <div
-              onClick={() => handleClick(2)}
+              onClick={() => handleClick(2, "Campaigns")}
               className={
                 selected === 2
                   ? "flex items-center gap-2 border-l-2 border-white text-white px-2"
@@ -59,7 +66,7 @@ const SideNav = ({ isOpen }) => {
               </div>
             </div>
             <div
-              onClick={() => handleClick(3)}
+              onClick={() => handleClick(3, "Messages")}
               className={
                 selected === 3
                   ? "flex items-center gap-2 border-l-2 border-white text-white px-2"
@@ -78,7 +85,7 @@ const SideNav = ({ isOpen }) => {
               </div>
             </div>
             <div
-              onClick={() => handleClick(4)}
+              onClick={() => handleClick(4, "Wallet")}
               className={
                 selected === 4
                   ? "flex items-center gap-2 border-l-2 border-white text-white px-2"
@@ -97,7 +104,7 @@ const SideNav = ({ isOpen }) => {
               </div>
             </div>
             <div
-              onClick={() => handleClick(5)}
+              onClick={() => handleClick(5, "Settings")}
               className={
                 selected === 5
                   ? "flex items-center gap-2 border-l-2 border-white text-white px-2"
@@ -118,7 +125,7 @@ const SideNav = ({ isOpen }) => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
