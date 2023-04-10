@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Link from "next/link";
 import Joi from "joi-browser";
-import MailchimpDownload from "../components/mailchimpDownload";
 import GoHome from "../components/common/GoHome";
 
 class SubscribeContent extends Component {
@@ -80,7 +79,6 @@ class SubscribeContent extends Component {
               your free package
             </span>
           </div>
-          <MailchimpDownload url={url} />
 
           <div className="flex flex-col mx-auto my-2">
             <span className="text-center text-slate-600 text-sm">

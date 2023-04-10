@@ -10,8 +10,6 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 
-import MailchimpSubscribeSmall from "./mailchimpSubscribeSmall";
-
 class Footer extends Component {
   company = [
     {
