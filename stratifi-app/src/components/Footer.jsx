@@ -81,7 +81,7 @@ class Footer extends Component {
             </h1>
 
             <div className="my-1">
-              <MailchimpSubscribeSmall url={url} />
+              {/* <MailchimpSubscribeSmall url={url} /> */}
             </div>
             <div className="flex flex-col px-2 py-4 mx-auto justify-between text-center text-white">
               <div className="flex gap-5 pt-4 text-2xl">
