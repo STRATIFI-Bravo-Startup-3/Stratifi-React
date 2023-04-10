@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../index.css";
 import Link from "next/link";
 import Joi from "joi-browser";
 import MailchimpDownload from "../components/mailchimpDownload";

@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import backgroundfooter from "../images/backgroundfooter.svg";
-import { Link } from "react-router-dom";
-import logo from "../images/logo.png";
 import GoHome from "../components/common/GoHome";
 import Input from "../components/common/input";
 import Joi from "joi-browser";
@@ -65,10 +62,7 @@ class ResetPassword extends Component {
   render() {
     const { account, errors } = this.state;
     return (
-      <div
-        style={{ backgroundImage: `url(${backgroundfooter})` }}
-        className="flex justify-center  h-screen relative"
-      >
+      <div className="flex justify-center  h-screen relative">
         <div className="absolute top-10 left-10">
           <GoHome />
         </div>
@@ -107,7 +101,6 @@ class ResetPassword extends Component {
               </Link>
             </span>
             <div className="items-center flex flex-col  ">
-              <img className="mx-auto w-[3rem]" src="" alt="" srcSet="" />
               <span className="font-black text-slate-700 text-lg my-auto">
                 STRATIFI.NG
               </span>
