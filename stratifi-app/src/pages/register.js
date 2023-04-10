@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import Input from "../components/common/input";
 import Link from "next/link";
 import Joi from "joi-browser";

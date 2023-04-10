@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Input from "../components/common/input";
 import Logo from "../components/common/Logo";
 import SelectCategory from "../components/common/SelectCategory";
 import SelectAudience from "../components/common/SelectAudience";
