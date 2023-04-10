@@ -113,7 +113,7 @@ const Login = () => {
             </form>
             <div className="flex flex-col mx-auto mb-5">
               <span className="text-center text-white text-sm">
-                Don't have an account?{" "}
+                {`Don't have an account?`}
                 <Link
                   className="underline underline-offset-2 text-sm"
                   href="/register"

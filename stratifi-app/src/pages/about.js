@@ -43,9 +43,9 @@ const AboutUs = () => {
           <div className="mx-auto lg:ml-48 lg:w-2/5 w-full flex flex-col gap-6">
             <h1 className="mx-auto lg:mx-0 text-xl font-bold">Our Vision</h1>
             <span className="text-slate-600 lg:w-4/5 w-full text-center lg:text-left">
-              To connect brands looking to amplify their reach with indigenous
+              {`To connect brands looking to amplify their reach with indigenous
               influencers in their industry who are verified and can deliver on
-              the brand's proposition.
+              the brand's proposition.`}
             </span>
           </div>
         </section>

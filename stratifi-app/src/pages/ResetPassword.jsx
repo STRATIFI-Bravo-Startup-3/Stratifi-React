@@ -101,7 +101,7 @@ class ResetPassword extends Component {
 
           <div className="flex flex-col gap-2 mx-auto mb-5">
             <span className="text-center text-gray-800 text-sm">
-              Didn't recieve any email?{" "}
+              {`Didn't recieve any email?`}
               <Link className="underline underline-offset-2 text-sm">
                 Resend email
               </Link>

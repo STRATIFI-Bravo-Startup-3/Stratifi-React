@@ -69,27 +69,6 @@ class Footer extends Component {
     },
   ];
 
-  icons = [
-    <FaLinkedin />,
-    <FaInstagram />,
-    <FaTwitter />,
-    <FaTiktok />,
-    <FaYoutube />,
-    <FaFacebook />,
-  ];
-
-  links = [
-    "https://www.linkedin.com/company/stratifing/",
-
-    "https://www.instagram.com/stratifii_",
-
-    "https://www.twitter.com/stratifi_",
-
-    "https://www.tiktok.com/@stratifi?_t=8WSCyCGgdsb&_r=1",
-
-    "https://www.facebook.com/profile.php?id=100086511409939",
-  ];
-
   render() {
     const url =
       "https://app.us13.list-manage.com/subscribe/post?u=311327338697ce69baa12d960&amp;id=3f88d6e974&amp;f_id=00c297e2f0";
