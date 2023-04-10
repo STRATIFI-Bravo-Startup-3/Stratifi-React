@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -21,11 +22,11 @@ const About = () => {
             We are an influencer marketplace. We connect brands with influencers
             from various niches to meet your marketing needs
           </span>
-          <a href="/about" className="lg:mx-0 mx-auto">
+          <Link href="/about" className="lg:mx-0 mx-auto">
             <button className="w-32 my-1 text-white px-4 py-2 active:bg-[#FF8F50] hover:bg-[#FF7A30] bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
               Learn more
             </button>
-          </a>
+          </Link>
         </div>
       </section>
       <section className="md:px-20 max-w-[80rem] grid grid-cols-1 items-center lg:flex lg:flex-row-reverse lg:justify-center p-8 gap-8">
@@ -49,11 +50,11 @@ const About = () => {
             opinions about your products and services with their audience to
             boost your brand exposure and grow your sales.
           </span>
-          <a href="/about" className="lg:mx-0 mx-auto">
+          <Link href="/about" className="lg:mx-0 mx-auto">
             <button className="w-32 my-1 text-white px-4 py-2 active:bg-[#FF8F50] hover:bg-[#FF7A30] bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
               Learn more
             </button>
-          </a>
+          </Link>
         </div>
       </section>
     </div>
