@@ -8,7 +8,7 @@ const Campaigns = () => {
         <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm">
           <h1 className="font-bold">MaraCampaign</h1>
           <div className="flex flex-col items-center">
-            <Image src="/images/about1.svg" width={200} height={200} />
+            <Image alt="" src="/images/about1.svg" width={200} height={200} />
             <span className="text-xs">Started on 22-10-2023</span>
             <span className="text-xs">Ending on 22-10-2023</span>
           </div>
@@ -17,7 +17,7 @@ const Campaigns = () => {
         <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm">
           <h1 className="font-bold">MaraCampaign</h1>
           <div className="flex flex-col items-center">
-            <Image src="/images/about1.svg" width={200} height={200} />
+            <Image alt="" src="/images/about1.svg" width={200} height={200} />
             <span className="text-xs">Started on 22-10-2023</span>
             <span className="text-xs">Ending on 22-10-2023</span>
           </div>
@@ -26,7 +26,7 @@ const Campaigns = () => {
         <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm">
           <h1 className="font-bold">MaraCampaign</h1>
           <div className="flex flex-col items-center">
-            <Image src="/images/about1.svg" width={200} height={200} />
+            <Image alt="" src="/images/about1.svg" width={200} height={200} />
             <span className="text-xs">Started on 22-10-2023</span>
             <span className="text-xs">Ending on 22-10-2023</span>
           </div>
@@ -35,7 +35,7 @@ const Campaigns = () => {
         <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm">
           <h1 className="font-bold">MaraCampaign</h1>
           <div className="flex flex-col items-center">
-            <Image src="/images/about1.svg" width={200} height={200} />
+            <Image alt="" src="/images/about1.svg" width={200} height={200} />
             <span className="text-xs">Started on 22-10-2023</span>
             <span className="text-xs">Ending on 22-10-2023</span>
           </div>
@@ -44,7 +44,7 @@ const Campaigns = () => {
         <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm">
           <h1 className="font-bold">MaraCampaign</h1>
           <div className="flex flex-col items-center">
-            <Image src="/images/about1.svg" width={200} height={200} />
+            <Image alt="" src="/images/about1.svg" width={200} height={200} />
             <span className="text-xs">Started on 22-10-2023</span>
             <span className="text-xs">Ending on 22-10-2023</span>
           </div>
@@ -53,7 +53,7 @@ const Campaigns = () => {
         <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm">
           <h1 className="font-bold">MaraCampaign</h1>
           <div className="flex flex-col items-center">
-            <Image src="/images/about1.svg" width={200} height={200} />
+            <Image alt="" src="/images/about1.svg" width={200} height={200} />
             <span className="text-xs">Started on 22-10-2023</span>
             <span className="text-xs">Ending on 22-10-2023</span>
           </div>
