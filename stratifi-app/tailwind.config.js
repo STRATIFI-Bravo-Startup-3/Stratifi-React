@@ -9,7 +9,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        blogPry: "#8F3AA6",
+      },
+    },
   },
   plugins: [],
 };
+

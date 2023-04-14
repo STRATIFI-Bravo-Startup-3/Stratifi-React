@@ -1,7 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
-const Hero = () => {
+const 
+
+
+Hero = () => {
   const url =
     "https://app.us13.list-manage.com/subscribe/post?u=311327338697ce69baa12d960&amp;id=3f88d6e974&amp;f_id=00c297e2f0";
 
