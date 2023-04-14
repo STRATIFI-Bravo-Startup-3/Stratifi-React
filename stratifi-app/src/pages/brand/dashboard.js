@@ -40,7 +40,7 @@ const BrandDashboard = () => {
             isOpen={isSidebarOpen}
           />
         </div>
-        <div className="w-full flex-grow items-center flex flex-col gap-4 overflow-y-auto overflow-x-hidden">
+        <div className="w-full flex-grow items-center flex flex-col gap-4 overflow-y-auto overflow-x-hidden justify-center">
           {componentToRender}
         </div>
       </div>

@@ -8,6 +8,7 @@ import SelectCategory from "../common/SelectCategory";
 import SelectPlatform from "../common/SelectPlatform";
 import SelectAudience from "../common/SelectAudience";
 import SelectEarning from "../common/SelectEarning";
+import ProfileCover from "./ProfileCover";
 
 const Profile = () => {
   const [brand, setBrand] = useState({});

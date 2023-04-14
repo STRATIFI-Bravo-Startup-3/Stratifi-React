@@ -1,6 +1,6 @@
 import { CiSearch } from "react-icons/ci";
 
-const SearchSm = () => {
+const SearchSm = ({ label }) => {
   return (
     <div className="flex items-center rounded ring-1 ring-gray-300 bg-white">
       <div className="pl-4 h-8 flex justify-center items-center">
@@ -10,7 +10,7 @@ const SearchSm = () => {
         <input
           className="px-2 h-full w-full outline-none"
           type="text"
-          placeholder="Search Campaigns"
+          placeholder={label}
         />
       </div>
     </div>

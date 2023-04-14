@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ButtonSm from "../common/ButtonSm";
-import Search from "../common/Search";
+import SearchSm from "../common/SearchSm";
 
 const Campaigns = () => {
   return (
@@ -11,7 +11,7 @@ const Campaigns = () => {
           New Campaign
         </button> */}
         <ButtonSm label="+ New Campaign" />
-        <Search />
+        <SearchSm label="Search Campaigns" />
       </div>
       <div>
         <h1 className="font-bold text-gray-600 text-lg p-4">
