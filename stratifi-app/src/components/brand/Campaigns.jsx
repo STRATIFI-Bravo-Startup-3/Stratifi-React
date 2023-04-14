@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { CiSearch } from "react-icons/ci";
 import ButtonSm from "../common/ButtonSm";
+import Search from "../common/Search";
 
 const Campaigns = () => {
   return (
@@ -11,18 +11,7 @@ const Campaigns = () => {
           New Campaign
         </button> */}
         <ButtonSm label="+ New Campaign" />
-        <div className="flex items-center rounded ring-1 ring-gray-300">
-          <div className="pl-4 h-12 flex justify-center items-center">
-            <CiSearch />
-          </div>
-          <div className="px-2 h-12 flex justify-center items-center w-[15rem]">
-            <input
-              className="px-2 h-full w-full outline-none"
-              type="text"
-              placeholder="Search Campaigns"
-            />
-          </div>
-        </div>
+        <Search />
       </div>
       <div>
         <h1 className="font-bold text-gray-600 text-lg p-4">
