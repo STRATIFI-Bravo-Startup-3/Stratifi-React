@@ -41,9 +41,6 @@ const BrandDashboard = () => {
           />
         </div>
         <div className="w-full flex-grow items-center flex flex-col gap-4 overflow-y-auto overflow-x-hidden">
-          <div className="p-2 lg:px-6 w-full">
-            <ProfileCover />
-          </div>
           {componentToRender}
         </div>
       </div>
