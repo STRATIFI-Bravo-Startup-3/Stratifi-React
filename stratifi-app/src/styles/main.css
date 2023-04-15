@@ -30,6 +30,7 @@
 }
 
 .bg-orange {
-  background-color: rgba(254, 156, 103, 0.7);
+  background-color: rgba(255, 122, 48, 0.8);
+
   background-blend-mode: overlay;
 }

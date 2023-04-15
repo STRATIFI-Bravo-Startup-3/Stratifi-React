@@ -48,7 +48,7 @@ const ChatWidget = () => {
         <div className="">Messages</div>
       </div>
       <div className="flex">
-        <div className="absolute lg:relative z-20 bg-gray-700 rounded-l">
+        <div className="absolute lg:relative z-20 bg-gray-500 rounded-l">
           <div className="flex flex-col bg-orange rounded-l">
             <div
               className={`${
@@ -105,7 +105,7 @@ const ChatWidget = () => {
         </div>
 
         <div className="bg-slate-300 w-full flex flex-col justify-between max-h-screen md:max-h-[36rem] rounded-r overflow-y-scroll relative">
-          <div className="bg-slate-800 z-10 sticky top-0">
+          <div className="bg-gray-500 z-10 sticky top-0">
             <div className="bg-orange h-12 flex items-center text-sm justify-between p-4 text-gray-200 z-10 sticky top-0">
               <h1>Fitness Center</h1>
 
@@ -119,12 +119,39 @@ const ChatWidget = () => {
             </div>
           </div>
 
-          <div className="my-auto flex flex-col items-start gap-4 p-2 text-gray-500 h-[36rem]">
-            <CgProfile className="h-8 w-8" />
-            <h1 className="font-bold text-3xl">Fitness Center</h1>
-            <span>
-              This is the beginning of your Direct Messaging with Fitness Center
-            </span>
+          <div className="overflow-y-scroll shadow-inner">
+            <div className="my-auto flex flex-col items-start gap-4 p-2 text-gray-500 h-[36rem]">
+              <CgProfile className="h-8 w-8" />
+              <h1 className="font-bold text-3xl">Fitness Center</h1>
+              <span>
+                This is the beginning of your Direct Messaging with Fitness
+                Center
+              </span>
+            </div>
+            <div className="my-auto flex flex-col items-start gap-4 p-2 text-gray-500 h-[36rem]">
+              <CgProfile className="h-8 w-8" />
+              <h1 className="font-bold text-3xl">Fitness Center</h1>
+              <span>
+                This is the beginning of your Direct Messaging with Fitness
+                Center
+              </span>
+            </div>
+            <div className="my-auto flex flex-col items-start gap-4 p-2 text-gray-500 h-[36rem]">
+              <CgProfile className="h-8 w-8" />
+              <h1 className="font-bold text-3xl">Fitness Center</h1>
+              <span>
+                This is the beginning of your Direct Messaging with Fitness
+                Center
+              </span>
+            </div>
+            <div className="my-auto flex flex-col items-start gap-4 p-2 text-gray-500 h-[36rem]">
+              <CgProfile className="h-8 w-8" />
+              <h1 className="font-bold text-3xl">Fitness Center</h1>
+              <span>
+                This is the beginning of your Direct Messaging with Fitness
+                Center
+              </span>
+            </div>
           </div>
 
           <div className="flex justify-between items-center p-2 z-10 sticky bottom-0 bg-slate-300">

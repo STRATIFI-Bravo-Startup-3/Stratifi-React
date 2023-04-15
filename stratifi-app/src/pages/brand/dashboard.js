@@ -1,10 +1,11 @@
 import { useState } from "react";
 import SideNav from "@/components/SideNav";
-import ProfileCover from "@/components/brand/ProfileCover";
 import { HiMenu } from "react-icons/hi";
 import Profile from "@/components/brand/Profile";
 import Campaigns from "@/components/brand/Campaigns";
 import ChatWidget from "@/components/ChatWidget";
+import Dashboard from "@/components/brand/Dashboard";
+import Wallet from "@/components/brand/Wallet";
 
 const BrandDashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -16,14 +17,22 @@ const BrandDashboard = () => {
 
   let componentToRender;
   switch (selectedComponent) {
+    case "Dashboard":
+      componentToRender = <Dashboard />;
+      break;
     case "Profile":
       componentToRender = <Profile />;
       break;
     case "Campaigns":
       componentToRender = <Campaigns />;
       break;
+
     case "Messages":
       componentToRender = <ChatWidget />;
+      break;
+
+    case "Wallet":
+      componentToRender = <Wallet />;
       break;
     default:
       componentToRender = null;
@@ -40,7 +49,7 @@ const BrandDashboard = () => {
             isOpen={isSidebarOpen}
           />
         </div>
-        <div className="w-full flex-grow items-center flex flex-col gap-4 overflow-y-auto overflow-x-hidden justify-center">
+        <div className="w-full flex-grow items-center flex flex-col gap-4 overflow-y-auto overflow-x-hidden ">
           {componentToRender}
         </div>
       </div>

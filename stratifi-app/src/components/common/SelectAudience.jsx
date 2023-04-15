@@ -18,7 +18,7 @@ const SelectAudience = ({
     </span> */}
       <select
         disabled={disabled}
-        className="rounded-lg p-2"
+        className="rounded-lg p-2 bg-[#F9E5FF]"
         name={name}
         value={value}
         onChange={onChange}

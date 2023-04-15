@@ -23,18 +23,19 @@ const Profile = () => {
 
   return (
     <>
-      <div className="p-2 lg:px-6 w-full">
-        <ProfileCover />
-      </div>
-
-      <div className="m-4 flex flex-col items-center w-full overflow-x-scroll">
+      <div className="m-4 flex flex-col items-center w-full py-4">
+        <div className="h-[10rem] w-[10rem] rounded-full ring-2 ring-gray-300 flex flex-col items-center justify-center">
+          <h1 className="border-b pt-12 pb-2 border-gray-300 text-xs text-gray-500">
+            Change Profile Picture
+          </h1>
+        </div>
         <form
           disabled
           // onSubmit={handleSubmit}
-          className="flex flex-col bg-gray-100 px-4 md:px-8 m-[1rem] items-center rounded-xl  gap-4 animate__animated animate__fadeInDown  shadow-slate-800"
+          className="flex flex-col px-4 md:px-8 m-[1rem] items-center rounded-xl  gap-4 animate__animated animate__fadeInDown  shadow-slate-800"
         >
           <div className="mt-6 flex items-center gap-2 w-full py-8 justify-between">
-            <h1 className="text-center text-sm md:text-base font-bold text-slate-800">
+            <h1 className="text-center text-sm md:text-base font-bold text-slate-800 mx-2">
               Profile Information
             </h1>
 
@@ -57,7 +58,7 @@ const Profile = () => {
             </label>
             <textarea
               disabled={isDisabled}
-              className="rounded-xl h-[10rem] sm:min-w-[35rem] text-sm ring-grey-200 ring-1 p-4"
+              className="rounded-xl h-[10rem] sm:min-w-[35rem] text-sm ring-grey-200 ring-1 p-4 bg-[#F9E5FF]"
               placeholder="In a few words, tell us about your brand..."
               name="description"
               value={brand.description}
@@ -76,7 +77,7 @@ const Profile = () => {
               </label>
               <input
                 disabled={isDisabled}
-                className="p-2 rounded-lg w-full"
+                className="p-2 rounded-lg w-full bg-[#F9E5FF]"
                 type="text"
                 name="business_name"
                 placeholder="Enter your Brand name"
@@ -95,7 +96,7 @@ const Profile = () => {
               </label>
               <input
                 disabled={isDisabled}
-                className="p-2 rounded-lg w-full"
+                className="p-2 rounded-lg w-full bg-[#F9E5FF]"
                 type="text"
                 name="website"
                 placeholder="https://"

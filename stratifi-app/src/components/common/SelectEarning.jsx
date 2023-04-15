@@ -4,10 +4,10 @@ const SelectEarning = ({ disabled, value, onChange, name, error }) => {
       <div className="flex gap-4 justify-center">
         <div>
           <input
-          disabled={disabled}
+            disabled={disabled}
             onChange={onChange}
             value={value}
-            className="rounded-lg p-2 text-sm w-11/12 mx-auto"
+            className="rounded-lg p-2 text-sm w-11/12 mx-auto bg-[#F9E5FF]"
             name={name}
             placeholder="0"
             type="text"

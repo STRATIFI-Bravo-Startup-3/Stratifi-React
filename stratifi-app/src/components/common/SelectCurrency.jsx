@@ -2,11 +2,11 @@ const SelectCurrency = ({ disabled, value, onChange, name }) => {
   return (
     <div className=" px-1">
       <select
-      disabled={disabled}
+        disabled={disabled}
         name={name}
         onChange={onChange}
         value={value}
-        className="rounded-lg p-2"
+        className="rounded-lg p-2 bg-[#F9E5FF]"
       >
         <option value="USD">$</option>
         <option value="NGN">₦</option>

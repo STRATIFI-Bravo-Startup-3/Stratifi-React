@@ -1,5 +1,5 @@
 const SelectInfluencerType = ({
-  disabled, 
+  disabled,
   value,
   onChange,
   name,
@@ -17,8 +17,8 @@ const SelectInfluencerType = ({
         (This is the platform you're most active in)
       </span> */}
       <select
-      disabled={disabled}
-        className="rounded-lg p-2"
+        disabled={disabled}
+        className="rounded-lg p-2 bg-[#F9E5FF]"
         name={name}
         value={value}
         onChange={onChange}
