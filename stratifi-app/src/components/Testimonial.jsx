@@ -37,7 +37,10 @@ const Testimonial = () => {
         <div className="flex flex-col mt-10 md:flex-row md:space-x-6">
           {/* <!-- Testimonials --> */}
           {testimonials.map((item) => (
-            <div className="flex flex-col space-y-20  p-4 rounded-lg bg-veryLightGray mb-4 md:mb-32 shadow-sm md:w-1/3 md:shadow-md ring-1 ring-slate-200">
+            <div
+              key={item.id}
+              className="flex flex-col space-y-20  p-4 rounded-lg bg-veryLightGray mb-4 md:mb-32 shadow-sm md:w-1/3 md:shadow-md ring-1 ring-slate-200"
+            >
               <p className="text-sm pt-8 text-slate-600">{item.comment}</p>
               <div className="flex items-center text-gray-600">
                 <Image

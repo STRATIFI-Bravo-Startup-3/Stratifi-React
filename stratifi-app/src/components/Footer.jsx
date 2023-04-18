@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Link from "next/link";
 
 import {
   FaFacebook,
@@ -8,9 +9,6 @@ import {
   FaTiktok,
   FaLinkedin,
 } from "react-icons/fa";
-
-import MailchimpSubscribeSmall from "./mailchimpSubscribeSmall";
-import MailchimpSubscribe from "./mailchimpSubscribe";
 
 class Footer extends Component {
   company = [
@@ -69,27 +67,6 @@ class Footer extends Component {
     },
   ];
 
-  icons = [
-    <FaLinkedin />,
-    <FaInstagram />,
-    <FaTwitter />,
-    <FaTiktok />,
-    <FaYoutube />,
-    <FaFacebook />,
-  ];
-
-  links = [
-    "https://www.linkedin.com/company/stratifing/",
-
-    "https://www.instagram.com/stratifii_",
-
-    "https://www.twitter.com/stratifi_",
-
-    "https://www.tiktok.com/@stratifi?_t=8WSCyCGgdsb&_r=1",
-
-    "https://www.facebook.com/profile.php?id=100086511409939",
-  ];
-
   render() {
     const url =
       "https://app.us13.list-manage.com/subscribe/post?u=311327338697ce69baa12d960&amp;id=3f88d6e974&amp;f_id=00c297e2f0";
@@ -102,46 +79,50 @@ class Footer extends Component {
             </h1>
 
             <div className="my-1">
-              <MailchimpSubscribeSmall url={url} />
+              {/* <MailchimpSubscribeSmall url={url} /> */}
             </div>
             <div className="flex flex-col px-2 py-4 mx-auto justify-between text-center text-white">
               <div className="flex gap-5 pt-4 text-2xl">
-                <a
+                <Link
                   className="hover:text-slate-300 active:text-slate-400"
                   href="https://www.linkedin.com/company/stratifing/"
                   target="blank"
                 >
                   <FaLinkedin />
-                </a>
-                <a
+                </Link>
+                <Link
                   className="hover:text-slate-300 active:text-slate-400"
                   href="https://www.facebook.com/profile.php?id=100086511409939"
                   target="blank"
                 >
                   <FaFacebook />
-                </a>
-                <a
+                </Link>
+                <Link
                   className="hover:text-slate-300 active:text-slate-400"
                   href="https://www.instagram.com/stratifii_"
                   target="blank"
                 >
                   <FaInstagram />
-                </a>
-                <a
+                </Link>
+                <Link
                   className="hover:text-slate-300 active:text-slate-400"
                   href="https://www.tiktok.com/@stratifi?_t=8WSCyCGgdsb&_r=1"
                   target="blank"
                 >
                   <FaTiktok />
-                </a>
-                <a
+                </Link>
+                <Link
                   className="hover:text-slate-300 active:text-slate-400"
                   href="https://www.twitter.com/stratifi_"
                   target="blank"
                 >
                   <FaTwitter />
-                </a>
-                <a className="hover:text-slate-300 active:text-slate-400">
+                </Link>
+                <a
+                  disabled
+                  className="hover:text-slate-300 active:text-slate-400"
+                  href="#"
+                >
                   <FaYoutube />
                 </a>
               </div>
@@ -154,12 +135,12 @@ class Footer extends Component {
               <h1 className="font-bold uppercase my-1">Quick Links</h1>
               {this.company.map((item) => (
                 <h2 key={item.id} className="my-1">
-                  <a
+                  <Link
                     className="hover:text-slate-300 active:text-slate-400"
                     href={item.link}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </h2>
               ))}
             </div>
@@ -169,12 +150,12 @@ class Footer extends Component {
               <h1 className="font-bold uppercase my-1">Support</h1>
               {this.support.map((item) => (
                 <h2 key={item.id} className="my-1">
-                  <a
+                  <Link
                     className="hover:text-slate-300 active:text-slate-400"
                     href={item.link}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </h2>
               ))}
             </div>

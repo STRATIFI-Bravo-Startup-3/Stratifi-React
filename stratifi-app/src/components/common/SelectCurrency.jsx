@@ -1,13 +1,14 @@
-const SelectCurrency = ({ value, onChange, name }) => {
+const SelectCurrency = ({ disabled, value, onChange, name }) => {
   return (
-    <div className="w-[6rem]">
+    <div className=" px-1">
       <select
+        disabled={disabled}
         name={name}
         onChange={onChange}
         value={value}
-        className="rounded-xl"
+        className="rounded-lg p-2 bg-[#F9E5FF]"
       >
-        <option value="USD">USD</option>
+        <option value="USD">$</option>
         <option value="NGN">₦</option>
       </select>
     </div>

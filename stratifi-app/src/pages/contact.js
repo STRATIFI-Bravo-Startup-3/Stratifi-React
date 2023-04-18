@@ -1,15 +1,10 @@
 import React, { Component } from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import useWindowWidth from "../components/common/windowWidth";
 import { useState } from "react";
-import Input from "../components/common/input";
-import FormInput from "../components/common/FormInput";
-import Button from "../components/common/Button";
 import Joi from "joi-browser";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
-import { HiOutlineSupport } from "react-icons/hi";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 const Contact = () => {
@@ -128,7 +123,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-white">
+    <div className="">
       <NavBar />
       <div className="h-screen relative bg-contact">
         <form

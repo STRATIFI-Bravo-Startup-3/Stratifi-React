@@ -1,12 +1,13 @@
-const SelectEarning = ({ value, onChange, name, error }) => {
+const SelectEarning = ({ disabled, value, onChange, name, error }) => {
   return (
     <div className="flex flex-col">
       <div className="flex gap-4 justify-center">
         <div>
           <input
+            disabled={disabled}
             onChange={onChange}
             value={value}
-            className="rounded-xl text-sm w-11/12 h-10  mx-auto"
+            className="rounded-lg p-2 text-sm w-11/12 mx-auto bg-[#F9E5FF]"
             name={name}
             placeholder="0"
             type="text"

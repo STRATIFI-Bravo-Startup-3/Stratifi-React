@@ -1,5 +1,6 @@
 import React, { Component, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { HiMenu } from "react-icons/hi";
 
 const NavBar = () => {
@@ -35,7 +36,7 @@ const NavBar = () => {
   return (
     <header className="">
       <div className="flex items-center lg:px-[5rem] p-1  text-gray-600 justify-between xl:mx-auto xl:max-w-7xl max-w-full flex-wrap w-full">
-        <a to="/">
+        <Link href="/">
           {" "}
           <div className="ml-16 lg:ml-10 flex justify-center w-[3rem]">
             <Image
@@ -48,7 +49,7 @@ const NavBar = () => {
             />
             <span className="font-black text-lg my-auto">STRATIFI.NG</span>
           </div>
-        </a>
+        </Link>
         <HiMenu
           className={`${
             open ? "rotate-90 ease-in delay-150" : ""
@@ -66,20 +67,20 @@ const NavBar = () => {
                 key={nav.id}
                 className="p-3 block text-start border-b-[0.5px] lg:border-0 border-neutral-800"
               >
-                <a
+                <Link
                   className="hover:text-slate-800 active:text-black"
                   href={nav.link}
                 >
                   {nav.item}
-                </a>
+                </Link>
               </li>
             ))}
-            <a href="/login">
+            <Link href="/login">
               {" "}
               <button className="ml-3 my-3 block text-white px-4 active:bg-[#FF8F50] hover:bg-[#FF7A30] bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
                 Sign in
               </button>
-            </a>
+            </Link>
           </ul>
         </nav>
       </div>

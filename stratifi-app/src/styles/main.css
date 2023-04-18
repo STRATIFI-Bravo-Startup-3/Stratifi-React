@@ -12,8 +12,25 @@
 .bg-contact {
   background: url("/images/contact-background.png") no-repeat center center
     fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+  background-size: cover;
 }
 .bg-tertiary {
-  background: url("/images/contact-background.png") no-repeat center center
-    fixed;
+  background: url("/images/background.jpeg") no-repeat center center fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+.bg-brand {
+  background: url("/images/brand-background.jpeg") no-repeat center center fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.bg-orange {
+  background-color: rgba(255, 122, 48, 0.8);
+
+  background-blend-mode: overlay;
 }

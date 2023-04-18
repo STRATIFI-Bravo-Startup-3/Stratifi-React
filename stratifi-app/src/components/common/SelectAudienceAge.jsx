@@ -1,4 +1,5 @@
 const SelectAudienceAge = ({
+  disabled,
   value,
   onChange,
   name,
@@ -8,7 +9,7 @@ const SelectAudienceAge = ({
 }) => {
   return (
     <div className="flex flex-col w-[17rem]">
-      <label htmlFor="audience" className="ml-2 mb-2">
+      <label htmlFor="audience" className="mb-1">
         {label}
         <span className="text-red-600">{required}</span>
       </label>
@@ -16,7 +17,8 @@ const SelectAudienceAge = ({
         (This is the platform you're most active in)
       </span> */}
       <select
-        className="rounded-xl"
+        disabled={disabled}
+        className="rounded-lg p-2 bg-[#F9E5FF]"
         name={name}
         value={value}
         onChange={onChange}
