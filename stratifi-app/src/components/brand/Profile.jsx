@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-import { Joi } from "joi-browser";
 import SelectCurrency from "../common/SelectCurrency";
 import SelectInfluencerType from "../common/SelectInfluencerType";
 import SelectAudienceAge from "../common/SelectAudienceAge";
@@ -8,7 +7,6 @@ import SelectCategory from "../common/SelectCategory";
 import SelectPlatform from "../common/SelectPlatform";
 import SelectAudience from "../common/SelectAudience";
 import SelectEarning from "../common/SelectEarning";
-import ProfileCover from "./ProfileCover";
 
 const Profile = () => {
   const [brand, setBrand] = useState({});
