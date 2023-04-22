@@ -6,10 +6,10 @@ import InfluencerNavBar from "../components/InfluencerNavBar";
 const InfluencerAccount = () => {
   return (
     <section>
-      <InfluencerNavBar />
-      <div>
-        <div className=" ">
-          <div className="items-center flex lg:px-32 space-y-10 lg:pt-7 lg:pb-16 mx-auto container ">
+      {/* <InfluencerNavBar /> */}
+      {/* <div> */}
+      {/* <div className=" ">
+          <div className="items-center flex px-32 space-y-10 pt-7 pb-16 mx-auto container ">
             {" "}
             <div className=" w-[15rem] lg:ml-48 mx-auto bg-[#FF8F50] rounded-full ">
               <Image
@@ -44,11 +44,11 @@ const InfluencerAccount = () => {
               </svg>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="items-center  border-black border flex space-x-10 container mx-auto flex">
-          {/* Profile */}
-          {/* <div className="space-y-3.5">
+      <div className="items-center  border-black border flex space-x-10 container mx-auto flex">
+        {/* Profile */}
+        {/* <div className="space-y-3.5">
             <div className="bg-orange-400 lg:rounded-lg lg:pt-0.5 lg:pb-3 lg:pl-12 lg:pr-10">
               <svg
                 width="96"
@@ -56,6 +56,7 @@ const InfluencerAccount = () => {
                 viewBox="0 0 96 76"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                cle
               >
                 <path
                   d="M94.5776 73.8832C94.2585 74.3403 93.7994 74.7198 93.2465 74.9837C92.6937 75.2475 92.0665 75.3864 91.4282 75.3862H4.17105C3.53316 75.3857 2.90668 75.2464 2.3545 74.9823C1.80232 74.7183 1.34388 74.3387 1.02522 73.8818C0.706565 73.4249 0.538899 72.9068 0.539063 72.3793C0.539226 71.8519 0.707214 71.3338 1.02616 70.877C7.94765 60.9831 18.6139 53.8886 31.0617 50.5255C24.9045 47.4948 20.1207 42.8767 17.445 37.3804C14.7693 31.8841 14.3496 25.8136 16.2504 20.101C18.1513 14.3884 22.2675 9.34971 27.9669 5.75862C33.6664 2.16754 40.6339 0.222656 47.7996 0.222656C54.9653 0.222656 61.9329 2.16754 67.6323 5.75862C73.3318 9.34971 77.448 14.3884 79.3488 20.101C81.2496 25.8136 80.83 31.8841 78.1543 37.3804C75.4786 42.8767 70.6948 47.4948 64.5375 50.5255C76.9853 53.8886 87.6516 60.9831 94.5731 70.877C94.8929 71.3337 95.0617 71.8519 95.0625 72.3796C95.0633 72.9073 94.896 73.4259 94.5776 73.8832Z"
@@ -66,8 +67,8 @@ const InfluencerAccount = () => {
             <div className="text-2xl underline">View Profile</div>
           </div> */}
 
-          {/* invitation */}
-          {/* <div className="space-y-3.5">
+        {/* invitation */}
+        {/* <div className="space-y-3.5">
             <div className="bg-orange-400 rounded-lg pt-0.5 pb-3 pl-12 pr-10">
               <svg
                 width="102"
@@ -84,8 +85,8 @@ const InfluencerAccount = () => {
             </div>
             <div className="text-2xl underline">invitation</div>
           </div> */}
-          {/* Recent collabs */}
-          {/* <div className="space-y-3.5">
+        {/* Recent collabs */}
+        {/* <div className="space-y-3.5">
             <div className="bg-orange-400 rounded-lg pt-0.5 pb-3 pl-12 pr-10">
               <svg
                 width="90"
@@ -102,8 +103,8 @@ const InfluencerAccount = () => {
             </div>
             <div className="text-2xl underline">Recent collabs</div>
           </div> */}
-          {/* Messages */}
-          {/* <div className="space-y-3.5">
+        {/* Messages */}
+        {/* <div className="space-y-3.5">
             <div className="bg-orange-400 rounded-lg pt-0.5 pb-3 pl-12 pr-10">
               <svg
                 width="94"
@@ -123,8 +124,8 @@ const InfluencerAccount = () => {
             </div>
             <div className="text-2xl underline">Messages</div>
           </div> */}
-          {/* Billing */}
-          {/* <div className="space-y-3.5">
+        {/* Billing */}
+        {/* <div className="space-y-3.5">
             <div className="bg-orange-400 rounded-lg pt-0.5 pb-3 pl-12 pr-10">
               <svg
                 width="74"
@@ -143,8 +144,8 @@ const InfluencerAccount = () => {
             </div>
             <div className="text-2xl underline">Billing</div>
           </div> */}
-          {/* Security */}
-          {/* <div className="space-y-3.5">
+        {/* Security */}
+        {/* <div className="space-y-3.5">
             <div className="bg-orange-400 rounded-lg pt-0.5 pb-3 pl-12 pr-10">
               <svg
                 width="68"
@@ -161,98 +162,100 @@ const InfluencerAccount = () => {
             </div>
             <div className="text-2xl underline">Security</div>
           </div> */}
-        </div>
+        {/* </div> */}
         {/* first section */}
-        <section className="container mx-auto py-6 px-20 pt-20 ">
-          <h1 className="text-4xl font-bold text-center">Invitations</h1>
-          <div className="bg-purple-500 rounded-lg shadow w-[543]px">
-            <div className="text-xl font-medium px-8 py-8">
-              <div className="text-center font-bold text-3xl underline">
-                House of Thera Pre-launch campaign
-              </div>
-            </div>
-            <div className="items-start flex ">
-              <div className="flex-col py-4 px-4">
-                <div className="text-xl font-medium px-8 py-8">
-                  <div className="bg-white rounded-lg px-14 py-5">
-                    Lifestyle
-                  </div>
-                </div>
-                <div className="items-center flex text-xl font-medium px-8  ">
-                  <div className="bg-white rounded-lg pt-4 pb-7 px-16">
-                    Fashion
-                  </div>
-                </div>
-              </div>
-
-              <div className="">
-                <div className="px-20 pb-4">
-                  {" "}
-                  <Image src={image} alt="" width={500} height={500} />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex justify-between">
-            <div className="text-xl font-medium px-8 py-8">
-              <div className="bg-orange-400 rounded-lg px-14 py-5">Message</div>
-            </div>
-            <div className="text-xl font-medium px-8 py-8 ">
-              <div className="bg-orange-400 rounded-lg px-14 py-5">View</div>
-            </div>
-          </div>
-        </section>
 
         {/* second section */}
-        <section className="container mx-auto py-6 px-20 pt-20 ">
-          <h1 className="text-4xl font-bold text-center">
-            Collabs you may like
-          </h1>
-          <div className="bg-purple-500 rounded-lg shadow w-[543]px">
-            <div className="text-xl font-medium px-8 py-8">
-              <div className="text-center font-bold text-3xl underline">
-                Fitness World
-              </div>
-            </div>
-            <div className="items-start flex ">
-              <div className="flex-col py-4 px-4">
-                <div className="items-center flex text-xl font-medium px-8  ">
-                  <div className="bg-white rounded-lg pt-4 pb-7 px-16 py-2">
-                    Sports
-                  </div>
-                </div>
-                <div className="text-xl font-medium px-8 py-8">
-                  <div className="bg-white rounded-lg px-14 py-5">
-                    Lifestyle
-                  </div>
-                </div>
-                <div className="items-center flex text-xl font-medium px-8  ">
-                  <div className="bg-white rounded-lg pt-4 pb-7 px-16">
-                    Health/fitness
-                  </div>
-                </div>
-              </div>
-
-              <div className="">
-                <div className="px-20 pb-4">
-                  {" "}
-                  <Image src={image} alt="" width={500} height={500} />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex justify-between">
-            <div className="text-xl font-medium px-8 py-8">
-              <div className="bg-orange-400 rounded-lg px-14 py-5">Message</div>
-            </div>
-            <div className="text-xl font-medium px-8 py-8 ">
-              <div className="bg-orange-400 rounded-lg px-14 py-5">View</div>
-            </div>
-          </div>
-        </section>
       </div>
+      <section className="container mx-auto lg:py-6 lg:px-20 lg:pt-20 ">
+        <h1 className="md:text-4xl font-bold text-center">Invitations</h1>
+        <div className="bg-purple-500 rounded-lg shadow w-full">
+          <div className="text-xl font-medium px-8 py-8">
+            <div className="text-center font-bold md:text-3xl underline">
+              House of Thera Pre-launch campaign
+            </div>
+          </div>
+          <div className="items-start flex ">
+            <div className="flex-col py-4 px-4">
+              <div className="md:text-xl font-medium px-8 py-8">
+                <div className="bg-white lg:rounded-lg lg:px-14 lg:py-5">
+                  Lifestyle
+                </div>
+              </div>
+              <div className="items-center flex text-xl font-medium px-8  ">
+                <div className="bg-white lg:rounded-lg lg:pt-4 lg:pb-7 lg:px-16">
+                  Fashion
+                </div>
+              </div>
+            </div>
+
+            <div className="">
+              <div className=" w-[5rem] mx-auto ">
+                <Image
+                  className=""
+                  src={image}
+                  alt=""
+                  width={500}
+                  height={500}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="flex justify-between">
+          <div className="text-xl font-medium px-8 py-8">
+            <div className="bg-orange-400 rounded-lg px-14 py-5">Message</div>
+          </div>
+          <div className="text-xl font-medium px-8 py-8 ">
+            <div className="bg-orange-400 rounded-lg px-14 py-5">View</div>
+          </div>
+        </div> */}
+      </section>
+
+      {/* <section className="container mx-auto py-6 px-20 pt-20 ">
+        <h1 className="text-4xl font-bold text-center">Collabs you may like</h1>
+        <div className="bg-purple-500 rounded-lg shadow w-[543]px">
+          <div className="text-xl font-medium px-8 py-8">
+            <div className="text-center font-bold text-3xl underline">
+              Fitness World
+            </div>
+          </div>
+          <div className="items-start flex ">
+            <div className="flex-col py-4 px-4">
+              <div className="items-center flex text-xl font-medium px-8  ">
+                <div className="bg-white rounded-lg pt-4 pb-7 px-16 py-2">
+                  Sports
+                </div>
+              </div>
+              <div className="text-xl font-medium px-8 py-8">
+                <div className="bg-white rounded-lg px-14 py-5">Lifestyle</div>
+              </div>
+              <div className="items-center flex text-xl font-medium px-8  ">
+                <div className="bg-white rounded-lg pt-4 pb-7 px-16">
+                  Health/fitness
+                </div>
+              </div>
+            </div>
+
+            <div className="">
+              <div className="px-20 pb-4 w-full">
+                {" "}
+                <Image src={image} alt="" width={500} height={500} />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-between">
+          <div className="text-xl font-medium px-8 py-8">
+            <div className="bg-orange-400 rounded-lg px-14 py-5">Message</div>
+          </div>
+          <div className="text-xl font-medium px-8 py-8 ">
+            <div className="bg-orange-400 rounded-lg px-14 py-5">View</div>
+          </div>
+        </div>
+      </section> */}
       <Footer />
     </section>
   );
