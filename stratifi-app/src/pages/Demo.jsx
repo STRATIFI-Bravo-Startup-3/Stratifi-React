@@ -136,26 +136,32 @@ const NavBar = () => {
           </button>
         </div>
       </section>
+
+      {/* Third section */}
+
       <section className="container mx-auto ">
         <h1 className="md:text-4xl text-2xl font-bold text-center mb-4">
-          Invitations
+          Collabs you may like
         </h1>
         <div className=" mx-auto container bg-purple-500 md:rounded-lg  rounded-sm">
           <h2 className="text-center font-bold md:text-3xl text-2xl underline mb-4">
-            House of Thera Pre-launch campaign
+            Fitness World
           </h2>
           <div className="flex  ">
             {/* Button section */}
-            <div className="flex-col px-8 pl-8 lg:px-40 lg:py-5 lg:mt-16 ">
-              <button className="bg-white p-2 rounded-lg  lg:px-14 lg:py-5 mb-8 font-medium">
-                Lifestyle
+            <div className="flex-col  pl-8 lg:px-40 lg:py-5 lg:mt-16 items-start">
+              <button className="bg-white p-2 px-10 lg:px-16  rounded-lg lg:py-5 mb-8 font-medium">
+                Sports
               </button>
-              <div className="bg-white mb-4 p-2 rounded-lg  lg:px-14 lg:py-5 font-medium">
-                Fashion
+              <div className="bg-white mb-4 p-2 py6 rounded-lg px-8  lg:px-14 lg:py-5 font-medium ">
+                Lifestyle
+              </div>
+              <div className="bg-white mb-4 mt-6 p-2 rounded-lg  lg:px-14 lg:py-5 font-medium">
+                Health/fitness
               </div>
             </div>
             {/* Image section */}
-            <div className=" w-2/5 mx-auto container sm:py-2 lg:px-4 lg:ml-4 lg:mb-4">
+            <div className=" w-2/5 mt-8 mx-auto container sm:py-8 lg:px-4 lg:ml-4 lg:mb-4">
               <Image className="" src={image} alt="" width={500} height={500} />
             </div>
           </div>
