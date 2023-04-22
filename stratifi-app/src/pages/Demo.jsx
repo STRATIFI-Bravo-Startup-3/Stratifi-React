@@ -100,6 +100,7 @@ const NavBar = () => {
         </div>
       </section>
 
+      {/* Second section  */}
       <section className="container mx-auto ">
         <h1 className="md:text-4xl text-2xl font-bold text-center mb-4">
           Invitations
@@ -109,18 +110,65 @@ const NavBar = () => {
             House of Thera Pre-launch campaign
           </h2>
           <div className="flex  ">
-            <div className="flex-col px-8 pl-8">
-              <div className="bg-white p-2 rounded-lg  lg:px-14 lg:py-5 mb-8">
+            {/* Button section */}
+            <div className="flex-col px-8 pl-8 lg:px-40 lg:py-5 lg:mt-16 ">
+              <button className="bg-white p-2 rounded-lg  lg:px-14 lg:py-5 mb-8 font-medium">
                 Lifestyle
-              </div>
-              <div className="bg-white mb-4 p-2 rounded-lg  lg:px-14 lg:py-5">
+              </button>
+              <div className="bg-white mb-4 p-2 rounded-lg  lg:px-14 lg:py-5 font-medium">
                 Fashion
               </div>
             </div>
-            <div className=" w-2/5 mx-auto container py-2">
+            {/* Image section */}
+            <div className=" w-2/5 mx-auto container sm:py-2 lg:px-4 lg:ml-4 lg:mb-4">
               <Image className="" src={image} alt="" width={500} height={500} />
             </div>
           </div>
+        </div>
+        {/* Button2 section */}
+        <div className="flex justify-between mt-4 px-4 item-center">
+          <button className="bg-orange-400 rounded-lg  p-2 text-xl lg:text-2xl font-medium ">
+            Message
+          </button>
+
+          <button className="bg-orange-400 rounded-lg  p-2 text-xl font-medium lg:px-4 lg:text-2xl">
+            View
+          </button>
+        </div>
+      </section>
+      <section className="container mx-auto ">
+        <h1 className="md:text-4xl text-2xl font-bold text-center mb-4">
+          Invitations
+        </h1>
+        <div className=" mx-auto container bg-purple-500 md:rounded-lg  rounded-sm">
+          <h2 className="text-center font-bold md:text-3xl text-2xl underline mb-4">
+            House of Thera Pre-launch campaign
+          </h2>
+          <div className="flex  ">
+            {/* Button section */}
+            <div className="flex-col px-8 pl-8 lg:px-40 lg:py-5 lg:mt-16 ">
+              <button className="bg-white p-2 rounded-lg  lg:px-14 lg:py-5 mb-8 font-medium">
+                Lifestyle
+              </button>
+              <div className="bg-white mb-4 p-2 rounded-lg  lg:px-14 lg:py-5 font-medium">
+                Fashion
+              </div>
+            </div>
+            {/* Image section */}
+            <div className=" w-2/5 mx-auto container sm:py-2 lg:px-4 lg:ml-4 lg:mb-4">
+              <Image className="" src={image} alt="" width={500} height={500} />
+            </div>
+          </div>
+        </div>
+        {/* Button2 section */}
+        <div className="flex justify-between mt-4 px-4 item-center">
+          <button className="bg-orange-400 rounded-lg  p-2 text-xl lg:text-2xl font-medium ">
+            Message
+          </button>
+
+          <button className="bg-orange-400 rounded-lg  p-2 text-xl font-medium lg:px-4 lg:text-2xl">
+            View
+          </button>
         </div>
       </section>
     </header>
