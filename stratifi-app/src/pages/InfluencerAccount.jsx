@@ -9,7 +9,7 @@ const InfluencerAccount = () => {
       <InfluencerNavBar />
       <div>
         <div className=" ">
-          <div className="items-center flex px-32 space-y-10 pt-7 pb-16 mx-auto container ">
+          <div className="items-center flex lg:px-32 space-y-10 lg:pt-7 lg:pb-16 mx-auto container ">
             {" "}
             <div className=" w-[15rem] lg:ml-48 mx-auto bg-[#FF8F50] rounded-full ">
               <Image
@@ -48,7 +48,7 @@ const InfluencerAccount = () => {
 
         <div className="items-center  border-black border flex space-x-10 container mx-auto flex">
           {/* Profile */}
-          <div className="space-y-3.5">
+          {/* <div className="space-y-3.5">
             <div className="bg-orange-400 lg:rounded-lg lg:pt-0.5 lg:pb-3 lg:pl-12 lg:pr-10">
               <svg
                 width="96"
@@ -64,10 +64,10 @@ const InfluencerAccount = () => {
               </svg>
             </div>
             <div className="text-2xl underline">View Profile</div>
-          </div>
+          </div> */}
 
           {/* invitation */}
-          <div className="space-y-3.5">
+          {/* <div className="space-y-3.5">
             <div className="bg-orange-400 rounded-lg pt-0.5 pb-3 pl-12 pr-10">
               <svg
                 width="102"
@@ -83,9 +83,9 @@ const InfluencerAccount = () => {
               </svg>
             </div>
             <div className="text-2xl underline">invitation</div>
-          </div>
+          </div> */}
           {/* Recent collabs */}
-          <div className="space-y-3.5">
+          {/* <div className="space-y-3.5">
             <div className="bg-orange-400 rounded-lg pt-0.5 pb-3 pl-12 pr-10">
               <svg
                 width="90"
@@ -101,9 +101,9 @@ const InfluencerAccount = () => {
               </svg>
             </div>
             <div className="text-2xl underline">Recent collabs</div>
-          </div>
+          </div> */}
           {/* Messages */}
-          <div className="space-y-3.5">
+          {/* <div className="space-y-3.5">
             <div className="bg-orange-400 rounded-lg pt-0.5 pb-3 pl-12 pr-10">
               <svg
                 width="94"
@@ -122,9 +122,9 @@ const InfluencerAccount = () => {
               </svg>
             </div>
             <div className="text-2xl underline">Messages</div>
-          </div>
+          </div> */}
           {/* Billing */}
-          <div className="space-y-3.5">
+          {/* <div className="space-y-3.5">
             <div className="bg-orange-400 rounded-lg pt-0.5 pb-3 pl-12 pr-10">
               <svg
                 width="74"
@@ -142,9 +142,9 @@ const InfluencerAccount = () => {
               </svg>
             </div>
             <div className="text-2xl underline">Billing</div>
-          </div>
+          </div> */}
           {/* Security */}
-          <div className="space-y-3.5">
+          {/* <div className="space-y-3.5">
             <div className="bg-orange-400 rounded-lg pt-0.5 pb-3 pl-12 pr-10">
               <svg
                 width="68"
@@ -160,7 +160,7 @@ const InfluencerAccount = () => {
               </svg>
             </div>
             <div className="text-2xl underline">Security</div>
-          </div>
+          </div> */}
         </div>
         {/* first section */}
         <section className="container mx-auto py-6 px-20 pt-20 ">
