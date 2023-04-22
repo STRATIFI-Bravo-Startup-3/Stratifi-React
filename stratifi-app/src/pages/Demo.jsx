@@ -66,7 +66,7 @@ const NavBar = () => {
               Show Profile Details
             </div>
           </div>
-          <div className="pr-10">
+          <div className="">
             <HiChevronUp
               className={`${
                 open ? "rotate-180 ease-in delay-150" : ""
@@ -90,7 +90,7 @@ const NavBar = () => {
                         alt=""
                         width={500}
                         height={500}
-                        className="w-[3rem] lg:w-[4rem]"
+                        className="w-[3rem] lg:w-[10rem]"
                       />
                     </div>
                     <div className="text-2xl underline">{nav.title}</div>
@@ -98,6 +98,34 @@ const NavBar = () => {
                 ))}
               </ul>
             </nav>
+          </div>
+        </div>
+      </section>
+
+      <section className="container mx-auto ">
+        <h1 className="md:text-4xl font-bold text-center">Invitations</h1>
+        <div>
+          <h2 className="text-center font-bold md:text-3xl underline">
+            House of Thera Pre-launch campaign
+          </h2>
+          <div>
+            <div className="flex-col">
+              <div className="bg-white lg:rounded-lg rounded-sm lg:px-14 lg:py-5">
+                Lifestyle
+              </div>
+              <div className="bg-white lg:rounded-lg rounded-sm lg:px-14 lg:py-5">
+                Fashion
+              </div>
+              <div className=" w-[5rem] mx-auto ">
+                <Image
+                  className=""
+                  src={image}
+                  alt=""
+                  width={500}
+                  height={500}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
