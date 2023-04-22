@@ -150,13 +150,13 @@ const NavBar = () => {
           <div className="flex  ">
             {/* Button section */}
             <div className="flex-col  pl-8 lg:px-40 lg:py-5 lg:mt-16 items-start">
-              <button className="bg-white p-2 px-10 lg:px-16  rounded-lg lg:py-5 mb-8 font-medium">
+              <button className="bg-white p-2 px-10 lg:px-16  rounded-lg lg:py-4 mb-8 font-medium">
                 Sports
               </button>
-              <div className="bg-white mb-4 p-2 py6 rounded-lg px-8  lg:px-14 lg:py-5 font-medium ">
+              <div className="bg-white mb-4 p-2  rounded-lg px-8  lg:px-10 lg:py-4 font-medium ">
                 Lifestyle
               </div>
-              <div className="bg-white mb-4 mt-6 p-2 rounded-lg  lg:px-14 lg:py-5 font-medium">
+              <div className="bg-white mb-4 mt-6 p-2 rounded-lg  lg:px-10 lg:py-4 font-medium">
                 Health/fitness
               </div>
             </div>
