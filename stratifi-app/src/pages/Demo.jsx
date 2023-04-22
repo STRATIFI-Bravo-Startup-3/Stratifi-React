@@ -1,9 +1,7 @@
 import React, { Component, useState } from "react";
 import Image from "next/image";
-import { HiMenu } from "react-icons/hi";
-import { HiChevronDown } from "react-icons/hi";
 import { HiChevronUp } from "react-icons/hi";
-
+import image from "../../public/images/prelaunchimages.jpg";
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const navItems = [
@@ -55,14 +53,14 @@ const NavBar = () => {
           />
         </div>
         <div className="mx-auto lg:w-full flex flex-col gap-6  pl-8">
-          <h1 className="text-purple-600 md:text-4xl font-bold">
+          <h1 className="text-purple-600 md:text-4xl text-3xl font-bold">
             {" "}
             Hi, <br />
             Anna
           </h1>
           <div className="flex">
             {" "}
-            <div className="text-orange-400 md:text-4xl font-bold">
+            <div className="text-orange-400 md:text-4xl font-bold text-3xl">
               Show Profile Details
             </div>
           </div>
@@ -78,7 +76,7 @@ const NavBar = () => {
                 open ? "block w-full ease-in delay-150" : "hidden"
               }  `}
             >
-              <ul className=" lg:border-black border lg:flex lg: container mx-auto lg:w-full  ">
+              <ul className=" w-full lg:border-black border lg:flex lg: container mx-auto lg:w-full  ">
                 {navItems.map((nav) => (
                   <li
                     key={nav.id}
@@ -103,28 +101,24 @@ const NavBar = () => {
       </section>
 
       <section className="container mx-auto ">
-        <h1 className="md:text-4xl font-bold text-center">Invitations</h1>
-        <div>
-          <h2 className="text-center font-bold md:text-3xl underline">
+        <h1 className="md:text-4xl text-2xl font-bold text-center mb-4">
+          Invitations
+        </h1>
+        <div className=" mx-auto container bg-purple-500 md:rounded-lg  rounded-sm">
+          <h2 className="text-center font-bold md:text-3xl text-2xl underline mb-4">
             House of Thera Pre-launch campaign
           </h2>
-          <div>
-            <div className="flex-col">
-              <div className="bg-white lg:rounded-lg rounded-sm lg:px-14 lg:py-5">
+          <div className="flex  ">
+            <div className="flex-col px-8 pl-8">
+              <div className="bg-white p-2 rounded-lg  lg:px-14 lg:py-5 mb-8">
                 Lifestyle
               </div>
-              <div className="bg-white lg:rounded-lg rounded-sm lg:px-14 lg:py-5">
+              <div className="bg-white mb-4 p-2 rounded-lg  lg:px-14 lg:py-5">
                 Fashion
               </div>
-              <div className=" w-[5rem] mx-auto ">
-                <Image
-                  className=""
-                  src={image}
-                  alt=""
-                  width={500}
-                  height={500}
-                />
-              </div>
+            </div>
+            <div className=" w-2/5 mx-auto container py-2">
+              <Image className="" src={image} alt="" width={500} height={500} />
             </div>
           </div>
         </div>
