@@ -78,13 +78,40 @@ class Footer2 extends Component {
       link: "",
     },
   ];
+  whyStratifi = [
+    {
+      id: 0,
+      name: "For Influencers",
+      link: "",
+    },
+    {
+      id: 1,
+      name: "For brands",
+      link: "",
+    },
+    {
+      id: 2,
+      name: "Testimonials",
+      link: "",
+    },
+    {
+      id: 3,
+      name: "Find Influencer",
+      link: "",
+    },
+    {
+      id: 4,
+      name: "Match Brands",
+      link: "",
+    },
+  ];
 
   render() {
     const url =
       "https://app.us13.list-manage.com/subscribe/post?u=311327338697ce69baa12d960&amp;id=3f88d6e974&amp;f_id=00c297e2f0";
     return (
-      <div className="md:flex grid-cols-1 justify-between mx-50 w-full bg-[#AD6EC0] text-white py-8 px-4 lg:gap-[5rem] bg-primary">
-        <div className="w-full lg:w-4/12 lg:pl-[8rem]">
+      <div className="md:flex grid-cols-4 justify-between mx-50 w-full bg-[#AD6EC0] text-white py-8 px-4 lg:gap-[5rem] bg-primary">
+        <div className="w-full ">
           <div className="flex flex-col text-left items-center">
             <h1 className="font-bold uppercase my-1">
               Subscribe to our Newsletter
@@ -141,7 +168,7 @@ class Footer2 extends Component {
             </div>
           </div>
         </div>
-        <div className="flex lg:w-full p-4 md:p-0">
+        <div className="flex lg:w-full ">
           <div className="flex flex-col items-center w-6/12 ">
             <div className="flex flex-col text-left">
               <h1 className="font-bold uppercase my-1">Quick Links</h1>
@@ -173,34 +200,37 @@ class Footer2 extends Component {
             </div>
           </div>
         </div>
-        <div className="w-6/12">
-          <div className="px-[2rem] flex-col text-left ">
-            <h1 className="font-bold uppercase my-1">About </h1>
-            {this.aboutUs.map((item) => (
-              <h2 key={item.id} className="my-1">
-                <Link
-                  className="hover:text-slate-300 active:text-slate-400"
-                  href={item.link}
-                >
-                  {item.name}
-                </Link>
-              </h2>
-            ))}
+        <div className="flex">
+          {" "}
+          <div className="">
+            <div className="px-[2rem] flex-col text-left ">
+              <h1 className="font-bold uppercase my-1">About </h1>
+              {this.aboutUs.map((item) => (
+                <h2 key={item.id} className="my-1">
+                  <Link
+                    className="hover:text-slate-300 active:text-slate-400"
+                    href={item.link}
+                  >
+                    {item.name}
+                  </Link>
+                </h2>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="w-6/12">
-          <div className="px-[2rem] flex-col text-left ">
-            <h1 className="font-bold uppercase my-1">About </h1>
-            {this.aboutUs.map((item) => (
-              <h2 key={item.id} className="my-1">
-                <Link
-                  className="hover:text-slate-300 active:text-slate-400"
-                  href={item.link}
-                >
-                  {item.name}
-                </Link>
-              </h2>
-            ))}
+          <div className="">
+            <div className="px-[2rem] flex-col text-left ">
+              <h1 className="font-bold uppercase my-1">Why Stratifi </h1>
+              {this.whyStratifi.map((item) => (
+                <h2 key={item.id} className="my-1">
+                  <Link
+                    className="hover:text-slate-300 active:text-slate-400"
+                    href={item.link}
+                  >
+                    {item.name}
+                  </Link>
+                </h2>
+              ))}
+            </div>
           </div>
         </div>
       </div>
