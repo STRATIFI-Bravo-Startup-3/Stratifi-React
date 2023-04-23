@@ -2,8 +2,9 @@ import React, { Component, useState } from "react";
 import Image from "next/image";
 import { HiChevronUp } from "react-icons/hi";
 import image from "../../public/images/prelaunchimages.jpg";
-import Footer from "@/components/Footer2";
 import Footer2 from "@/components/Footer2";
+import InfluencerNavBar from "@/components/InfluencerNavBar";
+
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const navItems = [
@@ -43,7 +44,8 @@ const NavBar = () => {
   ];
 
   return (
-    <header className="">
+    <body className="">
+      <InfluencerNavBar />
       <section className="px-20  grid grid-cols-1 items-center lg:gap lg:flex lg:justify-items-center p-8 gap-8 animate__animated animate__fadeInLeft">
         <div className=" w-[15rem] lg:ml-48 mx-auto bg-[#FF8F50] rounded-full ">
           <Image
@@ -55,7 +57,7 @@ const NavBar = () => {
           />
         </div>
         <div className="mx-auto lg:w-full flex flex-col gap-6  pl-8">
-          <h1 className="text-[#AD6EC0] md:text-4xl text-3xl font-bold">
+          <h1 className="text-purple-600 md:text-4xl text-3xl font-bold">
             {" "}
             Hi, <br />
             Anna
@@ -180,7 +182,7 @@ const NavBar = () => {
         </div>
       </section>
       <Footer2 />
-    </header>
+    </body>
   );
 };
 
