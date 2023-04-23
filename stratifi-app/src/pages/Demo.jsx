@@ -2,6 +2,7 @@ import React, { Component, useState } from "react";
 import Image from "next/image";
 import { HiChevronUp } from "react-icons/hi";
 import image from "../../public/images/prelaunchimages.jpg";
+import Footer from "@/components/Footer2";
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const navItems = [
@@ -177,6 +178,7 @@ const NavBar = () => {
           </button>
         </div>
       </section>
+      <Footer />
     </header>
   );
 };
