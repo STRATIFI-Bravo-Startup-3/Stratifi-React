@@ -3,6 +3,7 @@ import Image from "next/image";
 import { HiChevronUp } from "react-icons/hi";
 import image from "../../public/images/prelaunchimages.jpg";
 import Footer from "@/components/Footer2";
+import Footer2 from "@/components/Footer2";
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const navItems = [
@@ -54,7 +55,7 @@ const NavBar = () => {
           />
         </div>
         <div className="mx-auto lg:w-full flex flex-col gap-6  pl-8">
-          <h1 className="text-purple-600 md:text-4xl text-3xl font-bold">
+          <h1 className="text-[#AD6EC0] md:text-4xl text-3xl font-bold">
             {" "}
             Hi, <br />
             Anna
@@ -106,7 +107,7 @@ const NavBar = () => {
         <h1 className="md:text-4xl text-2xl font-bold text-center mb-4">
           Invitations
         </h1>
-        <div className=" mx-auto container bg-purple-500 md:rounded-lg  rounded-sm">
+        <div className=" mx-auto container bg-[#AD6EC0] md:rounded-lg  rounded-sm">
           <h2 className="text-center font-bold md:text-3xl text-2xl underline mb-4">
             House of Thera Pre-launch campaign
           </h2>
@@ -127,7 +128,7 @@ const NavBar = () => {
           </div>
         </div>
         {/* Button2 section */}
-        <div className="flex justify-between mt-4 px-4 item-center">
+        <div className="flex justify-between mt-4 px-4 item-center mb-4">
           <button className="bg-orange-400 rounded-lg  p-2 text-xl lg:text-2xl font-medium ">
             Message
           </button>
@@ -144,7 +145,7 @@ const NavBar = () => {
         <h1 className="md:text-4xl text-2xl font-bold text-center mb-4">
           Collabs you may like
         </h1>
-        <div className=" mx-auto container bg-purple-500 md:rounded-lg  rounded-sm">
+        <div className=" mx-auto container bg-[#AD6EC0] md:rounded-lg  rounded-sm">
           <h2 className="text-center font-bold md:text-3xl text-2xl underline mb-4">
             Fitness World
           </h2>
@@ -168,7 +169,7 @@ const NavBar = () => {
           </div>
         </div>
         {/* Button2 section */}
-        <div className="flex justify-between mt-4 px-4 item-center">
+        <div className="flex justify-between mt-4 px-4 item-center mb-8">
           <button className="bg-orange-400 rounded-lg  p-2 text-xl lg:text-2xl font-medium ">
             Message
           </button>
@@ -178,7 +179,7 @@ const NavBar = () => {
           </button>
         </div>
       </section>
-      <Footer />
+      <Footer2 />
     </header>
   );
 };
