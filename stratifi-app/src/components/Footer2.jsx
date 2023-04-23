@@ -10,7 +10,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 
-class Footer extends Component {
+class Footer2 extends Component {
   company = [
     {
       id: 0,
@@ -24,13 +24,13 @@ class Footer extends Component {
     },
     {
       id: 2,
-      name: "Contact",
-      link: "/contact",
+      name: "Get started",
+      link: "/get started",
     },
     {
       id: 3,
-      name: "Log In",
-      link: "/login",
+      name: "sign in",
+      link: "/sign-in",
     },
     {
       id: 4,
@@ -44,16 +44,16 @@ class Footer extends Component {
     },
   ];
 
-  support = [
+  customerService = [
     {
       id: 0,
-      name: "Information",
-      link: "/subscribe",
+      name: "Contact us",
+      link: "",
     },
     {
       id: 1,
-      name: "Privacy Policy",
-      link: "/info",
+      name: "Testimonials",
+      link: "",
     },
     {
       id: 2,
@@ -62,8 +62,20 @@ class Footer extends Component {
     },
     {
       id: 3,
-      name: "Community",
+      name: "Help",
       link: "/info",
+    },
+  ];
+  aboutUs = [
+    {
+      id: 0,
+      name: "About us",
+      link: "/About",
+    },
+    {
+      id: 1,
+      name: "Our Partners",
+      link: "",
     },
   ];
 
@@ -129,7 +141,7 @@ class Footer extends Component {
             </div>
           </div>
         </div>
-        <div className="flex lg:w-8/12 w-full p-4 md:p-0">
+        <div className="flex lg:w-full p-4 md:p-0">
           <div className="flex flex-col items-center w-6/12 ">
             <div className="flex flex-col text-left">
               <h1 className="font-bold uppercase my-1">Quick Links</h1>
@@ -147,8 +159,8 @@ class Footer extends Component {
           </div>
           <div className="w-6/12">
             <div className="px-[2rem] flex-col text-left ">
-              <h1 className="font-bold uppercase my-1">Support</h1>
-              {this.support.map((item) => (
+              <h1 className="font-bold uppercase my-1">Customer Service</h1>
+              {this.customerService.map((item) => (
                 <h2 key={item.id} className="my-1">
                   <Link
                     className="hover:text-slate-300 active:text-slate-400"
@@ -161,9 +173,39 @@ class Footer extends Component {
             </div>
           </div>
         </div>
+        <div className="w-6/12">
+          <div className="px-[2rem] flex-col text-left ">
+            <h1 className="font-bold uppercase my-1">About </h1>
+            {this.aboutUs.map((item) => (
+              <h2 key={item.id} className="my-1">
+                <Link
+                  className="hover:text-slate-300 active:text-slate-400"
+                  href={item.link}
+                >
+                  {item.name}
+                </Link>
+              </h2>
+            ))}
+          </div>
+        </div>
+        <div className="w-6/12">
+          <div className="px-[2rem] flex-col text-left ">
+            <h1 className="font-bold uppercase my-1">About </h1>
+            {this.aboutUs.map((item) => (
+              <h2 key={item.id} className="my-1">
+                <Link
+                  className="hover:text-slate-300 active:text-slate-400"
+                  href={item.link}
+                >
+                  {item.name}
+                </Link>
+              </h2>
+            ))}
+          </div>
+        </div>
       </div>
     );
   }
 }
 
-export default Footer;
+export default Footer2;
