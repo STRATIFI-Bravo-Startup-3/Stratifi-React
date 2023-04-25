@@ -11,12 +11,14 @@ import Subscriptions from "@/components/brand/Subscriptions";
 
 const BrandDashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [selectedComponent, setSelectedComponent] = useState("Profile");
+  const [selectedComponent, setSelectedComponent] = useState("Dashboard");
 
+  // Handles SideBar Toggle
   const handleToggle = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+  // Selects the Sidebar  Component to render
   let componentToRender;
   switch (selectedComponent) {
     case "Dashboard":
@@ -54,11 +56,13 @@ const BrandDashboard = () => {
       </div>
       <div className="flex min-h-screen lg:h-screen">
         <div className="absolute lg:relative z-30">
+          {/* SideBar */}
           <SideNav
             onClick={(component) => setSelectedComponent(component)}
             isOpen={isSidebarOpen}
           />
         </div>
+        {/* Rendered Component */}
         <div className="w-full flex-grow items-center flex flex-col gap-4 overflow-y-auto overflow-x-hidden ">
           {componentToRender}
         </div>

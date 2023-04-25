@@ -1,23 +1,14 @@
 import { useState } from "react";
-import { HiOutlineSpeakerWave, HiOutlineWallet, HiHome } from "react-icons/hi2";
+import { HiHome } from "react-icons/hi2";
 import { HiSpeakerphone } from "react-icons/hi";
-import { TiMessages } from "react-icons/ti";
-import {
-  IoSettingsOutline,
-  IoWallet,
-  IoSettings,
-  IoHelpCircleSharp,
-  IoLogOut,
-} from "react-icons/io5";
-import { FiHelpCircle } from "react-icons/fi";
-import { BiLogOutCircle } from "react-icons/bi";
+import { IoWallet, IoSettings, IoLogOut } from "react-icons/io5";
+
 import { BsPersonCircle } from "react-icons/bs";
 import { RiMessage3Fill } from "react-icons/ri";
-import { MdHelp } from "react-icons/md";
 import { FaRegMoneyBillAlt } from "react-icons/fa";
 
 const SideNav = ({ isOpen, onClick }) => {
-  const [selected, setSelected] = useState(1);
+  const [selected, setSelected] = useState(0);
 
   const handleClick = (index, component) => {
     setSelected(index);

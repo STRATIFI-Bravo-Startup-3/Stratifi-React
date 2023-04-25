@@ -10,6 +10,7 @@ import SelectAudience from "../components/common/SelectAudience";
 import SelectAudienceAge from "../components/common/SelectAudienceAge";
 import SelectInfluencerType from "../components/common/SelectInfluencerType";
 import NavBar from "@/components/NavBar";
+import UploadPicture from "../components/common/UploadPicture";
 
 const BrandInformation = () => {
   const [brand, setBrand] = useState({});
@@ -20,11 +21,11 @@ const BrandInformation = () => {
     description: Joi.string().required().min(50).label("Description"),
     website: Joi.string().required().label("Website"),
     business_name: Joi.string().required().label("Business Name"),
-    preferred_platform: Joi.string().required().label("Preferred Platform"),
+    // preferred_platform: Joi.string().required().label("Preferred Platform"),
     audience_age: Joi.string().required().label("Audience Age"),
     target_audience: Joi.string().required().label("Target Audience"),
     category: Joi.string().required().label("Category"),
-    influencer_type: Joi.string().required().label("Influencer Type"),
+    // influencer_type: Joi.string().required().label("Influencer Type"),
     budget_range: Joi.string().required().label("Budget Range"),
   };
 
@@ -203,12 +204,8 @@ const BrandInformation = () => {
               onChange={handleChange}
               error={errors.influencer_type}
             /> */}
-            <div className="flex flex-col w-[17rem] items-center">
-              <label className="ml-2 mb-2" htmlFor="">
-                Budget
-              </label>
-              <div className="flex items-center w-full justify-center">
-                <div className="">
+            <div className="flex flex-col w-[17rem]">
+              {/* <div className="">
                   <SelectCurrency
                     name="currency"
                     value={brand.currency}
@@ -219,8 +216,8 @@ const BrandInformation = () => {
                   name="budget_range"
                   value={brand.budget_range || ""}
                   onChange={handleChange}
-                />
-              </div>
+                /> */}
+              <UploadPicture />
             </div>
           </div>
 
