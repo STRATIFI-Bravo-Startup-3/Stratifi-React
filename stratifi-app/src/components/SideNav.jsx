@@ -14,6 +14,7 @@ import { BiLogOutCircle } from "react-icons/bi";
 import { BsPersonCircle } from "react-icons/bs";
 import { RiMessage3Fill } from "react-icons/ri";
 import { MdHelp } from "react-icons/md";
+import { FaRegMoneyBillAlt } from "react-icons/fa";
 
 const SideNav = ({ isOpen, onClick }) => {
   const [selected, setSelected] = useState(1);
@@ -130,8 +131,9 @@ const SideNav = ({ isOpen, onClick }) => {
                 <div className="cursor-pointer">Wallet</div>
               </div>
             </div>
+
             <div
-              onClick={() => handleClick(5, "Settings")}
+              onClick={() => handleClick(5, "Subscriptions")}
               className={
                 selected === 5
                   ? "flex items-center gap-2 border-l-2 border-[#8F3AA6] text-white px-2"
@@ -145,13 +147,13 @@ const SideNav = ({ isOpen, onClick }) => {
                     : "flex items-center px-2 gap-2 rounded-lg w-[10rem]"
                 }
               >
-                <IoSettings />
-                <div className="cursor-pointer">Settings</div>
+                <FaRegMoneyBillAlt />
+                <div className="cursor-pointer">Subscriptions</div>
               </div>
             </div>
 
             <div
-              onClick={() => handleClick(6, "Help")}
+              onClick={() => handleClick(6, "Settings")}
               className={
                 selected === 6
                   ? "flex items-center gap-2 border-l-2 border-[#8F3AA6] text-white px-2"
@@ -165,8 +167,8 @@ const SideNav = ({ isOpen, onClick }) => {
                     : "flex items-center px-2 gap-2 rounded-lg w-[10rem]"
                 }
               >
-                <MdHelp />
-                <div className="cursor-pointer">Help</div>
+                <IoSettings />
+                <div className="cursor-pointer">Settings</div>
               </div>
             </div>
 

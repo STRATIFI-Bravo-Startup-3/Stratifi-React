@@ -7,6 +7,7 @@ import ChatWidget from "@/components/ChatWidget";
 import Dashboard from "@/components/brand/Dashboard";
 import Wallet from "@/components/brand/Wallet";
 import Settings from "@/components/brand/Settings";
+import Subscriptions from "@/components/brand/Subscriptions";
 
 const BrandDashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -34,6 +35,10 @@ const BrandDashboard = () => {
 
     case "Wallet":
       componentToRender = <Wallet />;
+      break;
+
+    case "Subscriptions":
+      componentToRender = <Subscriptions />;
       break;
 
     case "Settings":
