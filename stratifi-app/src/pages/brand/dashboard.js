@@ -18,6 +18,8 @@ const BrandDashboard = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+  const selected = () => setIsSidebarOpen(false);
+
   // Selects the Sidebar  Component to render
   let componentToRender;
   switch (selectedComponent) {
@@ -60,6 +62,7 @@ const BrandDashboard = () => {
           <SideNav
             onClick={(component) => setSelectedComponent(component)}
             isOpen={isSidebarOpen}
+            hasSelected={selected}
           />
         </div>
         {/* Rendered Component */}

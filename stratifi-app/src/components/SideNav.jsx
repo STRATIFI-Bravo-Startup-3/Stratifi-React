@@ -7,12 +7,13 @@ import { BsPersonCircle } from "react-icons/bs";
 import { RiMessage3Fill } from "react-icons/ri";
 import { FaRegMoneyBillAlt } from "react-icons/fa";
 
-const SideNav = ({ isOpen, onClick }) => {
+const SideNav = ({ isOpen, onClick, hasSelected }) => {
   const [selected, setSelected] = useState(0);
 
   const handleClick = (index, component) => {
     setSelected(index);
     onClick(component);
+    hasSelected();
   };
 
   return (
