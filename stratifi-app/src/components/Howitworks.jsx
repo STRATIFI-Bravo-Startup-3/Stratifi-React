@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Howitworks = () => {
   const itemList = [
@@ -52,11 +53,11 @@ const Howitworks = () => {
         ))}
       </div>
       <div className="flex flex-col py-10">
-        <a href="/register">
+        <Link href="/register">
           <button className="w-40 text-white active:bg-[#FF8F50] hover:bg-[#FF7A30] bg-[#FF6610] ring-1 ring-[#FF7A30] shadow-sm shadow-slate-600 rounded">
             Get Started for Free
           </button>
-        </a>
+        </Link>
       </div>
     </section>
   );

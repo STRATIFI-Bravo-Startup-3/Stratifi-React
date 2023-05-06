@@ -1,5 +1,5 @@
-import React, { Component } from "react";
 import Input from "../components/common/input";
+import Link from "next/link";
 import Joi from "joi-browser";
 import NavBar from "@/components/NavBar";
 import { useState } from "react";
@@ -158,12 +158,12 @@ const Register = () => {
             <div className="flex flex-col mx-auto mb-5">
               <span className="text-center text-white text-sm">
                 Already have an account?{" "}
-                <a
+                <Link
                   className="underline underline-offset-2 text-sm"
                   href="/login"
                 >
                   Log In
-                </a>
+                </Link>
               </span>
             </div>
           </div>

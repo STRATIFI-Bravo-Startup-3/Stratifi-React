@@ -1,7 +1,8 @@
-const SelectCurrency = ({ value, onChange, name }) => {
+const SelectCurrency = ({ disabled, value, onChange, name }) => {
   return (
     <div className=" px-1">
       <select
+      disabled={disabled}
         name={name}
         onChange={onChange}
         value={value}

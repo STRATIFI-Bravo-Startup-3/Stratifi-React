@@ -1,4 +1,5 @@
 import Input from "../components/common/input";
+import Link from "next/link";
 import Joi from "joi-browser";
 import NavBar from "@/components/NavBar";
 import { useRouter } from "next/router";
@@ -112,13 +113,13 @@ const Login = () => {
             </form>
             <div className="flex flex-col mx-auto mb-5">
               <span className="text-center text-white text-sm">
-                Don't have an account?{" "}
-                <a
+                {`Don't have an account?`}
+                <Link
                   className="underline underline-offset-2 text-sm"
                   href="/register"
                 >
                   Sign up
-                </a>
+                </Link>
               </span>
             </div>
           </div>

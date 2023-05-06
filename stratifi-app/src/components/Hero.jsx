@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const 
 
@@ -19,17 +20,17 @@ Hero = () => {
           <span className="lg:text-xl">Guaranteed Results.</span>
         </div>
         <div className="md:mx-auto lg:mx-0 flex justify-between gap-8 animate__animated animate__bounce  lg:gap-6">
-          <a href="/register">
+          <Link href="/register">
             {" "}
             <button className="text-sm lg:text-base ring-2 ring-white bg-white hover:bg-slate-100 active:bg-slate-200 rounded-md text-[#FF8F50] py-1 px-6 w-30 lg:w-40">
               GET STARTED
             </button>
-          </a>
-          <a href="/login">
+          </Link>
+          <Link href="/login">
             <button className="text-sm lg:text-base ring-2 ring-white bg-[#AD6EC0] hover:bg-[#A960BF] active:bg-[#A752C0] rounded-md text-white py-1 px-6 w-30 lg:w-40">
               Sign In
             </button>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="h-auto items-center mx-auto lg:pt-12 lg:w-3/5 animate__animated animate__fadeInRight">

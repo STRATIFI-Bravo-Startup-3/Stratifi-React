@@ -66,10 +66,7 @@ const BrandInformation = () => {
     setErrors(newErrors || {});
     if (newErrors) return;
     // console.log("Submitted");
-    router.push({
-      pathname: "/brand/my-dashboard",
-      query: { email: account.email },
-    });
+    router.push("/brand/dashboard");
   };
 
   return (

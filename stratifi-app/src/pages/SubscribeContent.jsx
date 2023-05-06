@@ -1,10 +1,6 @@
 import React, { Component } from "react";
-import "../index.css";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import Joi from "joi-browser";
-import MailchimpDownload from "../components/mailchimpDownload";
-import logo from "../images/logo.png";
-import subscribeBackground from "../images/subscribe-background.png";
 import GoHome from "../components/common/GoHome";
 
 class SubscribeContent extends Component {
@@ -83,20 +79,19 @@ class SubscribeContent extends Component {
               your free package
             </span>
           </div>
-          <MailchimpDownload url={url} />
 
           <div className="flex flex-col mx-auto my-2">
             <span className="text-center text-slate-600 text-sm">
-              Don't have an account yet?{" "}
-              <a
+              {` Don't have an account yet?`}
+              <Link
                 className="underline underline-offset-2 text-sm"
                 href="/register"
               >
                 Sign Up
-              </a>
+              </Link>
             </span>
             <div className="items-center flex flex-col  ">
-              <img className="mx-auto w-[3rem]" src="" alt="" srcSet="" />
+              {/* <Image className="mx-auto w-[3rem]" src="" alt="" srcSet="" /> */}
               <span className="font-black text-slate-700 text-lg my-auto">
                 STRATIFI.NG
               </span>

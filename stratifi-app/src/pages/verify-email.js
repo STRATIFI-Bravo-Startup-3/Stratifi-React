@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Input from "../components/common/input";
-import Joi from "joi-browser";
+import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import { useRouter } from "next/router";
 
@@ -23,11 +22,11 @@ const VerifyEmail = () => {
                 Be sure to check your spam folder
               </span>
 
-              <a href="/account-type">
+              <Link href="/account-type">
                 <button className="mx-auto active:bg-[#FF8F50] text-white h-12 w-11/12  md:w-[10rem]  rounded-xl text-base hover:bg-[#FF7A30] bg-[#FF6610]">
                   Continue
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

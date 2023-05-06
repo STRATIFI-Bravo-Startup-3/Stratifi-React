@@ -11,10 +11,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        textPry: "#8F3AA6",
         blogPry: "#8F3AA6",
+        formFieldBg: "#eeeeee",
       },
     },
   },
-  plugins: [],
+  plugins: [],  
 };
-
