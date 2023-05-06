@@ -1,21 +1,24 @@
 import { FiArrowDown, FiArrowUp } from "react-icons/fi";
 import { BsSend } from "react-icons/bs";
 
-const Wallet = () => {
+const Wallet = ({ type }) => {
   return (
     <div className="flex flex-col w-full max-w-[40rem] ">
-      <div className="p-8 md:mt-16 text-center z-10 bg-white w-full">
+      <div className="p-4 md:mt-16 text-center z-10 bg-white w-full">
         <h1 className="text-sm text-gray-600">Current Balance:</h1>
-        <h1 className="font-bold text-3xl"> $1,250.00</h1>
+        <h1 className="font-bold text-gray-500 text-3xl"> $1,250.00</h1>
       </div>
-      <div className="flex justify-between p-8 text-sm">
+      <div className="flex justify-between p-4 md:p-8 text-sm">
         <button className="bg-blue-500 active:bg-blue-600 text-white p-2 rounded">
-          + Add Money
+          {type == "influencer" ? "Request Withdrawal" : "+ Add Money"}
         </button>
-        <div className="flex bg-blue-500 active:bg-blue-600 text-white p-2 rounded items-center gap-2">
-          <button className="">Send</button>
-          <BsSend />
-        </div>
+
+        {type === "brand" && (
+          <div className="flex bg-blue-500 active:bg-blue-600 text-white p-2 rounded items-center gap-2">
+            <button className="">Send</button>
+            <BsSend />
+          </div>
+        )}
       </div>
       <div className="flex flex-col text-sm w-full px-4 gap-8 md:px-8 ">
         <div className="border-b border-gray-300 text-gray-600">

@@ -1,13 +1,12 @@
 import { useState } from "react";
 import SideNav from "@/components/SideNav";
 import { HiMenu } from "react-icons/hi";
-import Profile from "@/components/brand/Profile";
-import Campaigns from "@/components/brand/Campaigns";
+import Profile from "@/components/influencer/Profile";
+import Campaigns from "@/components/influencer/Campaigns";
 import ChatWidget from "@/components/ChatWidget";
-import Dashboard from "@/components/brand/Dashboard";
-import Wallet from "@/components/brand/Wallet";
-import Settings from "@/components/brand/Settings";
-import Subscriptions from "@/components/brand/Subscriptions";
+import Dashboard from "@/components/influencer/Dashboard";
+import Wallet from "@/components/influencer/Wallet";
+import Settings from "@/components/influencer/Settings";
 
 const BrandDashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -38,11 +37,7 @@ const BrandDashboard = () => {
       break;
 
     case "Wallet":
-      componentToRender = <Wallet type="brand" />;
-      break;
-
-    case "Subscriptions":
-      componentToRender = <Subscriptions />;
+      componentToRender = <Wallet type="influencer" />;
       break;
 
     case "Settings":
@@ -62,8 +57,8 @@ const BrandDashboard = () => {
           <SideNav
             onClick={(component) => setSelectedComponent(component)}
             isOpen={isSidebarOpen}
+            type="influencer"
             hasSelected={selected}
-            type="brand"
           />
         </div>
         {/* Rendered Component */}

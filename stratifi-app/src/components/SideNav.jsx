@@ -7,7 +7,7 @@ import { BsPersonCircle } from "react-icons/bs";
 import { RiMessage3Fill } from "react-icons/ri";
 import { FaRegMoneyBillAlt } from "react-icons/fa";
 
-const SideNav = ({ isOpen, onClick, hasSelected }) => {
+const SideNav = ({ isOpen, onClick, hasSelected, type }) => {
   const [selected, setSelected] = useState(0);
 
   const handleClick = (index, component) => {
@@ -124,25 +124,27 @@ const SideNav = ({ isOpen, onClick, hasSelected }) => {
               </div>
             </div>
 
-            <div
-              onClick={() => handleClick(5, "Subscriptions")}
-              className={
-                selected === 5
-                  ? "flex items-center gap-2 border-l-2 border-[#8F3AA6] text-white px-2"
-                  : "flex items-center gap-2 px-2  text-white"
-              }
-            >
+            {type === "brand" && (
               <div
+                onClick={() => handleClick(5, "Subscriptions")}
                 className={
                   selected === 5
-                    ? "flex items-center px-2 gap-2 text-white bg-[#8F3AA6] rounded-lg w-[10rem]"
-                    : "flex items-center px-2 gap-2 rounded-lg w-[10rem]"
+                    ? "flex items-center gap-2 border-l-2 border-[#8F3AA6] text-white px-2"
+                    : "flex items-center gap-2 px-2  text-white"
                 }
               >
-                <FaRegMoneyBillAlt />
-                <div className="cursor-pointer">Subscriptions</div>
+                <div
+                  className={
+                    selected === 5
+                      ? "flex items-center px-2 gap-2 text-white bg-[#8F3AA6] rounded-lg w-[10rem]"
+                      : "flex items-center px-2 gap-2 rounded-lg w-[10rem]"
+                  }
+                >
+                  <FaRegMoneyBillAlt />
+                  <div className="cursor-pointer">Subscriptions</div>
+                </div>
               </div>
-            </div>
+            )}
 
             <div
               onClick={() => handleClick(6, "Settings")}

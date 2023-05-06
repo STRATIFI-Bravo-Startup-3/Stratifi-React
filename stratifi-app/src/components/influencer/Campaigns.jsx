@@ -4,13 +4,8 @@ import SearchSm from "../common/SearchSm";
 
 const Campaigns = () => {
   return (
-    <section className="flex flex-col w-full overflow-x-scroll overflow-hidden gap-8 px-2 lg:px-6 overflow-y-scroll">
+    <section className="flex flex-col w-full overflow-x-scroll overflow-hidden gap-4 px-2 lg:px-6 overflow-y-scroll">
       <div className="p-4 text-sm w-full grid grid-cols-1 sm:flex items-center gap-4 sm:gap-8">
-        {/* <button className="">
-          <BsPlus />
-          New Campaign
-        </button> */}
-        <ButtonSm label="+ New Campaign" />
         <SearchSm label="Search Campaigns" />
       </div>
       <div>

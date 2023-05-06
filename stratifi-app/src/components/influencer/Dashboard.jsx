@@ -12,10 +12,6 @@ const Dashboard = () => {
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 p-2 text-[#55006E] text-sm">
         <div className="w-[10rem] h-[10rem] sm:w-[15rem] sm:h-[10rem] p-6 bg-[#F9E5FF] rounded-lg flex flex-col justify-between hover:shadow-md active:shadow-inner">
-          <h1 className="text-4xl font-bold">+</h1>
-          <h1 className="flex-end">Start a Campaign</h1>
-        </div>
-        <div className="w-[10rem] h-[10rem] sm:w-[15rem] sm:h-[10rem] p-6 bg-[#F9E5FF] rounded-lg flex flex-col justify-between hover:shadow-md active:shadow-inner">
           <div className="flex items-center gap-2">
             <IoMailUnread className="w-5 h-5" />
             <h1 className="font-bold">Messages</h1>

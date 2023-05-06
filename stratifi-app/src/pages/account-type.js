@@ -24,8 +24,9 @@ const ChooseAcount = () => {
     const newError = validate();
     setError(newError || "");
     if (newError) return;
-    console.log("Submitted");
-    route.push("/brand-information");
+    // console.log("Submitted");
+    if (account.type === "brand") route.push("/brand-information");
+    if (account.type === "influencer") route.push("/influencer-information");
   };
 
   return (
@@ -47,8 +48,8 @@ const ChooseAcount = () => {
               onChange={(e) => setAccount({ ...account, type: e.target.value })}
             >
               <option value="">Choose one ...</option>
-              <option value="Influencer">Influencer</option>
-              <option value="Brand">Brand</option>
+              <option value="influencer">Influencer</option>
+              <option value="brand">Brand</option>
             </select>
             {error && (
               <div className=" text-[0.7rem] lg:text-sm text-red-600">

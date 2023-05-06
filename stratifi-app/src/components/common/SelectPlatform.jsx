@@ -28,7 +28,6 @@ const SelectPlatform = ({
         <option value="Twitter">Twitter</option>
         <option value="Facebook">Facebook</option>
         <option value="Youtube">Youtube</option>
-        <option value="LinkedIn">LinkedIn</option>
         <option value="TikTok">TikTok</option>
       </select>
       {errors && (
