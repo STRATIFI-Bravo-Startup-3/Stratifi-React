@@ -8,7 +8,7 @@ import Dashboard from "@/components/influencer/Dashboard";
 import Wallet from "@/components/influencer/Wallet";
 import Settings from "@/components/influencer/Settings";
 
-const BrandDashboard = () => {
+const InfluencerDashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [selectedComponent, setSelectedComponent] = useState("Dashboard");
 
@@ -23,7 +23,9 @@ const BrandDashboard = () => {
   let componentToRender;
   switch (selectedComponent) {
     case "Dashboard":
-      componentToRender = <Dashboard />;
+      componentToRender = (
+        <Dashboard onClick={(component) => setSelectedComponent(component)} />
+      );
       break;
     case "Profile":
       componentToRender = <Profile />;
@@ -70,4 +72,4 @@ const BrandDashboard = () => {
   );
 };
 
-export default BrandDashboard;
+export default InfluencerDashboard;

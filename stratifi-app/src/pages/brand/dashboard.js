@@ -24,7 +24,9 @@ const BrandDashboard = () => {
   let componentToRender;
   switch (selectedComponent) {
     case "Dashboard":
-      componentToRender = <Dashboard />;
+      componentToRender = (
+        <Dashboard onClick={(component) => setSelectedComponent(component)} />
+      );
       break;
     case "Profile":
       componentToRender = <Profile />;
@@ -32,7 +34,6 @@ const BrandDashboard = () => {
     case "Campaigns":
       componentToRender = <Campaigns />;
       break;
-
     case "Messages":
       componentToRender = <ChatWidget />;
       break;

@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { HiHome } from "react-icons/hi2";
 import { HiSpeakerphone } from "react-icons/hi";
-import { IoWallet, IoSettings, IoLogOut } from "react-icons/io5";
-
-import { BsPersonCircle } from "react-icons/bs";
+import { IoSettings, IoLogOut } from "react-icons/io5";
 import { RiMessage3Fill } from "react-icons/ri";
 import { FaRegMoneyBillAlt } from "react-icons/fa";
 
@@ -47,25 +45,7 @@ const SideNav = ({ isOpen, onClick, hasSelected, type }) => {
                 <div className="cursor-pointer">Dashboard</div>
               </div>
             </div>
-            <div
-              onClick={() => handleClick(1, "Profile")}
-              className={
-                selected === 1
-                  ? "flex items-center gap-2 border-l-2 border-[#8F3AA6] text-white px-2"
-                  : "flex items-center gap-2 px-2  text-white"
-              }
-            >
-              <div
-                className={
-                  selected === 1
-                    ? "flex items-center px-2 gap-2 text-white bg-[#8F3AA6] rounded-lg w-[10rem]"
-                    : "flex items-center px-2 gap-2 rounded-lg w-[10rem]"
-                }
-              >
-                <BsPersonCircle />
-                <div className="cursor-pointer">Profile</div>
-              </div>
-            </div>
+
             <div
               onClick={() => handleClick(2, "Campaigns")}
               className={
@@ -102,25 +82,6 @@ const SideNav = ({ isOpen, onClick, hasSelected, type }) => {
               >
                 <RiMessage3Fill />
                 <div className="cursor-pointer">Messages</div>
-              </div>
-            </div>
-            <div
-              onClick={() => handleClick(4, "Wallet")}
-              className={
-                selected === 4
-                  ? "flex items-center gap-2 border-l-2 border-[#8F3AA6] text-white px-2"
-                  : "flex items-center gap-2 px-2  text-white"
-              }
-            >
-              <div
-                className={
-                  selected === 4
-                    ? "flex items-center px-2 gap-2 text-white bg-[#8F3AA6] rounded-lg w-[10rem]"
-                    : "flex items-center px-2 gap-2 rounded-lg w-[10rem]"
-                }
-              >
-                <IoWallet />
-                <div className="cursor-pointer">Wallet</div>
               </div>
             </div>
 
