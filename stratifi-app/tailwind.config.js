@@ -9,7 +9,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        textPry: "#8F3AA6",
+        blogPry: "#8F3AA6",
+        formFieldBg: "#eeeeee",
+      },
+    },
   },
-  plugins: [],
+  plugins: [],  
 };
