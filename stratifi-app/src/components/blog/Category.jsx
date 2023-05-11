@@ -13,7 +13,6 @@ const resetCategory = {
 };
 
 function Category() {
-
   const [activeCategory, setActiveCategory] = useState({
     all: true,
     brand: false,
@@ -39,13 +38,13 @@ function Category() {
 
   return (
     <>
-      <div className="w-full overflow-x-auto my-4">
+      <div className="w-full overflow-x-auto my-4 text-sm">
         <div className="grid gap-3 grid-rows-[repeat(1,_minmax(0,_37px))] auto-cols-[max-content] grid-flow-col [&>*]: text-white">
           <div
-            className={`flex items-center px-3 cursor-pointer rounded-sm ${
+            className={`flex items-center px-3 cursor-pointer rounded ${
               activeCategory.all
-                ? "bg-[white] border-[1px] border-green-700 text-[black]"
-                : "bg-[#FE9C67]"
+                ? "bg-[white] border-[1px] border-gray-300 text-[black]"
+                : "bg-[#FF6610]"
             }`}
             onClick={() => {
               setActiveCategory({
@@ -55,15 +54,16 @@ function Category() {
               });
               setCurrentDataItems(blogData);
               setCurrentPage(1);
-            }}>
+            }}
+          >
             {" "}
             All
           </div>
           <div
-            className={`flex items-center px-3 cursor-pointer rounded-sm ${
+            className={`flex items-center px-3 cursor-pointer rounded ${
               activeCategory.tips
-                ? "bg-[white] border-[1px] border-green-700 text-[black]"
-                : "bg-[#FE9C67]"
+                ? "bg-[white] border-[1px] border-gray-300 text-[black]"
+                : "bg-[#FF6610]"
             }`}
             onClick={() => {
               setActiveCategory({
@@ -73,14 +73,15 @@ function Category() {
               });
               handleCategoryChange("tips");
               setCurrentPage(1);
-            }}>
+            }}
+          >
             Tips
           </div>
           <div
-            className={`flex items-center px-3 cursor-pointer rounded-sm ${
+            className={`flex items-center px-3 cursor-pointer rounded ${
               activeCategory.recommendation
-                ? "bg-[white] border-[1px] border-green-700 text-[black]"
-                : "bg-[#FE9C67]"
+                ? "bg-[white] border-[1px] border-gray-300 text-[black]"
+                : "bg-[#FF6610]"
             }`}
             onClick={() => {
               setActiveCategory({
@@ -90,14 +91,15 @@ function Category() {
               });
               handleCategoryChange("recommendation");
               setCurrentPage(1);
-            }}>
+            }}
+          >
             Recommendation
           </div>
           <div
-            className={`flex items-center px-3 cursor-pointer rounded-sm ${
+            className={`flex items-center px-3 cursor-pointer rounded ${
               activeCategory.brand
-                ? "bg-[white] border-[1px] border-green-700 text-[black]"
-                : "bg-[#FE9C67]"
+                ? "bg-[white] border-[1px] border-gray-300 text-[black]"
+                : "bg-[#FF6610]"
             }`}
             onClick={() => {
               setActiveCategory({
@@ -107,14 +109,15 @@ function Category() {
               });
               handleCategoryChange("brand");
               setCurrentPage(1);
-            }}>
+            }}
+          >
             Brands
           </div>
           <div
-            className={`flex items-center px-3 cursor-pointer rounded-sm ${
+            className={`flex items-center px-3 cursor-pointer rounded ${
               activeCategory.influencers
-                ? "bg-[white] border-[1px] border-green-700 text-[black]"
-                : "bg-[#FE9C67]"
+                ? "bg-[white] border-[1px] border-gray-300 text-[black]"
+                : "bg-[#FF6610]"
             }`}
             onClick={() => {
               setActiveCategory({
@@ -124,14 +127,15 @@ function Category() {
               });
               handleCategoryChange("influencers");
               setCurrentPage(1);
-            }}>
+            }}
+          >
             Influencers
           </div>
           <div
-            className={`flex items-center px-3 cursor-pointer rounded-sm ${
+            className={`flex items-center px-3 cursor-pointer rounded ${
               activeCategory.resources
-                ? "bg-[white] border-[1px] border-green-700 text-[black]"
-                : "bg-[#FE9C67]"
+                ? "bg-[white] border-[1px] border-gray-300 text-[black]"
+                : "bg-[#FF6610]"
             }`}
             onClick={() => {
               setActiveCategory({
@@ -141,7 +145,8 @@ function Category() {
               });
               handleCategoryChange("resources");
               setCurrentPage(1);
-            }}>
+            }}
+          >
             Resources
           </div>
         </div>
@@ -159,28 +164,3 @@ function Category() {
 }
 
 export { Category };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

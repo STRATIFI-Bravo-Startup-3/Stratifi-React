@@ -34,7 +34,8 @@ function CategoryView({ data, recordsPerPage, currentPage, setCurrentPage }) {
           return (
             <div
               key={index}
-              className="grid grid-cols-1 sm:grid-cols-2 gap-x-2 sm:py-[2.5rem] sm:border-b-[1px] sm:border-y-gray-400 rounded shadow sm:rounded-none sm:shadow-none mx-auto">
+              className="grid grid-cols-1 sm:grid-cols-2 gap-x-2 sm:py-[2.5rem] sm:border-b-[1px] sm:border-y-gray-400 rounded shadow sm:rounded-none sm:shadow-none mx-auto"
+            >
               {/* category image container */}
               <div className="w-full h-[150px] sm:h-full">
                 <img
@@ -72,7 +73,8 @@ function CategoryView({ data, recordsPerPage, currentPage, setCurrentPage }) {
                 ...activeCategory,
                 ...resetCategory,
                 all: true,
-              }); mt-3">
+              }); mt-3"
+                >
                   <div className="text-xs">{`${category.commentAmount} comments `}</div>
                   <a href="#" className="text-blue-600 text-xs capitalize ">
                     Read more
@@ -97,6 +99,3 @@ function CategoryView({ data, recordsPerPage, currentPage, setCurrentPage }) {
 }
 
 export { CategoryView };
-
-
-
