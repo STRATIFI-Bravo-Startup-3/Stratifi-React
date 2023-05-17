@@ -151,25 +151,6 @@ const BrandInformation = () => {
           </div>
 
           <div className="grid grid-cols-1 gap-4 md:gap-[6rem] items-center md:flex mx-auto">
-            {/* <SelectPlatform
-              name="preferred_platform"
-              value={brand.preferred_platform}
-              onChange={handleChange}
-              errors={errors.preferred_platform}
-              label="Preferred Platform"
-              required="*"
-            /> */}
-            {/* <SelectCategory
-              name="category"
-              value={brand.category}
-              onChange={handleChange}
-              errors={errors.category}
-              label="Main Content Category"
-              required="*"
-            /> */}
-          </div>
-
-          <div className="grid grid-cols-1 gap-4 md:gap-[6rem] items-center md:flex mx-auto">
             <SelectAudience
               label="Target Audience"
               required="*"
@@ -196,27 +177,8 @@ const BrandInformation = () => {
               label="Main Content Category"
               required="*"
             />
-            {/* <SelectInfluencerType
-              label="Preferred Influencer Type"
-              required="*"
-              name="influencer_type"
-              value={brand.influencer_type}
-              onChange={handleChange}
-              error={errors.influencer_type}
-            /> */}
+
             <div className="flex flex-col w-[17rem]">
-              {/* <div className="">
-                  <SelectCurrency
-                    name="currency"
-                    value={brand.currency}
-                    onChange={handleChange}
-                  />
-                </div>
-                <SelectEarning
-                  name="budget_range"
-                  value={brand.budget_range || ""}
-                  onChange={handleChange}
-                /> */}
               <UploadPicture />
             </div>
           </div>

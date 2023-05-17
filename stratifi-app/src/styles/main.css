@@ -34,3 +34,13 @@
 
   background-blend-mode: overlay;
 }
+
+.bg-pink-gradient {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(247, 222, 255, 1) 52%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
