@@ -7,19 +7,27 @@ const Howitworks = () => {
     {
       id: 0,
       title: "Sign Up",
-      content: "Create an account for free, it’s simple and easy",
+      content: `Begin your journey by creating a free account. 
+      It's a seamless and straightforward process that opens up a 
+      world of opportunities for you. Sign up today and unlock your potential.`,
       image: "/images/how1.svg",
     },
     {
       id: 1,
       title: "Choose a Category",
-      content: "Choose what aligns with your target and goals",
+      content: `Discover the power of aligning with your desired category. 
+      Explore various options and select the one that best resonates with 
+      your goals and aspirations. Our diverse range of categories ensures 
+      that you find the perfect fit for your unique vision.`,
       image: "/images/how2.svg",
     },
     {
       id: 2,
       title: "Get Paired",
-      content: "Get paired instantly with a verified Influencer",
+      content: `Our advanced matching algorithm ensures that you are 
+      connected with an Influencer who not only meets your requirements 
+      but also complements your brand or project. Enjoy the benefits 
+      of a tailored partnership that brings your ideas to life.`,
       image: "/images/how3.svg",
     },
   ];
