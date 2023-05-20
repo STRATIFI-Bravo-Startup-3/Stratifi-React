@@ -20,7 +20,7 @@ const About = () => {
           </h1>
           <span>
             Say goodbye to endless email threads and complicated negotiations.
-            InfluenceConnect simplifies the collaboration process by providing a
+            Stratifi simplifies the collaboration process by providing a
             centralized hub for communication, campaign management, and
             performance tracking. Collaborate seamlessly with influencers,
             manage deliverables, and monitor campaign progress all in one place.
