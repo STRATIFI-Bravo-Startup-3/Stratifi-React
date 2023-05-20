@@ -1,125 +1,85 @@
 import React from "react";
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
+Layout;
 import Image from "next/image";
+import Layout from "./layout";
 
 const AboutUs = () => {
   return (
-    <div className="bg-white">
-      <NavBar />
+    <Layout>
+      <div className="bg-about">
+        <div className="py-24 sm:py-[10rem] border-t-2 border-slate-200 text-gray-200 px-4 sm:px-8">
+          <div className="flex flex-col gap-4 items-center justify-center max-w-[65rem] shadow-lg p-4 sm:p-12 mx-auto bg-[#AD6EC0] rounded-lg animate__animated animate__headShake">
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className=" rounded-full ">
+                <Image
+                  className=""
+                  src="/images/about7.svg"
+                  alt=""
+                  width={500}
+                  height={500}
+                />
+              </div>
 
-      <div className="py-16 border-t-2 border-slate-200 text-gray-600 bg-gray-100">
-        <section className="px-20 grid grid-cols-1 items-center lg:gap-8 lg:flex lg:justify-items-center p-8 gap-8 animate__animated animate__fadeInLeft">
-          <div className=" w-[15rem] lg:ml-48 mx-auto bg-[#FF8F50] rounded-full ">
-            <Image
-              className=""
-              src="/images/about7.svg"
-              alt=""
-              width={500}
-              height={500}
-            />
+              <div className="flex flex-col p-2 gap-2">
+                <h1 className="font-bold text-white text-2xl">About Us</h1>
+                <span>
+                  At Stratifi, we believe in the transformative power of
+                  influencer marketing. We are passionate about connecting
+                  brands with influencers to create impactful collaborations
+                  that drive real results. Our mission is to provide a seamless
+                  platform that empowers brands to harness the potential of
+                  social media influence and build authentic connections with
+                  their target audience.
+                </span>
+              </div>
+            </div>
+            <div className="flex flex-col gap-8">
+              <span>
+                With the rise of social media, influencers have become a driving
+                force in shaping consumer behavior and preferences. We
+                recognized the need for a platform that simplifies and enhances
+                the process of brand-influencer collaborations. Stratifi was
+                born out of the desire to bridge the gap between brands and
+                influencers, enabling them to form mutually beneficial
+                partnerships that yield remarkable outcomes.
+              </span>
+              <span>
+                Our platform is built on the principles of innovation,
+                transparency, and efficiency. We strive to continually innovate
+                and adapt to the evolving needs of the influencer marketing
+                landscape, ensuring our users have access to the latest tools
+                and features that optimize their campaigns. Transparency is at
+                the core of our operations. We believe in fostering trust
+                between brands and influencers, facilitating fair
+                collaborations, and providing clear and transparent
+                communication. From pricing to campaign management, we ensure
+                that all transactions are secure and transparent, promoting a
+                positive and trustworthy ecosystem.
+              </span>
+              <span>
+                Stratifi is more than just a platform; it's a community of
+                like-minded individuals driven by a shared passion for
+                creativity, authenticity, and growth. We are dedicated to
+                supporting our users every step of the way, offering
+                personalized guidance, valuable insights, and exceptional
+                customer service. Join the Stratifi community and unlock the
+                potential of influencer marketing.
+              </span>
+              <span>
+                Discover the perfect influencers for your brand, create
+                memorable campaigns, and achieve your marketing goals like never
+                before. Together, let's shape the future of influencer marketing
+                and revolutionize the way brands connect with their audiences.
+                We invite you to explore Stratifi, connect with our team, and
+                embark on an exciting journey of collaboration, inspiration, and
+                success. Let's make a difference and create influential moments
+                together.
+              </span>
+            </div>
           </div>
-          <div className="mx-auto lg:w-2/5 w-full flex flex-col gap-6">
-            <h1 className="mx-auto lg:mx-0 text-xl font-bold">About Us</h1>
-            <span className="text-slate-600 lg:w-4/5 w-full text-center lg:text-left">
-              Stratifi NG is an influencer marketing startup in Nigeria
-              connecting credible influencers with reputable brands who are
-              looking to break into new markets or expand their existing
-              business. We are currently focused on Nano and Micro influencers
-              and brands.
-            </span>
-          </div>
-        </section>
-        <section className="px-20 grid grid-cols-1 items-center lg:gap-4 lg:flex lg:flex-row-reverse lg:justify-items-center p-8 gap-8 animate__animated animate__fadeInRight">
-          <div className=" w-[15rem] lg:mr-48 mx-auto bg-[#FF8F50] rounded-full">
-            <Image
-              className=""
-              src="/images/about6.svg"
-              alt=""
-              width={500}
-              height={500}
-            />
-          </div>
-          <div className="mx-auto lg:ml-48 lg:w-2/5 w-full flex flex-col gap-6">
-            <h1 className="mx-auto lg:mx-0 text-xl font-bold">Our Vision</h1>
-            <span className="text-slate-600 lg:w-4/5 w-full text-center lg:text-left">
-              {`To connect brands looking to amplify their reach with indigenous
-              influencers in their industry who are verified and can deliver on
-              the brand's proposition.`}
-            </span>
-          </div>
-        </section>
-
-        <section className="px-20 grid grid-cols-1 items-center lg:gap-4 lg:flex  lg:justify-items-center p-8 gap-8 animate__animated animate__fadeInRight">
-          <div className=" w-[15rem] lg:ml-48 mx-auto bg-[#FF8F50] rounded-full">
-            <Image
-              className=""
-              src="/images/about4.svg"
-              alt=""
-              width={500}
-              height={500}
-            />
-          </div>
-          <div className="mx-auto lg:ml-48 lg:w-2/5 w-full flex flex-col gap-6">
-            <h1 className="mx-auto lg:mx-0 text-xl font-bold">Our Goals</h1>
-            <span className="text-slate-600  w-full text-center lg:text-left ">
-              <h1 className="text-left ">
-                Our mission is to increase accessibility and delivery between
-                brands and influencers by:
-              </h1>
-              <ul className="list-disc ml-[1rem] text-left lg:ml-5 w-full flex flex-col gap-3 lg:gap-0">
-                <li className="">
-                  increase brand recognition and strengthen brand image
-                </li>
-                <li>increase social engagement and interaction</li>
-                <li>
-                  improve sales based on customer insight, strategic
-                  collaborations and caimpaigns.
-                </li>
-              </ul>
-            </span>
-          </div>
-        </section>
-
-        <section className="px-20 grid grid-cols-1 items-center lg:gap-4 lg:flex lg:flex-row-reverse lg:justify-items-center p-8 gap-8 animate__animated animate__fadeInLeft">
-          <div className="w-[15rem] lg:mr-48 mx-auto bg-[#FF8F50] rounded-full ">
-            <Image
-              className=""
-              src="/images/about5.svg"
-              alt=""
-              width={500}
-              height={500}
-            />
-          </div>
-          <div className="mx-auto lg:ml-48 lg:w-2/5 w-full flex flex-col gap-6">
-            <h1 className="mx-auto lg:mx-0 text-xl font-bold">Our Services</h1>
-            <span className="text-slate-600 lg:w-4/5 w-full text-center lg:text-left">
-              <ul className="list-disc ml-[1rem] text-left lg:ml-5 w-full flex flex-col gap-3 lg:gap-0">
-                <li className="">
-                  We offer influencer search and sourcing services to
-                  brands/agencies.
-                </li>
-                <li>
-                  We handle Influencer payments for both foreign and local
-                  companies running influencer campaigns in Nigeria.
-                </li>
-                <li>
-                  We provide an easier workflow from ideation to activation.
-                </li>
-                <li>
-                  We thoroughly vet influencer(s) and brand for credibility.
-                </li>
-                <li>
-                  We ensure all influencers get paid timely and adequately.
-                </li>
-              </ul>
-            </span>
-          </div>
-        </section>
+        </div>
       </div>
-
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 

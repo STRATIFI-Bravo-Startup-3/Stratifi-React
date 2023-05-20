@@ -1,16 +1,12 @@
-import React, { Component } from "react";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+import React from "react";
 import { useState } from "react";
 import Joi from "joi-browser";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import Layout from "./layout";
 
 const Contact = () => {
-  // const imageUrl =
-  //   useWindowWidth() >= 650 ? contactBackground : contactBackgroundSmall;
-
   const SERVICE_ID = "service_6pqkwl5";
   const TEMPLATE_ID = "template_vok9xgx";
   const USER_ID = "5Y3o8rm4LH3pWWuEF";
@@ -40,8 +36,6 @@ const Contact = () => {
   };
 
   const validateOnChange = ({ name, value }) => {
-    // Destructured to take in name(e.currentTarget.name) and
-    // value(e.currentTarget.value)
     const obj = { [name]: value };
     const newSchema = { [name]: schema[name] };
     const { error } = Joi.validate(obj, newSchema);
@@ -49,8 +43,6 @@ const Contact = () => {
   };
 
   const handleChange = ({ currentTarget: input }) => {
-    // currentTarget destructured and refrenced as 'input'
-    // currentTarget destructured and refrenced as 'input'
     const error = { ...errors };
     const errorMessage = validateOnChange(input);
 
@@ -73,14 +65,10 @@ const Contact = () => {
     const error = validate();
 
     setErrors(error || {});
-    // console.log(errors);
     if (error) {
       setIsLoading(false);
       return;
     }
-
-    // const templateParams = { ...account };
-    // console.log(templateParams);
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, "#contact_form", USER_ID).then(
       (response) => {
@@ -96,7 +84,6 @@ const Contact = () => {
         Swal.fire({
           icon: "error",
           title: "Oops! Something went wrong!",
-          // text: error.text,
           confirmButtonColor: "#AD6EC0",
         });
         setIsLoading(false);
@@ -107,7 +94,7 @@ const Contact = () => {
   const renderButton = () => {
     if (isLoading)
       return (
-        <button className="mx-auto active:bg-[#FF8F50] text-white h-12 w-[16rem] rounded-xl text-base hover:bg-[#FF7A30] bg-[#FF6610] ">
+        <button className="transition ease-in-out duration-500 delay-150 hover:scale-110 hover:translate-y-1 mx-auto active:bg-[#FF8F50] text-white px-4 py-2 rounded-xl text-base hover:bg-[#FF7A30] bg-[#FF6610] ">
           <div className="flex gap-2 justify-center items-center">
             <AiOutlineLoading3Quarters className="animate-spin" /> Sending...
           </div>
@@ -115,7 +102,7 @@ const Contact = () => {
       );
     else {
       return (
-        <button className="mx-auto active:bg-[#FF8F50] text-white h-12 w-[16rem] rounded-xl text-base hover:bg-[#FF7A30] bg-[#FF6610] ">
+        <button className="transition ease-in-out duration-500 delay-150 hover:scale-110 hover:translate-y-1 mx-auto active:bg-[#FF8F50] text-white px-4 py-2 rounded-xl text-base hover:bg-[#FF7A30] bg-[#FF6610] ">
           Send Message
         </button>
       );
@@ -123,9 +110,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="">
-      <NavBar />
-      <div className="h-screen relative bg-contact">
+    <Layout>
+      <div className="h-screen relative bg-contact px-1">
         <form
           id="contact_form"
           onSubmit={handleSubmit}
@@ -201,8 +187,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 

@@ -4,6 +4,7 @@ import Joi from "joi-browser";
 import NavBar from "@/components/NavBar";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Layout from "./layout";
 
 const Register = () => {
   const schema = {
@@ -87,8 +88,7 @@ const Register = () => {
   };
 
   return (
-    <div className="">
-      <NavBar />
+    <Layout>
       <div className="static flex flex-col bg-tertiary bg-opacity-50">
         <div className="flex justify-center  h-screen ">
           <div className="flex flex-col gap-4 justify-center my-auto bg-secondary w-4/5 lg:w-6/12 h-auto rounded-xl shadow-2xl animate__animated animate__flipInX">
@@ -149,7 +149,7 @@ const Register = () => {
                   error={errors.repeat_password}
                 />
 
-                <button className="mx-auto active:bg-[#FF8F50] text-white h-12 w-11/12  md:w-[20rem]  rounded-xl text-base hover:bg-[#FF7A30] bg-[#FF6610]">
+                <button className="mx-auto active:bg-[#FF8F50] text-white h-10 w-11/12  md:w-[20rem]  rounded-xl text-base hover:bg-[#FF7A30] bg-[#FF6610]">
                   Create Account
                 </button>
               </div>
@@ -169,7 +169,7 @@ const Register = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <div className="text-slate-600 mt-16">
-      <div className="flex flex-col md:flex-row gap-4 items-center justify-center max-w-[65rem] shadow p-12 mx-auto rounded-t-lg bg-pink-gradient">
+    <div className="text-slate-600 mt-16 py-1">
+      <div className="flex flex-col md:flex-row gap-4 items-center justify-center max-w-[65rem] shadow p-12 mx-auto rounded-t-lg bg-gray-100">
         <div className="bg-[#FF8F50] rounded-full max-w-[12rem]">
           <Image
             className=""
@@ -28,7 +28,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex flex-col-reverse md:flex-row gap-4 items-center justify-center max-w-[65rem] shadow p-12 mx-auto rounded-b-lg bg-pink-gradient">
+      <div className="flex flex-col-reverse md:flex-row gap-4 items-center justify-center max-w-[65rem] shadow p-12 mx-auto bg-gray-100">
         <div className="flex flex-col px-4 gap-4">
           <h1 className="font-bold text-black text-2xl">
             Smart Recommendations
@@ -52,7 +52,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-4 items-center justify-center max-w-[65rem] shadow p-12 mx-auto rounded-t-lg bg-pink-gradient">
+      <div className="flex flex-col md:flex-row gap-4 items-center justify-center max-w-[65rem] shadow p-12 mx-auto rounded-b-lg bg-gray-100">
         <div className="bg-[#FF8F50] rounded-full max-w-[12rem]">
           <Image
             className=""

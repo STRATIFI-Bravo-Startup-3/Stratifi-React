@@ -24,22 +24,51 @@ const testimonials = [
   },
 ];
 
+const testimony = [
+  {
+    id: 1,
+    name: "John Doe",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    content:
+      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    content:
+      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    content:
+      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    content:
+      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+  },
+  // Add more testimonials here
+];
+
 const Testimonial = () => {
   return (
-    <section>
-      {/* <!-- Container to heading and testm blocks --> */}
-      <div className="max-w-6xl px-5 mx-auto mt-10 text-center">
-        {/* <!-- Heading --> */}
+    <div className="overflow-x-auto">
+      <div className="mx-auto mt-10 text-center">
         <h2 className="text-2xl lg:text-3xl font-bold text-center">
           Testimonials from our clients
         </h2>
-        {/* <!-- Testimonials Container --> */}
-        <div className="flex flex-col mt-10 md:flex-row md:space-x-6">
-          {/* <!-- Testimonials --> */}
+        <div className="flex lg:justify-around mt-10 gap-8 overflow-scroll w-full">
           {testimonials.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col space-y-20  p-4 rounded-lg bg-veryLightGray mb-4 md:mb-32 shadow-sm md:w-1/3 md:shadow-md ring-1 ring-slate-200"
+              className="flex flex-col mx-4 flex-grow-0 flex-shrink-0 w-[15rem] space-y-20 bg-gray-100 p-4 rounded-lg mb-4 md:mb-32 shadow-sm md:w-[20rem] md:shadow-md ring-1 ring-slate-200"
             >
               <p className="text-sm pt-8 text-slate-600">{item.comment}</p>
               <div className="flex items-center text-gray-600">
@@ -56,7 +85,7 @@ const Testimonial = () => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
