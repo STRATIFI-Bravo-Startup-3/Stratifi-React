@@ -48,7 +48,7 @@ const Faq = () => {
     {
       id: 4,
       question: "Q: How can Stratifi help my brand?",
-      answer: `At stratify your safety is important to us. Brands and influencers
+      answer: `At Stratifi your safety is important to us. Brands and influencers
       must pass our quality assurance checks and must be vetted to ensure the safety of each user.`,
     },
 
