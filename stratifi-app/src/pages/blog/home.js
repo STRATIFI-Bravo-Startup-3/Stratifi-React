@@ -4,7 +4,7 @@ import Layout from "../layout";
 export default function Blog() {
   return (
     <Layout>
-      <div className="py-24 px-[2rem] md:px-[10rem]">
+      <div className="py-24 px-[2rem] md:px-[10rem] animate__animated animate__bounceInUp">
         <h2 className="text-2xl font-bold">Category</h2>
         <Category />
       </div>

@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { paginateData } from "../../utils";
 import { Pagination } from "../common/paginate";
 
@@ -29,7 +28,7 @@ function CategoryView({ data, recordsPerPage, currentPage, setCurrentPage }) {
 
   return (
     <div>
-      <div className="flex flex-col gap-y-8 sm:gap-0 max-w-[900px] mx-auto">
+      <div className="flex flex-col gap-y-8 sm:gap-0 max-w-[900px] mx-auto bg-[#AD6EC0] p-6 rounded-lg text-gray-100">
         {records.map((category, index) => {
           return (
             <div
@@ -53,7 +52,7 @@ function CategoryView({ data, recordsPerPage, currentPage, setCurrentPage }) {
                   </div>
 
                   {/* Category date published and minutes read */}
-                  <div className="flex justify-between gap-x-4 text-gray-600 mt-3">
+                  <div className="flex justify-between gap-x-4 text-gray-300 mt-3">
                     <div className="text-xs font-mono">{category.date}</div>
                     <div className="text-xs font-mono">{`${category.minutesRead} minutes read`}</div>
                   </div>
@@ -76,7 +75,7 @@ function CategoryView({ data, recordsPerPage, currentPage, setCurrentPage }) {
               }); mt-3"
                 >
                   <div className="text-xs">{`${category.commentAmount} comments `}</div>
-                  <a href="#" className="text-blue-600 text-xs capitalize ">
+                  <a href="#" className="text-blue-700 text-xs capitalize ">
                     Read more
                   </a>
                 </div>

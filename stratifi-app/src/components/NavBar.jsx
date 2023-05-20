@@ -29,8 +29,8 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="bg-pink-gradient w-full fixed z-50">
-      <div className="flex items-center lg:px-[5rem] p-1  text-gray-600 justify-between xl:mx-auto xl:max-w-7xl max-w-full flex-wrap w-full">
+    <div className="bg-[#AD6EC0] w-full fixed z-50 border-b-4">
+      <div className="flex items-center lg:px-[5rem] p-1  text-gray-100 justify-between xl:mx-auto xl:max-w-7xl max-w-full flex-wrap w-full">
         <Link href="/">
           {" "}
           <div className="ml-16 lg:ml-10 flex justify-center w-[3rem] transition duration-500 ease-in-out delay-150 hover:scale-110 hover:translate-y-0.5">
@@ -42,7 +42,9 @@ const NavBar = () => {
               width={500}
               height={500}
             />
-            <span className="font-black text-lg my-auto">STRATIFI.NG</span>
+            <span className="font-black text-lg my-auto text-white">
+              STRATIFI.NG
+            </span>
           </div>
         </Link>
         <HiMenu
