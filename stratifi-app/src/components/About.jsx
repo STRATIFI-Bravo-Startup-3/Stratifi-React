@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <div className="text-slate-600 mt-16 px-2">
+    <div className="text-slate-600 mt-16 px-4">
       <div className="flex flex-col md:flex-row gap-4 items-center justify-center max-w-[65rem] shadow p-12 mx-auto rounded-t-lg bg-gray-100">
         <div className="bg-[#FF8F50] rounded-full max-w-[12rem]">
           <Image

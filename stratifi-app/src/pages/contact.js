@@ -111,7 +111,7 @@ const Contact = () => {
 
   return (
     <Layout>
-      <div className="h-screen relative bg-contact px-1">
+      <div className="h-screen relative bg-contact px-4">
         <form
           id="contact_form"
           onSubmit={handleSubmit}
