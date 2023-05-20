@@ -7,27 +7,19 @@ const Howitworks = () => {
     {
       id: 0,
       title: "Sign Up",
-      content: `Begin your journey by creating a free account. 
-      It's a seamless and straightforward process that opens up a 
-      world of opportunities for you. Sign up today and unlock your potential.`,
+      content: `Create a free account effortlessly and start exploring`,
       image: "/images/how1.svg",
     },
     {
       id: 1,
       title: "Choose a Category",
-      content: `Discover the power of aligning with your desired category. 
-      Explore various options and select the one that best resonates with 
-      your goals and aspirations. Our diverse range of categories ensures 
-      that you find the perfect fit for your unique vision.`,
+      content: `Align with your goals by selecting the right category.`,
       image: "/images/how2.svg",
     },
     {
       id: 2,
       title: "Get Paired",
-      content: `Our advanced matching algorithm ensures that you are 
-      connected with an Influencer who not only meets your requirements 
-      but also complements your brand or project. Enjoy the benefits 
-      of a tailored partnership that brings your ideas to life.`,
+      content: `Enjoy the benefits of a tailored partnership that brings your ideas to life`,
       image: "/images/how3.svg",
     },
   ];
@@ -43,7 +35,7 @@ const Howitworks = () => {
             className="flex flex-col items-center gap-4 w-full mb-8 py-4"
             key={item.id}
           >
-            <div className="transition ease-in-out duration-500 delay-150 hover:scale-110 hover:translate-y-1 bg-secondary rounded-3xl bg-[#AD6EC0] w-[12rem] py-4 flex flex-col gap-2 text-sm text-gray-300 items-center shadow-sm shadow-slate-600">
+            <div className="transition ease-in-out duration-500 delay-150 hover:scale-110 hover:translate-y-1 bg-secondary rounded-3xl bg-[#AD6EC0] w-[12rem] py-4 flex flex-col gap-2 text-sm items-center shadow-sm shadow-slate-600">
               <Image
                 src={item.image}
                 alt=""
