@@ -43,7 +43,7 @@ const Howitworks = () => {
             className="flex flex-col items-center gap-4 w-full mb-8 py-4"
             key={item.id}
           >
-            <div className="transition ease-in-out duration-500 delay-150 hover:scale-110 hover:translate-y-1 bg-secondary rounded-3xl bg-[#AD6EC0] w-[12rem] py-4 flex flex-col gap-2 text-sm text-slate-800 items-center shadow-sm shadow-slate-600">
+            <div className="transition ease-in-out duration-500 delay-150 hover:scale-110 hover:translate-y-1 bg-secondary rounded-3xl bg-[#AD6EC0] w-[12rem] py-4 flex flex-col gap-2 text-sm text-gray-300 items-center shadow-sm shadow-slate-600">
               <Image
                 src={item.image}
                 alt=""
