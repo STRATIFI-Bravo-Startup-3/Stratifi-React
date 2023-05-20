@@ -3,7 +3,7 @@ import { BsSend } from "react-icons/bs";
 
 const Wallet = ({ type }) => {
   return (
-    <div className="flex flex-col w-full max-w-[40rem] ">
+    <div className="flex flex-col w-full max-w-[40rem] animate__animated animate__fadeIn">
       <div className="p-4 md:mt-16 text-center z-10 bg-white w-full">
         <h1 className="text-sm text-gray-600">Current Balance:</h1>
         <h1 className="font-bold text-gray-500 text-3xl"> $1,250.00</h1>

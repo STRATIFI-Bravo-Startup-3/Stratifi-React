@@ -28,18 +28,18 @@ const SideNav = ({ isOpen, onClick, hasSelected, type }) => {
             <div className="text-white p-2"></div>
             <div
               onClick={() => handleClick(0, "Dashboard")}
-              className={
+              className={`${
                 selected === 0
-                  ? "flex items-center gap-2 border-l-2 border-[#8F3AA6] text-white px-2"
-                  : "flex items-center gap-2 px-2  text-white"
-              }
+                  ? "border-[#8F3AA6] border-l-2"
+                  : "hover:border-gray-300 "
+              } flex items-center gap-2 text-white px-2 hover:border-l-2 transition ease-in-out delay-150`}
             >
               <div
-                className={
+                className={`${
                   selected === 0
-                    ? "flex items-center px-2 gap-2 text-white bg-[#8F3AA6] rounded-lg w-[10rem]"
-                    : "flex items-center px-2 gap-2 rounded-lg w-[10rem]"
-                }
+                    ? " text-white bg-[#8F3AA6]"
+                    : " hover:bg-gray-300 hover:text-gray-800"
+                } flex items-center px-2 gap-2 rounded-lg w-[10rem] transition ease-in-out delay-150`}
               >
                 <HiHome />
                 <div className="cursor-pointer">Dashboard</div>
@@ -48,18 +48,18 @@ const SideNav = ({ isOpen, onClick, hasSelected, type }) => {
 
             <div
               onClick={() => handleClick(2, "Campaigns")}
-              className={
+              className={`${
                 selected === 2
-                  ? "flex items-center gap-2 border-l-2 border-[#8F3AA6] text-white px-2"
-                  : "flex items-center gap-2 px-2 text-white"
-              }
+                  ? "border-[#8F3AA6] border-l-2"
+                  : "hover:border-gray-300 "
+              } flex items-center gap-2 text-white px-2 hover:border-l-2 transition ease-in-out delay-150`}
             >
               <div
-                className={
+                className={`${
                   selected === 2
-                    ? "flex items-center px-2 gap-2 text-white bg-[#8F3AA6] rounded-lg w-[10rem]"
-                    : "flex items-center px-2 gap-2 rounded-lg w-[10rem]"
-                }
+                    ? " text-white bg-[#8F3AA6]"
+                    : " hover:bg-gray-300 hover:text-gray-800"
+                } flex items-center px-2 gap-2 rounded-lg w-[10rem] transition ease-in-out delay-150`}
               >
                 <HiSpeakerphone />
                 <div className="cursor-pointer">Campaigns</div>
@@ -67,18 +67,18 @@ const SideNav = ({ isOpen, onClick, hasSelected, type }) => {
             </div>
             <div
               onClick={() => handleClick(3, "Messages")}
-              className={
+              className={`${
                 selected === 3
-                  ? "flex items-center gap-2 border-l-2 border-[#8F3AA6] text-white px-2"
-                  : "flex items-center gap-2 px-2  text-white"
-              }
+                  ? "border-[#8F3AA6] border-l-2"
+                  : "hover:border-gray-300 "
+              } flex items-center gap-2 text-white px-2 hover:border-l-2 transition ease-in-out delay-150`}
             >
               <div
-                className={
+                className={`${
                   selected === 3
-                    ? "flex items-center px-2 gap-2 text-white bg-[#8F3AA6] rounded-lg w-[10rem]"
-                    : "flex items-center px-2 gap-2 rounded-lg w-[10rem]"
-                }
+                    ? " text-white bg-[#8F3AA6]"
+                    : " hover:bg-gray-300 hover:text-gray-800"
+                } flex items-center px-2 gap-2 rounded-lg w-[10rem] transition ease-in-out delay-150`}
               >
                 <RiMessage3Fill />
                 <div className="cursor-pointer">Messages</div>
@@ -88,18 +88,18 @@ const SideNav = ({ isOpen, onClick, hasSelected, type }) => {
             {type === "brand" && (
               <div
                 onClick={() => handleClick(5, "Subscriptions")}
-                className={
+                className={`${
                   selected === 5
-                    ? "flex items-center gap-2 border-l-2 border-[#8F3AA6] text-white px-2"
-                    : "flex items-center gap-2 px-2  text-white"
-                }
+                    ? "border-[#8F3AA6] border-l-2"
+                    : "hover:border-gray-300 "
+                } flex items-center gap-2 text-white px-2 hover:border-l-2 transition ease-in-out delay-150`}
               >
                 <div
-                  className={
+                  className={`${
                     selected === 5
-                      ? "flex items-center px-2 gap-2 text-white bg-[#8F3AA6] rounded-lg w-[10rem]"
-                      : "flex items-center px-2 gap-2 rounded-lg w-[10rem]"
-                  }
+                      ? " text-white bg-[#8F3AA6]"
+                      : " hover:bg-gray-300 hover:text-gray-800"
+                  } flex items-center px-2 gap-2 rounded-lg w-[10rem] transition ease-in-out delay-150`}
                 >
                   <FaRegMoneyBillAlt />
                   <div className="cursor-pointer">Subscriptions</div>
@@ -109,18 +109,18 @@ const SideNav = ({ isOpen, onClick, hasSelected, type }) => {
 
             <div
               onClick={() => handleClick(6, "Settings")}
-              className={
+              className={`${
                 selected === 6
-                  ? "flex items-center gap-2 border-l-2 border-[#8F3AA6] text-white px-2"
-                  : "flex items-center gap-2 px-2  text-white"
-              }
+                  ? "border-[#8F3AA6] border-l-2"
+                  : "hover:border-gray-300 "
+              } flex items-center gap-2 text-white px-2 hover:border-l-2 transition ease-in-out delay-150`}
             >
               <div
-                className={
+                className={`${
                   selected === 6
-                    ? "flex items-center px-2 gap-2 text-white bg-[#8F3AA6] rounded-lg w-[10rem]"
-                    : "flex items-center px-2 gap-2 rounded-lg w-[10rem]"
-                }
+                    ? " text-white bg-[#8F3AA6]"
+                    : " hover:bg-gray-300 hover:text-gray-800"
+                } flex items-center px-2 gap-2 rounded-lg w-[10rem] transition ease-in-out delay-150`}
               >
                 <IoSettings />
                 <div className="cursor-pointer">Settings</div>
@@ -129,18 +129,18 @@ const SideNav = ({ isOpen, onClick, hasSelected, type }) => {
 
             <div
               onClick={() => handleClick(7, "Logout")}
-              className={
+              className={`${
                 selected === 7
-                  ? "flex items-center gap-2 border-l-2 border-[#8F3AA6] text-white px-2"
-                  : "flex items-center gap-2 px-2  text-white"
-              }
+                  ? "border-[#8F3AA6] border-l-2"
+                  : "hover:border-gray-300 "
+              } flex items-center gap-2 text-white px-2 hover:border-l-2 transition ease-in-out delay-150`}
             >
               <div
-                className={
+                className={`${
                   selected === 7
-                    ? "flex items-center px-2 gap-2 text-white bg-[#8F3AA6] rounded-lg w-[10rem]"
-                    : "flex items-center px-2 gap-2 rounded-lg w-[10rem]"
-                }
+                    ? " text-white bg-[#8F3AA6]"
+                    : " hover:bg-gray-300 hover:text-gray-800"
+                } flex items-center px-2 gap-2 rounded-lg w-[10rem] transition ease-in-out delay-150`}
               >
                 <IoLogOut />
                 <div className="cursor-pointer">Log Out</div>

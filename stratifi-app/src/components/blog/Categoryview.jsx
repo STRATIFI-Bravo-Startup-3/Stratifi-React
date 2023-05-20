@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { paginateData } from "../../utils";
 import { Pagination } from "../common/paginate";
 
@@ -37,7 +38,9 @@ function CategoryView({ data, recordsPerPage, currentPage, setCurrentPage }) {
             >
               {/* category image container */}
               <div className="w-full h-[150px] sm:h-full">
-                <img
+                <Image
+                  width={500}
+                  height={500}
                   className="w-full h-full"
                   src={category.image.src}
                   alt={category.title}

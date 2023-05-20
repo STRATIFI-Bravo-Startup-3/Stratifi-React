@@ -23,7 +23,7 @@ const ChatWidget = () => {
   }
 
   return (
-    <div className=" w-full  overflow-x-hidden p-2 lg:p-8">
+    <div className=" w-full  overflow-x-hidden p-2 lg:p-8 animate__animated animate__fadeIn">
       <div className="text-white md:my-8 p-2 lg:px-4 bg-[#AD6EC0] z-20 sticky top-0 flex items-center gap-2 border-b border-slate-300 sm:border-none rounded">
         <IoChevronBackOutline
           className="lg:hidden"
@@ -51,8 +51,8 @@ const ChatWidget = () => {
                   <div
                     onClick={() => handleClick(0, "")}
                     className={`${
-                      chat === 0 ? "text-black bg-slate-100" : "text-white"
-                    } ring-gray-100 flex items-center p-2 gap-4 border-b cursor-pointer`}
+                      chat === 0 ? "text-gray-800 bg-slate-100" : "text-white"
+                    } ring-gray-100 flex items-center p-2 gap-4 border-b cursor-pointer  hover:bg-slate-100 hover:text-gray-800 transition ease-in-out delay-100`}
                   >
                     <CgProfile />
                     Fitness Center
@@ -61,8 +61,8 @@ const ChatWidget = () => {
                   <div
                     onClick={() => handleClick(1, "Campaigns")}
                     className={`${
-                      chat === 1 ? "text-black bg-slate-100" : "text-white"
-                    } ring-gray-100 flex items-center p-2 gap-4 border-b cursor-pointer`}
+                      chat === 1 ? "text-gray-800 bg-slate-100" : "text-white"
+                    } ring-gray-100 flex items-center p-2 gap-4 border-b cursor-pointer  hover:bg-slate-100 hover:text-gray-800 transition ease-in-out delay-100`}
                   >
                     <CgProfile />
                     Fitness Center
@@ -70,8 +70,8 @@ const ChatWidget = () => {
                   <div
                     onClick={() => handleClick(2, "Campaigns")}
                     className={`${
-                      chat === 2 ? "text-black bg-slate-100" : "text-white"
-                    } ring-gray-100 flex items-center p-2 gap-4 border-b cursor-pointer`}
+                      chat === 2 ? "text-gray-800 bg-slate-100" : "text-white"
+                    } ring-gray-100 flex items-center p-2 gap-4 border-b cursor-pointer  hover:bg-slate-100 hover:text-gray-800 transition ease-in-out delay-100`}
                   >
                     <CgProfile />
                     Fitness Center
@@ -79,8 +79,8 @@ const ChatWidget = () => {
                   <div
                     onClick={() => handleClick(3, "user")}
                     className={`${
-                      chat === 3 ? "text-black bg-slate-100" : "text-white"
-                    } ring-gray-100 flex items-center p-2 gap-4 border-b cursor-pointer`}
+                      chat === 3 ? "text-gray-800 bg-slate-100" : "text-white"
+                    } ring-gray-100 flex items-center p-2 gap-4 border-b cursor-pointer  hover:bg-slate-100 hover:text-gray-800 transition ease-in-out delay-100`}
                   >
                     <CgProfile />
                     Fitness Center
@@ -94,7 +94,7 @@ const ChatWidget = () => {
 
         <div className="bg-slate-100 w-full flex flex-col justify-between max-h-screen md:max-h-[36rem] rounded-r overflow-y-scroll relative">
           <div className="bg-gray-500 z-10 sticky top-0">
-            <div className="bg-orange h-12 flex items-center text-sm justify-between p-4 text-gray-200 z-10 sticky top-0">
+            <div className="bg-orange h-12 flex items-center text-sm justify-between p-4 text-gray-100 z-10 sticky top-0">
               <h1>Fitness Center</h1>
 
               <label

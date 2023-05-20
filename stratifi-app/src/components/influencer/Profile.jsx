@@ -23,7 +23,7 @@ const Profile = () => {
 
   return (
     <>
-      <div className="m-4 flex flex-col items-center w-full py-4 text-sm">
+      <div className="m-4 flex flex-col items-center w-full py-4 text-sm animate__animated animate__fadeIn">
         <div className="h-[10rem] w-[10rem] rounded-full ring-2 ring-gray-300 flex flex-col items-center justify-center">
           <h1 className="border-b pt-12 pb-2 border-gray-300 text-xs text-gray-500">
             Change Profile Picture

@@ -10,17 +10,17 @@ const Dashboard = ({ onClick }) => {
   };
   return (
     <>
-      <div className="p-2 lg:px-6 w-full">
+      <div className="p-2 lg:px-6 w-full animate__animated animate__fadeIn">
         <ProfileCover />
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 p-2 text-[#55006E] text-sm">
-        <div className="w-[10rem] h-[10rem] sm:w-[15rem] sm:h-[10rem] p-6 bg-[#F9E5FF] rounded-lg flex flex-col justify-between hover:shadow-md active:shadow-inner">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 p-2 text-[#55006E] text-sm animate__animated animate__fadeIn">
+        <div className="w-[10rem] h-[10rem] sm:w-[15rem] sm:h-[10rem] p-6 bg-[#F9E5FF] rounded-lg flex flex-col justify-between hover:shadow-md transition duration-500 ease-in-out delay-150 hover:scale-105 hover:translate-y-1 cursor-pointer">
           <h1 className="text-4xl font-bold">+</h1>
           <h1 className="flex-end">Start a Campaign</h1>
         </div>
         <div
           onClick={() => handleClick("Messages")}
-          className="w-[10rem] h-[10rem] sm:w-[15rem] sm:h-[10rem] p-6 bg-[#F9E5FF] rounded-lg flex flex-col justify-between hover:shadow-md active:shadow-inner"
+          className="w-[10rem] h-[10rem] sm:w-[15rem] sm:h-[10rem] p-6 bg-[#F9E5FF] rounded-lg flex flex-col justify-between hover:shadow-md transition duration-500 ease-in-out delay-150 hover:scale-105 hover:translate-y-1 cursor-pointer"
         >
           <div className="flex items-center gap-2">
             <IoMailUnread className="w-5 h-5" />
@@ -30,7 +30,7 @@ const Dashboard = ({ onClick }) => {
         </div>
         <div
           onClick={() => handleClick("Campaigns")}
-          className="w-[10rem] h-[10rem] sm:w-[15rem] sm:h-[10rem] p-6 bg-[#F9E5FF] rounded-lg flex flex-col justify-between hover:shadow-md active:shadow-inner"
+          className="w-[10rem] h-[10rem] sm:w-[15rem] sm:h-[10rem] p-6 bg-[#F9E5FF] rounded-lg flex flex-col justify-between hover:shadow-md transition duration-500 ease-in-out delay-150 hover:scale-105 hover:translate-y-1 cursor-pointer"
         >
           <div className="flex items-center gap-2">
             <HiSpeakerphone className="w-5 h-5" />
@@ -40,7 +40,7 @@ const Dashboard = ({ onClick }) => {
         </div>
         <div
           onClick={() => handleClick("Wallet")}
-          className="w-[10rem] h-[10rem] sm:w-[15rem] sm:h-[10rem] p-6 bg-[#F9E5FF] rounded-lg flex flex-col justify-between hover:shadow-md active:shadow-inner"
+          className="w-[10rem] h-[10rem] sm:w-[15rem] sm:h-[10rem] p-6 bg-[#F9E5FF] rounded-lg flex flex-col justify-between hover:shadow-md transition duration-500 ease-in-out delay-150 hover:scale-105 hover:translate-y-1 cursor-pointer"
         >
           <div className="flex items-center gap-2">
             <IoWallet className="w-5 h-5" />
@@ -50,7 +50,7 @@ const Dashboard = ({ onClick }) => {
         </div>
         <div
           onClick={() => handleClick("Profile")}
-          className="w-[10rem] h-[10rem] sm:w-[15rem] sm:h-[10rem] p-6 bg-[#F9E5FF] rounded-lg flex flex-col justify-between hover:shadow-md active:shadow-inner"
+          className="w-[10rem] h-[10rem] sm:w-[15rem] sm:h-[10rem] p-6 bg-[#F9E5FF] rounded-lg flex flex-col justify-between hover:shadow-md transition duration-500 ease-in-out delay-150 hover:scale-105 hover:translate-y-1 cursor-pointer"
         >
           <div className="flex items-center gap-2">
             <BsPersonCircle className="w-5 h-5" />

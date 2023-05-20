@@ -7,6 +7,7 @@ import ChatWidget from "@/components/ChatWidget";
 import Dashboard from "@/components/influencer/Dashboard";
 import Wallet from "@/components/influencer/Wallet";
 import Settings from "@/components/influencer/Settings";
+import Layout from "../layout";
 
 const InfluencerDashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -64,7 +65,7 @@ const InfluencerDashboard = () => {
           />
         </div>
         {/* Rendered Component */}
-        <div className="w-full flex-grow items-center flex flex-col gap-4 overflow-y-auto overflow-x-hidden ">
+        <div className="w-full flex-grow items-center flex flex-col gap-4 overflow-y-auto overflow-x-hidden">
           {componentToRender}
         </div>
       </div>

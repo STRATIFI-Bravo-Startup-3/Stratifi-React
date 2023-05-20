@@ -3,14 +3,10 @@ import { useRouter } from "next/router";
 import Joi from "joi-browser";
 import Logo from "../components/common/Logo";
 import SelectCategory from "../components/common/SelectCategory";
-import SelectEarning from "../components/common/SelectEarning";
-import SelectCurrency from "../components/common/SelectCurrency";
-import SelectPlatform from "../components/common/SelectPlatform";
 import SelectAudience from "../components/common/SelectAudience";
 import SelectAudienceAge from "../components/common/SelectAudienceAge";
-import SelectInfluencerType from "../components/common/SelectInfluencerType";
-import NavBar from "@/components/NavBar";
 import UploadPicture from "../components/common/UploadPicture";
+import Layout from "./layout";
 
 const BrandInformation = () => {
   const [brand, setBrand] = useState({});
@@ -21,12 +17,9 @@ const BrandInformation = () => {
     description: Joi.string().required().min(50).label("Description"),
     website: Joi.string().required().label("Website"),
     business_name: Joi.string().required().label("Business Name"),
-    // preferred_platform: Joi.string().required().label("Preferred Platform"),
     audience_age: Joi.string().required().label("Audience Age"),
     target_audience: Joi.string().required().label("Target Audience"),
     category: Joi.string().required().label("Category"),
-    // influencer_type: Joi.string().required().label("Influencer Type"),
-    budget_range: Joi.string().required().label("Budget Range"),
   };
 
   const validate = () => {
@@ -71,9 +64,8 @@ const BrandInformation = () => {
   };
 
   return (
-    <>
-      <NavBar />
-      <div className=" flex flex-col text-[0.92rem] text-slate-700 bg-brand py-12">
+    <Layout>
+      <div className=" flex flex-col text-[0.92rem] text-slate-700 bg-brand py-24">
         <form
           onSubmit={handleSubmit}
           className="flex flex-col bg-secondary lg:w-[50rem] lg:mx-auto m-[1rem] items-center rounded-xl  gap-4 animate__animated animate__fadeInDown shadow-lg shadow-slate-800"
@@ -194,7 +186,7 @@ const BrandInformation = () => {
           <Logo />
         </form>
       </div>
-    </>
+    </Layout>
   );
 };
 

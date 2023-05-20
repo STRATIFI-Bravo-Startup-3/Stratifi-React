@@ -3,15 +3,12 @@ import { useRouter } from "next/router";
 import Joi from "joi-browser";
 import Logo from "../components/common/Logo";
 import SelectCategory from "../components/common/SelectCategory";
-import SelectEarning from "../components/common/SelectEarning";
-import SelectCurrency from "../components/common/SelectCurrency";
 import SelectPlatform from "../components/common/SelectPlatform";
 import SelectAudience from "../components/common/SelectAudience";
 import SelectAudienceAge from "../components/common/SelectAudienceAge";
-import SelectInfluencerType from "../components/common/SelectInfluencerType";
-import NavBar from "@/components/NavBar";
 import UploadPicture from "../components/common/UploadPicture";
 import SelectRegion from "@/components/common/SelectRegion";
+import Layout from "./layout";
 
 const InfluencerInformation = () => {
   const [influencer, setInfluencer] = useState({});
@@ -73,9 +70,8 @@ const InfluencerInformation = () => {
   };
 
   return (
-    <>
-      <NavBar />
-      <div className=" flex flex-col text-[0.92rem] text-slate-800 bg-brand py-12">
+    <Layout>
+      <div className=" flex flex-col text-[0.92rem] text-slate-800 bg-brand py-24">
         <form
           onSubmit={handleSubmit}
           className="flex flex-col bg-secondary lg:w-[50rem] lg:mx-auto m-[1rem] items-center rounded-xl  gap-4 animate__animated animate__fadeInDown shadow-lg shadow-slate-800"
@@ -270,7 +266,7 @@ const InfluencerInformation = () => {
           <Logo />
         </form>
       </div>
-    </>
+    </Layout>
   );
 };
 

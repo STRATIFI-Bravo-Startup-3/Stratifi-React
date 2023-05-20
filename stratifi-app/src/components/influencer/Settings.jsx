@@ -5,7 +5,7 @@ import ButtonSm from "../common/ButtonSm";
 
 const Settings = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center h-full w-full items-center gap-12 md:gap-16 text-sm md:text-base">
+    <div className="flex flex-col md:flex-row justify-center h-full w-full items-center gap-12 md:gap-16 text-sm md:text-base animate__animated animate__fadeIn">
       <div className="flex flex-col justify-center h-full px-4">
         <h1 className="font-bold text-2xl py-4">Account Settings</h1>
         <div className="flex flex-col gap-8 w-[20rem]">

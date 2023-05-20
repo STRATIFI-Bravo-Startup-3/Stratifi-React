@@ -3,7 +3,7 @@ import { HiCheckBadge } from "react-icons/hi2";
 
 const ProfileCover = () => {
   return (
-    <div className="bg-secondary w-full py-4 rounded-lg relative text-sm">
+    <div className="bg-secondary w-full py-4 rounded-lg relative text-sm animate__animated animate__fadeIn">
       <div className="px-4 flex h-full items-center justify-end">
         <div className="flex flex-col items-center text-white">
           <div className="flex items-center gap-2 px-4 rounded-lg ">

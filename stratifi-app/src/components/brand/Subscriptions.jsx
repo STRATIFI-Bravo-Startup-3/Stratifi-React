@@ -9,7 +9,9 @@ const Subscriptions = () => {
       <div className="flex flex-col gap-3">
         <span>Active Subscription: Premium Plan</span>
         <span>Expires: May 2024</span>
-        <ButtonSm label="Change Plan" />
+        <a href="/pricing">
+          <ButtonSm label="Change Plan" />
+        </a>
       </div>
     </div>
   );

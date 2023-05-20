@@ -4,12 +4,8 @@ import SearchSm from "../common/SearchSm";
 
 const Campaigns = () => {
   return (
-    <section className="flex flex-col w-full overflow-x-scroll overflow-hidden gap-8 px-2 lg:px-6 overflow-y-scroll">
+    <section className="flex flex-col w-full overflow-x-scroll overflow-hidden gap-8 px-2 lg:px-6 overflow-y-scroll animate__animated animate__fadeIn">
       <div className="p-4 text-sm w-full grid grid-cols-1 sm:flex items-center gap-4 sm:gap-8">
-        {/* <button className="">
-          <BsPlus />
-          New Campaign
-        </button> */}
         <ButtonSm label="+ New Campaign" />
         <SearchSm label="Search Campaigns" />
       </div>
@@ -18,7 +14,7 @@ const Campaigns = () => {
           Active Campaigns
         </h1>
         <div className="bg-gray-200 rounded-lg flex items-center gap-4 justify-between py-8 w-full overflow-x-scroll px-4">
-          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm">
+          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm transition duration-500 ease-in-out delay-100 hover:scale-105 hover:translate-y-1 cursor-pointer">
             <h1 className="font-bold">MaraCampaign</h1>
             <div className="flex flex-col items-center">
               <Image alt="" src="/images/about1.svg" width={200} height={200} />
@@ -26,7 +22,7 @@ const Campaigns = () => {
             </div>
           </div>
 
-          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm">
+          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm transition duration-500 ease-in-out delay-100 hover:scale-105 hover:translate-y-1 cursor-pointer">
             <h1 className="font-bold">MaraCampaign</h1>
             <div className="flex flex-col items-center">
               <Image alt="" src="/images/about1.svg" width={200} height={200} />
@@ -34,7 +30,7 @@ const Campaigns = () => {
             </div>
           </div>
 
-          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm">
+          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm transition duration-500 ease-in-out delay-100 hover:scale-105 hover:translate-y-1 cursor-pointer">
             <h1 className="font-bold">MaraCampaign</h1>
             <div className="flex flex-col items-center">
               <Image alt="" src="/images/about1.svg" width={200} height={200} />
@@ -42,7 +38,7 @@ const Campaigns = () => {
             </div>
           </div>
 
-          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm">
+          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm transition duration-500 ease-in-out delay-100 hover:scale-105 hover:translate-y-1 cursor-pointer">
             <h1 className="font-bold">MaraCampaign</h1>
             <div className="flex flex-col items-center">
               <Image alt="" src="/images/about1.svg" width={200} height={200} />
@@ -50,7 +46,7 @@ const Campaigns = () => {
             </div>
           </div>
 
-          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm">
+          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm transition duration-500 ease-in-out delay-100 hover:scale-105 hover:translate-y-1 cursor-pointer">
             <h1 className="font-bold">MaraCampaign</h1>
             <div className="flex flex-col items-center">
               <Image alt="" src="/images/about1.svg" width={200} height={200} />
@@ -58,7 +54,7 @@ const Campaigns = () => {
             </div>
           </div>
 
-          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm">
+          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm transition duration-500 ease-in-out delay-100 hover:scale-105 hover:translate-y-1 cursor-pointer">
             <h1 className="font-bold">MaraCampaign</h1>
             <div className="flex flex-col items-center">
               <Image alt="" src="/images/about1.svg" width={200} height={200} />
@@ -74,7 +70,7 @@ const Campaigns = () => {
           Campaigns Completed
         </h1>
         <div className="bg-gray-200 rounded-lg flex items-center gap-4 justify-between py-8 w-full overflow-x-scroll px-4">
-          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm">
+          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm transition duration-500 ease-in-out delay-100 hover:scale-105 hover:translate-y-1 cursor-pointer">
             <h1 className="font-bold">MaraCampaign</h1>
             <div className="flex flex-col items-center">
               <Image alt="" src="/images/about1.svg" width={200} height={200} />
@@ -82,7 +78,7 @@ const Campaigns = () => {
             </div>
           </div>
 
-          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm">
+          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm transition duration-500 ease-in-out delay-100 hover:scale-105 hover:translate-y-1 cursor-pointer">
             <h1 className="font-bold">MaraCampaign</h1>
             <div className="flex flex-col items-center">
               <Image alt="" src="/images/about1.svg" width={200} height={200} />
@@ -90,7 +86,7 @@ const Campaigns = () => {
             </div>
           </div>
 
-          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm">
+          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm transition duration-500 ease-in-out delay-100 hover:scale-105 hover:translate-y-1 cursor-pointer">
             <h1 className="font-bold">MaraCampaign</h1>
             <div className="flex flex-col items-center">
               <Image alt="" src="/images/about1.svg" width={200} height={200} />
@@ -98,7 +94,7 @@ const Campaigns = () => {
             </div>
           </div>
 
-          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm">
+          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm transition duration-500 ease-in-out delay-100 hover:scale-105 hover:translate-y-1 cursor-pointer">
             <h1 className="font-bold">MaraCampaign</h1>
             <div className="flex flex-col items-center">
               <Image alt="" src="/images/about1.svg" width={200} height={200} />
@@ -106,7 +102,7 @@ const Campaigns = () => {
             </div>
           </div>
 
-          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm">
+          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm transition duration-500 ease-in-out delay-100 hover:scale-105 hover:translate-y-1 cursor-pointer">
             <h1 className="font-bold">MaraCampaign</h1>
             <div className="flex flex-col items-center">
               <Image alt="" src="/images/about1.svg" width={200} height={200} />
@@ -114,7 +110,7 @@ const Campaigns = () => {
             </div>
           </div>
 
-          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm">
+          <div className="rounded flex flex-col items-center ring-1 w-[10rem] gap-4 text-sm bg-gray-100 p-2 ring-gray-300 shadow-sm transition duration-500 ease-in-out delay-100 hover:scale-105 hover:translate-y-1 cursor-pointer">
             <h1 className="font-bold">MaraCampaign</h1>
             <div className="flex flex-col items-center">
               <Image alt="" src="/images/about1.svg" width={200} height={200} />
