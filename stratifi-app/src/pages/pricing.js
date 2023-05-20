@@ -11,7 +11,7 @@ const Pricing = () => {
 
   return (
     <Layout>
-      <div className="flex flex-col gap-8 px-4 items-center text-gray-700 my-auto py-24 justify-center md:h-screen bg-pink-gradient animate__animated animate__headShake">
+      <div className="flex flex-col gap-8 px-4 items-center text-gray-700 my-auto py-24 justify-center md:h-screen bg-pink-gradient animate__animated animate__flipInX">
         <div className="flex gap-2 items-center">
           <h1 className="font-semibold text-xl">Plans & Pricing</h1>
           <BsFillInfoCircleFill
