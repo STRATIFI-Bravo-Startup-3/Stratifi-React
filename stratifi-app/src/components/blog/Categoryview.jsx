@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { paginateData } from "../../utils";
 import { Pagination } from "../common/paginate";
@@ -37,11 +35,10 @@ function CategoryView({ data, recordsPerPage, currentPage, setCurrentPage }) {
               className="grid grid-cols-1 sm:grid-cols-2 gap-x-2 sm:py-[2.5rem] sm:border-b-[1px] sm:border-y-gray-400 rounded shadow sm:rounded-none sm:shadow-none mx-auto"
             >
               {/* category image container */}
-              <div className="w-full h-[150px] sm:h-full">
+              <div className="w-full sm:h-full">
                 <Image
                   width={500}
                   height={500}
-                  className="w-full h-full"
                   src={category.image.src}
                   alt={category.title}
                 />
