@@ -45,28 +45,27 @@ function CategoryView({ data, recordsPerPage, currentPage, setCurrentPage }) {
               </div>
 
               <div className="flex flex-col justify-between py-4 px-3 sm:py-0">
-                <div>
-                  {/* Category type */}
-                  <div className="w-max rounded-sm text-white capitalize py-1 px-3 bg-blogPry">
-                    {category.category}
-                  </div>
-
-                  {/* Category date published and minutes read */}
-                  <div className="flex justify-between gap-x-4 text-gray-300 mt-3">
-                    <div className="text-xs font-mono">{category.date}</div>
-                    <div className="text-xs font-mono">{`${category.minutesRead} minutes read`}</div>
-                  </div>
-
-                  {/* Category title */}
-                  <div className="font-bold mt-1 md:text-xl">
-                    {category.title}
-                  </div>
-
-                  {/* Category description */}
-                  <div className="text-sm mt-2 md:text-[1rem]">
-                    {category.description}
-                  </div>
+                {/* Category type */}
+                <div className="w-max rounded-sm text-white capitalize py-1 px-3 bg-blogPry">
+                  {category.category}
                 </div>
+
+                {/* Category date published and minutes read */}
+                <div className="flex justify-between gap-x-4 text-gray-300 mt-3">
+                  <div className="text-xs font-mono">{category.date}</div>
+                  <div className="text-xs font-mono">{`${category.minutesRead} minutes read`}</div>
+                </div>
+
+                {/* Category title */}
+                <div className="font-bold mt-1 md:text-xl">
+                  {category.title}
+                </div>
+
+                {/* Category description */}
+                <div className="text-sm mt-2 md:text-[1rem]">
+                  {category.description}
+                </div>
+
                 <div
                   className="flex justify-between items-centersetActiveCategory({
                 ...activeCategory,
